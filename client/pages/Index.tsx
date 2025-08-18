@@ -152,7 +152,7 @@ export default function Index() {
   };
 
   return (
-    <div className="h-screen bg-gradient-to-br from-copper-50 via-cream-50 to-copper-100 flex flex-col overflow-hidden">
+    <div className="h-screen bg-gradient-to-br from-black-950 via-black-900 to-black-800 flex flex-col overflow-hidden">
       <Header />
 
       {/* Pricing Banner */}
