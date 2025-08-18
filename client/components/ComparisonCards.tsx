@@ -25,27 +25,27 @@ export function ComparisonCards({
     return (
       <div className="space-y-6">
         <div className="text-center">
-          <h2 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">
+          <h2 className="text-lg sm:text-xl font-bold text-gold-300 mb-2">
             Fragrance Comparison
           </h2>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gold-300">
             Add more fragrances to start comparing
           </p>
         </div>
 
-        <Card className="bg-gradient-to-br from-copper-100 via-copper-200 to-copper-300 border-2 border-copper-400 shadow-xl">
+        <Card className="bg-gradient-to-br from-black-900 via-black-800 to-black-700 border-2 border-gold-400 shadow-xl">
           <CardContent className="p-6">
             <div className="text-center">
-              <h3 className="text-lg font-bold text-gray-800 mb-2">
+              <h3 className="text-lg font-bold text-gold-300 mb-2">
                 {perfume.name}
               </h3>
-              <p className="text-sm text-copper-700 mb-4">
+              <p className="text-sm text-gold-700 mb-4">
                 Add another fragrance to begin your comparison
               </p>
               <Button
                 variant="outline"
                 onClick={() => onRemove(perfume.id)}
-                className="border-red-300 text-red-600 hover:bg-red-50"
+                className="border-red-300 text-red-600 hover:bg-red-800"
               >
                 <X className="w-4 h-4 mr-2" />
                 Remove
@@ -67,7 +67,7 @@ export function ComparisonCards({
       case "unisex":
         return "bg-green-200 text-green-900 border-green-400";
       default:
-        return "bg-gray-200 text-gray-900 border-gray-400";
+        return "bg-black-800 text-gold-300 border-gold-500";
     }
   };
 
@@ -76,31 +76,31 @@ export function ComparisonCards({
     switch (gender.toLowerCase()) {
       case "women":
         return {
-          titleText: "text-amber-900",
-          brandText: "text-amber-800",
-          accordBorder: "border-amber-400 text-amber-900 bg-amber-50",
-          iconColor: "text-amber-700",
+          titleText: "text-black-700",
+          brandText: "text-gold-800",
+          accordBorder: "border-gold-400 text-black-700 bg-black-800",
+          iconColor: "text-gold-700",
         };
       case "men":
         return {
           titleText: "text-slate-900",
           brandText: "text-slate-800",
-          accordBorder: "border-slate-500 text-slate-900 bg-slate-100",
+          accordBorder: "border-slate-500 text-slate-900 bg-black-800",
           iconColor: "text-slate-700",
         };
       case "unisex":
         return {
-          titleText: "text-orange-900",
-          brandText: "text-orange-800",
-          accordBorder: "border-orange-400 text-orange-900 bg-orange-50",
-          iconColor: "text-orange-700",
+          titleText: "text-black-700",
+          brandText: "text-gold-800",
+          accordBorder: "border-gold-400 text-black-700 bg-black-800",
+          iconColor: "text-gold-700",
         };
       default:
         return {
-          titleText: "text-orange-900",
-          brandText: "text-orange-800",
-          accordBorder: "border-orange-400 text-orange-900 bg-orange-50",
-          iconColor: "text-orange-700",
+          titleText: "text-black-700",
+          brandText: "text-gold-800",
+          accordBorder: "border-gold-400 text-black-700 bg-black-800",
+          iconColor: "text-gold-700",
         };
     }
   };
@@ -126,7 +126,7 @@ export function ComparisonCards({
           >
             {perfume.brand}
           </p>
-          <p className="text-xs font-semibold text-gray-700 hidden sm:block">
+          <p className="text-xs font-semibold text-gold-400 hidden sm:block">
             Inspired by {perfume.originalBrand}
           </p>
           <Badge
@@ -141,7 +141,7 @@ export function ComparisonCards({
     {
       title: "Profile",
       getValue: (perfume: Perfume, colors: any) => (
-        <p className="text-xs font-semibold text-gray-900 text-center">
+        <p className="text-xs font-semibold text-gold-300 text-center">
           {perfume.fragranceProfile}
         </p>
       ),
@@ -150,17 +150,17 @@ export function ComparisonCards({
       title: "Details",
       getValue: (perfume: Perfume, colors: any) => (
         <div className="space-y-1 text-xs">
-          <div className="flex items-center justify-center gap-1 text-gray-900">
+          <div className="flex items-center justify-center gap-1 text-gold-300">
             <Clock className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
             <span className="font-semibold text-center">
               {perfume.bestTime}
             </span>
           </div>
-          <div className="flex items-center justify-center gap-1 text-gray-900">
+          <div className="flex items-center justify-center gap-1 text-gold-300">
             <Droplets className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
             <span className="font-semibold text-center">{perfume.sillage}</span>
           </div>
-          <div className="flex items-center justify-center gap-1 text-gray-900">
+          <div className="flex items-center justify-center gap-1 text-gold-300">
             <Star className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
             <span className="font-semibold text-center">
               {perfume.mainSeasons.join(", ")}
@@ -192,7 +192,7 @@ export function ComparisonCards({
           {perfume.topNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-white/60 px-1 sm:px-2 py-1 rounded border border-gray-300 font-medium truncate"
+              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gold-500 font-medium truncate"
             >
               {note}
             </div>
@@ -207,7 +207,7 @@ export function ComparisonCards({
           {perfume.middleNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-white/60 px-1 sm:px-2 py-1 rounded border border-gray-300 font-medium truncate"
+              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gold-500 font-medium truncate"
             >
               {note}
             </div>
@@ -222,7 +222,7 @@ export function ComparisonCards({
           {perfume.baseNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-white/60 px-1 sm:px-2 py-1 rounded border border-gray-300 font-medium truncate"
+              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gold-500 font-medium truncate"
             >
               {note}
             </div>
@@ -264,9 +264,9 @@ export function ComparisonCards({
       </div>
 
       {/* Single Comparison Card */}
-      <Card className="bg-gradient-to-br from-copper-50 via-cream-50 to-copper-100 border-2 border-copper-400 shadow-xl relative overflow-hidden -mt-2">
+      <Card className="bg-gradient-to-br from-black-950 via-black-900 to-black-800 border-2 border-gold-400 shadow-xl relative overflow-hidden -mt-2">
         <CardHeader className="text-center pb-1 sm:pb-2 relative">
-          <CardTitle className="text-sm sm:text-xl font-bold text-gray-800 flex items-center justify-center gap-1 sm:gap-2 flex-wrap">
+          <CardTitle className="text-sm sm:text-xl font-bold text-gold-300 flex items-center justify-center gap-1 sm:gap-2 flex-wrap">
             Fragrance Comparison Chart
           </CardTitle>
         </CardHeader>
@@ -289,7 +289,7 @@ export function ComparisonCards({
                       {/* Perfume Column */}
                       <div className="space-y-1 text-center min-h-0 flex flex-col justify-start">
                         {section.title && (
-                          <h4 className="font-bold text-xs text-gray-800 mb-1">
+                          <h4 className="font-bold text-xs text-gold-300 mb-1">
                             {section.title}
                           </h4>
                         )}
@@ -298,14 +298,14 @@ export function ComparisonCards({
 
                       {/* Divider (not after last item) */}
                       {perfumeIndex < perfumes.length - 1 && (
-                        <div className="bg-copper-300"></div>
+                        <div className="bg-gold-300"></div>
                       )}
                     </div>
                   ))}
                 </div>
                 {/* Horizontal line separator between sections (except after last section) */}
                 {index < comparisonSections.length - 1 && (
-                  <div className="w-full h-px bg-copper-300 my-2 sm:my-3"></div>
+                  <div className="w-full h-px bg-gold-300 my-2 sm:my-3"></div>
                 )}
               </div>
             ))}
@@ -325,7 +325,7 @@ export function ComparisonCards({
                   <Button
                     variant="outline"
                     onClick={() => onViewDetails(perfume)}
-                    className="w-full border-gray-400 bg-white/90 text-gray-800 hover:bg-gray-100 font-semibold text-xs h-8"
+                    className="w-full border-gold-500 bg-black-800 text-gold-300 hover:bg-gold-600 font-semibold text-xs h-8"
                   >
                     <Eye className="w-3 h-3 mr-1" />
                     <span className="hidden sm:inline">Details</span>
@@ -334,7 +334,7 @@ export function ComparisonCards({
 
                   {/* Divider (not after last item) */}
                   {perfumeIndex < perfumes.length - 1 && (
-                    <div className="bg-copper-300"></div>
+                    <div className="bg-gold-300"></div>
                   )}
                 </div>
               ))}

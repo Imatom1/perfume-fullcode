@@ -412,24 +412,24 @@ export default function Quiz() {
   const progress = ((currentQuestion + 1) / quizQuestions.length) * 100;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-copper-50 via-cream-50 to-copper-100 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-black-800 flex flex-col">
       <Header />
 
       {/* Page Header */}
       <div
-        className="bg-gradient-to-r from-copper-100 via-copper-200 to-copper-300 py-3 sm:py-4 relative overflow-hidden flex-shrink-0
+        className="bg-gradient-to-r from-black-800 via-black-700 to-gold-300 py-3 sm:py-4 relative overflow-hidden flex-shrink-0
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-2 sm:mb-3">
-              <Heart className="w-5 h-5 sm:w-6 sm:h-6 text-copper-700" />
-              <h1 className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-copper-800 via-copper-700 to-copper-600 bg-clip-text text-transparent">
+              <Heart className="w-5 h-5 sm:w-6 sm:h-6 text-gold-700" />
+              <h1 className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-gold-800 via-gold-700 to-gold-600 bg-clip-text text-transparent">
                 Perfume Selector Quiz
               </h1>
-              <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-copper-700" />
+              <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-gold-700" />
             </div>
-            <p className="text-sm text-gray-700 max-w-2xl mx-auto px-2">
+            <p className="text-sm text-gold-400 max-w-2xl mx-auto px-2">
               Discover your perfect fragrance match through our
               personality-based questionnaire
             </p>
@@ -439,12 +439,12 @@ export default function Quiz() {
 
       <div className="flex-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
         <Card
-          className="bg-gradient-to-br from-copper-50 via-copper-100 to-copper-200 border-2 border-copper-400 shadow-xl relative flex flex-col min-h-[calc(100vh-16rem)]
+          className="bg-gradient-to-br from-black-800 via-black-800 to-black-700 border-2 border-gold-400 shadow-xl relative flex flex-col min-h-[calc(100vh-16rem)]
         before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
         >
           <CardHeader className="relative z-10 flex-shrink-0">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <CardTitle className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">
+              <CardTitle className="text-lg sm:text-xl md:text-2xl font-bold text-gold-300">
                 {showResults
                   ? "Your Perfect Matches"
                   : `Question ${currentQuestion + 1} of ${quizQuestions.length}`}
@@ -455,7 +455,7 @@ export default function Quiz() {
                     variant="outline"
                     size="sm"
                     onClick={restartQuiz}
-                    className="border-copper-400 text-copper-800 hover:bg-copper-100 flex-1 sm:flex-none"
+                    className="border-gold-400 text-gold-800 hover:bg-black-800 flex-1 sm:flex-none"
                   >
                     <RefreshCw className="w-4 h-4 mr-1" />
                     <span className="hidden sm:inline">Restart Quiz</span>
@@ -467,7 +467,7 @@ export default function Quiz() {
                     variant="outline"
                     size="sm"
                     onClick={goToPreviousQuestion}
-                    className="border-copper-400 text-copper-800 hover:bg-copper-100 flex-1 sm:flex-none"
+                    className="border-gold-400 text-gold-800 hover:bg-black-800 flex-1 sm:flex-none"
                   >
                     <ArrowLeft className="w-4 h-4 mr-1" />
                     <span className="hidden sm:inline">
@@ -485,9 +485,9 @@ export default function Quiz() {
               <div className="mt-4 sm:mt-6">
                 <Progress
                   value={progress}
-                  className="h-2 sm:h-3 bg-copper-200"
+                  className="h-2 sm:h-3 bg-black-700"
                 />
-                <p className="text-xs sm:text-sm text-gray-600 mt-2">
+                <p className="text-xs sm:text-sm text-gold-300 mt-2">
                   {Math.round(progress)}% complete
                 </p>
               </div>
@@ -498,7 +498,7 @@ export default function Quiz() {
             {!showResults ? (
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-6 text-center">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gold-300 mb-6 text-center">
                     {quizQuestions[currentQuestion].question}
                   </h3>
 
@@ -509,7 +509,7 @@ export default function Quiz() {
                         <Button
                           key={option.id}
                           variant="outline"
-                          className="aspect-square p-3 sm:p-4 border-copper-300 text-copper-800 hover:bg-copper-100 hover:border-copper-500 font-medium flex flex-col items-center justify-center text-center w-full h-auto"
+                          className="aspect-square p-3 sm:p-4 border-gold-300 text-gold-800 hover:bg-black-800 hover:border-gold-500 font-medium flex flex-col items-center justify-center text-center w-full h-auto"
                           onClick={() => handleAnswer(option)}
                           style={{
                             minHeight: "calc(min(40vw, 180px))",
@@ -517,12 +517,12 @@ export default function Quiz() {
                           }}
                         >
                           <div className="flex flex-col items-center justify-center space-y-2 sm:space-y-3 h-full w-full">
-                            <IconComponent className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-copper-600 flex-shrink-0" />
+                            <IconComponent className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-gold-600 flex-shrink-0" />
                             <div className="space-y-1 flex-1 flex flex-col justify-center w-full text-center">
                               <div className="font-semibold text-sm sm:text-base leading-tight whitespace-normal break-words">
                                 {option.text}
                               </div>
-                              <div className="text-xs text-gray-600 leading-relaxed whitespace-normal break-words px-1">
+                              <div className="text-xs text-gold-300 leading-relaxed whitespace-normal break-words px-1">
                                 {option.traits.slice(0, 3).join(", ")}
                               </div>
                             </div>
@@ -536,11 +536,11 @@ export default function Quiz() {
             ) : (
               <div className="space-y-4 h-full flex flex-col">
                 <div className="text-center flex-shrink-0">
-                  <Sparkles className="w-8 h-8 sm:w-12 sm:h-12 text-copper-600 mx-auto mb-3" />
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2">
+                  <Sparkles className="w-8 h-8 sm:w-12 sm:h-12 text-gold-600 mx-auto mb-3" />
+                  <h3 className="text-base sm:text-lg font-semibold text-gold-300 mb-2">
                     Your Perfect Fragrance Matches
                   </h3>
-                  <p className="text-sm text-gray-600 max-w-2xl mx-auto px-2">
+                  <p className="text-sm text-gold-300 max-w-2xl mx-auto px-2">
                     Based on your personality and preferences, here are the
                     fragrances that align perfectly with who you are
                   </p>
@@ -551,26 +551,26 @@ export default function Quiz() {
                     {recommendations.map((perfume, index) => (
                       <Card
                         key={perfume.id}
-                        className="border-copper-300 bg-gradient-to-br from-copper-50 to-copper-100 hover:from-copper-100 hover:to-copper-150 transition-all cursor-pointer group"
+                        className="border-gold-300 bg-gradient-to-br from-black-800 to-black-800 hover:from-black-800 hover:to-gold-150 transition-all cursor-pointer group"
                         onClick={() => handlePerfumeClick(perfume)}
                       >
                         <CardContent className="p-3 sm:p-4 md:p-5">
                           <div className="space-y-2 sm:space-y-3">
                             <div className="flex items-center justify-between">
-                              <Badge className="bg-copper-600 text-white text-xs font-semibold">
+                              <Badge className="bg-gold-600 text-white text-xs font-semibold">
                                 #{index + 1} Match
                               </Badge>
-                              <Crown className="w-4 h-4 sm:w-5 sm:h-5 text-copper-600" />
+                              <Crown className="w-4 h-4 sm:w-5 sm:h-5 text-gold-600" />
                             </div>
 
                             <div>
-                              <h4 className="font-bold text-gray-900 text-sm sm:text-base md:text-lg group-hover:text-copper-800 transition-colors">
+                              <h4 className="font-bold text-gold-300 text-sm sm:text-base md:text-lg group-hover:text-gold-800 transition-colors">
                                 {perfume.name}
                               </h4>
-                              <p className="text-xs sm:text-sm font-semibold text-copper-700">
+                              <p className="text-xs sm:text-sm font-semibold text-gold-700">
                                 {perfume.brand}
                               </p>
-                              <p className="text-xs text-gray-600 mb-2 sm:mb-3">
+                              <p className="text-xs text-gold-300 mb-2 sm:mb-3">
                                 Inspired by {perfume.originalBrand}
                               </p>
                             </div>
@@ -580,7 +580,7 @@ export default function Quiz() {
                                 <Badge
                                   key={accord}
                                   variant="outline"
-                                  className="text-xs border-copper-300 text-copper-800 bg-copper-50"
+                                  className="text-xs border-gold-300 text-gold-800 bg-black-800"
                                 >
                                   {accord}
                                 </Badge>
@@ -588,22 +588,22 @@ export default function Quiz() {
                             </div>
 
                             <div className="space-y-1 sm:space-y-2">
-                              <p className="text-xs sm:text-sm text-gray-700">
+                              <p className="text-xs sm:text-sm text-gold-400">
                                 <span className="font-semibold">Profile:</span>{" "}
                                 {perfume.fragranceProfile}
                               </p>
-                              <p className="text-xs sm:text-sm text-gray-700">
+                              <p className="text-xs sm:text-sm text-gold-400">
                                 <span className="font-semibold">Best for:</span>{" "}
                                 {perfume.bestTime}
                               </p>
                             </div>
 
-                            <div className="flex justify-between items-center pt-2 border-t border-copper-200">
+                            <div className="flex justify-between items-center pt-2 border-t border-black-700">
                               <div className="text-right">
-                                <div className="text-sm sm:text-base md:text-lg font-bold text-copper-800">
+                                <div className="text-sm sm:text-base md:text-lg font-bold text-gold-800">
                                   ${perfume.sizes[0].price}
                                 </div>
-                                <div className="text-xs text-gray-600">
+                                <div className="text-xs text-gold-300">
                                   from {perfume.sizes[0].size}
                                 </div>
                               </div>
@@ -619,13 +619,13 @@ export default function Quiz() {
                   <Button
                     variant="outline"
                     onClick={resetQuiz}
-                    className="flex-1 border-copper-400 text-copper-800 hover:bg-copper-100 font-semibold py-2 sm:py-3 text-sm sm:text-base"
+                    className="flex-1 border-gold-400 text-gold-800 hover:bg-black-800 font-semibold py-2 sm:py-3 text-sm sm:text-base"
                   >
                     Take Quiz Again
                   </Button>
                   <Button
                     onClick={() => navigate("/")}
-                    className="flex-1 bg-copper-600 hover:bg-copper-700 text-white font-semibold py-2 sm:py-3 text-sm sm:text-base"
+                    className="flex-1 bg-gold-600 hover:bg-gold-700 text-white font-semibold py-2 sm:py-3 text-sm sm:text-base"
                   >
                     <span className="hidden sm:inline">
                       Explore Full Collection

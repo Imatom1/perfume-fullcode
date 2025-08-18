@@ -32,9 +32,9 @@ export function ComparisonTable({
       label: "Name",
       getValue: (p: Perfume) => (
         <div className="space-y-1">
-          <div className="font-bold text-gray-900">{p.name}</div>
-          <div className="text-sm font-semibold text-copper-700">{p.brand}</div>
-          <div className="text-xs font-medium text-gray-700">
+          <div className="font-bold text-gold-300">{p.name}</div>
+          <div className="text-sm font-semibold text-gold-700">{p.brand}</div>
+          <div className="text-xs font-medium text-gold-400">
             Inspired by {p.originalBrand}
           </div>
         </div>
@@ -43,7 +43,7 @@ export function ComparisonTable({
     {
       label: "Gender",
       getValue: (p: Perfume) => (
-        <Badge className="bg-copper-200 text-copper-900 border-copper-400 font-semibold">
+        <Badge className="bg-black-700 text-gold-900 border-gold-400 font-semibold">
           {p.gender}
         </Badge>
       ),
@@ -51,7 +51,7 @@ export function ComparisonTable({
     {
       label: "Fragrance Profile",
       getValue: (p: Perfume) => (
-        <div className="text-sm font-semibold text-gray-800">
+        <div className="text-sm font-semibold text-gold-300">
           {p.fragranceProfile}
         </div>
       ),
@@ -59,13 +59,13 @@ export function ComparisonTable({
     {
       label: "Best Time",
       getValue: (p: Perfume) => (
-        <div className="text-sm font-medium text-gray-700">{p.bestTime}</div>
+        <div className="text-sm font-medium text-gold-400">{p.bestTime}</div>
       ),
     },
     {
       label: "Seasons",
       getValue: (p: Perfume) => (
-        <div className="text-sm font-medium text-gray-700">
+        <div className="text-sm font-medium text-gold-400">
           {p.mainSeasons.join(", ")}
         </div>
       ),
@@ -73,7 +73,7 @@ export function ComparisonTable({
     {
       label: "Sillage",
       getValue: (p: Perfume) => (
-        <div className="text-sm font-medium text-gray-700">{p.sillage}</div>
+        <div className="text-sm font-medium text-gold-400">{p.sillage}</div>
       ),
     },
     {
@@ -84,7 +84,7 @@ export function ComparisonTable({
             <Badge
               key={accord}
               variant="outline"
-              className="text-xs border-copper-300 text-copper-800 bg-copper-50 font-medium"
+              className="text-xs border-gold-300 text-gold-800 bg-black-800 font-medium"
             >
               {accord}
             </Badge>
@@ -95,11 +95,11 @@ export function ComparisonTable({
     {
       label: "Top Notes",
       getValue: (p: Perfume) => (
-        <div className="text-sm font-medium text-gray-700 space-y-1">
+        <div className="text-sm font-medium text-gold-400 space-y-1">
           {p.topNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-copper-50 px-2 py-1 rounded border border-copper-200"
+              className="text-xs bg-black-800 px-2 py-1 rounded border border-black-700"
             >
               {note}
             </div>
@@ -110,11 +110,11 @@ export function ComparisonTable({
     {
       label: "Middle Notes",
       getValue: (p: Perfume) => (
-        <div className="text-sm font-medium text-gray-700 space-y-1">
+        <div className="text-sm font-medium text-gold-400 space-y-1">
           {p.middleNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-copper-50 px-2 py-1 rounded border border-copper-200"
+              className="text-xs bg-black-800 px-2 py-1 rounded border border-black-700"
             >
               {note}
             </div>
@@ -125,11 +125,11 @@ export function ComparisonTable({
     {
       label: "Base Notes",
       getValue: (p: Perfume) => (
-        <div className="text-sm font-medium text-gray-700 space-y-1">
+        <div className="text-sm font-medium text-gold-400 space-y-1">
           {p.baseNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-copper-50 px-2 py-1 rounded border border-copper-200"
+              className="text-xs bg-black-800 px-2 py-1 rounded border border-black-700"
             >
               {note}
             </div>
@@ -146,21 +146,21 @@ export function ComparisonTable({
         {perfumes.map((perfume, index) => (
           <Card
             key={perfume.id}
-            className="bg-gradient-to-br from-copper-50 to-copper-100 border border-copper-300"
+            className="bg-gradient-to-br from-black-800 to-black-800 border border-gold-300"
           >
             <CardContent className="p-4">
               <div className="text-center mb-3">
-                <h4 className="font-bold text-gray-900 text-sm mb-1">
+                <h4 className="font-bold text-gold-300 text-sm mb-1">
                   {perfume.name}
                 </h4>
-                <p className="text-xs text-copper-700">{perfume.brand}</p>
+                <p className="text-xs text-gold-700">{perfume.brand}</p>
               </div>
               <div className="flex gap-2 justify-center">
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={() => onViewDetails(perfume)}
-                  className="border-copper-400 text-copper-800 hover:bg-copper-50 font-semibold text-xs"
+                  className="border-gold-400 text-gold-800 hover:bg-black-800 font-semibold text-xs"
                 >
                   <Eye className="w-3 h-3 mr-1" />
                   View
@@ -169,7 +169,7 @@ export function ComparisonTable({
                   variant="outline"
                   size="sm"
                   onClick={() => onRemove(perfume.id)}
-                  className="border-red-300 text-red-600 hover:bg-red-50 text-xs"
+                  className="border-red-300 text-red-600 hover:bg-red-800 text-xs"
                 >
                   <X className="w-3 h-3" />
                 </Button>
@@ -181,14 +181,14 @@ export function ComparisonTable({
 
       {/* Comparison Table */}
       <Card
-        className="bg-gradient-to-br from-copper-50 via-copper-100 to-copper-200 border-2 border-copper-400 shadow-xl relative overflow-hidden
+        className="bg-gradient-to-br from-black-800 via-black-800 to-black-700 border-2 border-gold-400 shadow-xl relative overflow-hidden
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] hover:before:animate-shimmer before:transition-transform"
       >
         <CardHeader className="relative z-10">
-          <CardTitle className="text-lg sm:text-xl font-bold text-gray-900 flex items-center gap-2">
+          <CardTitle className="text-lg sm:text-xl font-bold text-gold-300 flex items-center gap-2">
             Fragrance Comparison Table
           </CardTitle>
-          <p className="text-xs text-gray-600 mt-2 sm:hidden">
+          <p className="text-xs text-gold-300 mt-2 sm:hidden">
             Scroll horizontally to see all details
           </p>
         </CardHeader>
@@ -197,14 +197,14 @@ export function ComparisonTable({
             <div className="min-w-[600px]">
               <Table>
                 <TableHeader>
-                  <TableRow className="border-b border-copper-300">
-                    <TableHead className="font-bold text-gray-800 bg-copper-200 min-w-[120px] sticky left-0 z-20">
+                  <TableRow className="border-b border-gold-300">
+                    <TableHead className="font-bold text-gold-300 bg-black-700 min-w-[120px] sticky left-0 z-20">
                       Attribute
                     </TableHead>
                     {perfumes.map((perfume, index) => (
                       <TableHead
                         key={perfume.id}
-                        className="font-semibold text-gray-700 bg-copper-100 text-center min-w-[180px]"
+                        className="font-semibold text-gold-400 bg-black-800 text-center min-w-[180px]"
                       >
                         Fragrance {index + 1}
                       </TableHead>
@@ -215,9 +215,9 @@ export function ComparisonTable({
                   {comparisonRows.map((row, rowIndex) => (
                     <TableRow
                       key={row.label}
-                      className={`border-b border-copper-200 ${rowIndex % 2 === 0 ? "bg-copper-50/50" : "bg-copper-50/30"}`}
+                      className={`border-b border-black-700 ${rowIndex % 2 === 0 ? "bg-black-800/50" : "bg-black-800/30"}`}
                     >
-                      <TableCell className="font-medium text-gray-800 bg-copper-50 sticky left-0 z-20 border-r border-copper-200 min-w-[120px]">
+                      <TableCell className="font-medium text-gold-300 bg-black-800 sticky left-0 z-20 border-r border-black-700 min-w-[120px]">
                         {row.label}
                       </TableCell>
                       {perfumes.map((perfume) => (

@@ -27,7 +27,7 @@ export function PerfumeCard({
       case "unisex":
         return "bg-green-200 text-green-900 border-green-400";
       default:
-        return "bg-gray-200 text-gray-900 border-gray-400";
+        return "bg-black-800 text-gold-300 border-gold-500";
     }
   };
 
@@ -37,16 +37,16 @@ export function PerfumeCard({
       case "women":
         // Better Gold theme - using amber for more authentic gold
         return {
-          cardBg: "bg-gradient-to-br from-amber-200 via-amber-300 to-amber-400",
-          cardBorder: "border-amber-500 hover:border-amber-600",
-          cardShadow: "shadow-amber-300/60",
-          titleHover: "group-hover:text-amber-900",
-          brandText: "text-amber-900",
-          profileText: "text-amber-950",
-          badge: "bg-amber-300 text-amber-950 border-amber-500",
-          accordBorder: "border-amber-400 text-amber-900 bg-amber-100",
-          iconColor: "text-amber-800",
-          compareButton: "border-amber-500 text-amber-900 hover:bg-amber-200",
+          cardBg: "bg-gradient-to-br from-black-700 via-gold-300 to-gold-400",
+          cardBorder: "border-gold-500 hover:border-gold-600",
+          cardShadow: "shadow-gold-300/60",
+          titleHover: "group-hover:text-gold-900",
+          brandText: "text-gold-900",
+          profileText: "text-gold-950",
+          badge: "bg-gold-300 text-gold-950 border-gold-500",
+          accordBorder: "border-gold-400 text-gold-900 bg-black-800",
+          iconColor: "text-gold-800",
+          compareButton: "border-gold-500 text-gold-900 hover:bg-black-700",
           shimmer: "before:via-white/15",
         };
       case "men":
@@ -68,34 +68,34 @@ export function PerfumeCard({
         // More saturated copper theme
         return {
           cardBg:
-            "bg-gradient-to-br from-orange-200 via-orange-300 to-orange-400",
-          cardBorder: "border-orange-500 hover:border-orange-600",
-          cardShadow: "shadow-orange-300/60",
-          titleHover: "group-hover:text-orange-900",
-          brandText: "text-orange-900",
-          profileText: "text-orange-950",
-          badge: "bg-orange-300 text-orange-950 border-orange-500",
-          accordBorder: "border-orange-400 text-orange-900 bg-orange-100",
-          iconColor: "text-orange-800",
+            "bg-gradient-to-br from-black-700 via-gold-300 to-gold-400",
+          cardBorder: "border-gold-500 hover:border-gold-600",
+          cardShadow: "shadow-gold-300/60",
+          titleHover: "group-hover:text-gold-900",
+          brandText: "text-gold-900",
+          profileText: "text-gold-950",
+          badge: "bg-gold-300 text-gold-950 border-gold-500",
+          accordBorder: "border-gold-400 text-gold-900 bg-black-800",
+          iconColor: "text-gold-800",
           compareButton:
-            "border-orange-500 text-orange-900 hover:bg-orange-200",
+            "border-gold-500 text-gold-900 hover:bg-black-700",
           shimmer: "before:via-white/15",
         };
       default:
         // Fallback to saturated copper
         return {
           cardBg:
-            "bg-gradient-to-br from-orange-200 via-orange-300 to-orange-400",
-          cardBorder: "border-orange-500 hover:border-orange-600",
-          cardShadow: "shadow-orange-300/60",
-          titleHover: "group-hover:text-orange-900",
-          brandText: "text-orange-900",
-          profileText: "text-orange-950",
-          badge: "bg-orange-300 text-orange-950 border-orange-500",
-          accordBorder: "border-orange-400 text-orange-900 bg-orange-100",
-          iconColor: "text-orange-800",
+            "bg-gradient-to-br from-black-700 via-gold-300 to-gold-400",
+          cardBorder: "border-gold-500 hover:border-gold-600",
+          cardShadow: "shadow-gold-300/60",
+          titleHover: "group-hover:text-gold-900",
+          brandText: "text-gold-900",
+          profileText: "text-gold-950",
+          badge: "bg-gold-300 text-gold-950 border-gold-500",
+          accordBorder: "border-gold-400 text-gold-900 bg-black-800",
+          iconColor: "text-gold-800",
           compareButton:
-            "border-orange-500 text-orange-900 hover:bg-orange-200",
+            "border-gold-500 text-gold-900 hover:bg-black-700",
           shimmer: "before:via-white/15",
         };
     }
@@ -113,7 +113,7 @@ export function PerfumeCard({
         <div className="flex justify-between items-start mb-2">
           <div className="flex-1 min-w-0">
             <CardTitle
-              className={`text-sm sm:text-base md:text-lg font-bold text-gray-900 ${colors.titleHover} transition-colors leading-tight truncate`}
+              className={`text-sm sm:text-base md:text-lg font-bold text-gold-300 ${colors.titleHover} transition-colors leading-tight truncate`}
             >
               {perfume.name}
             </CardTitle>
@@ -122,7 +122,7 @@ export function PerfumeCard({
             >
               {perfume.brand}
             </p>
-            <p className="text-xs font-semibold text-gray-800 mt-1 truncate">
+            <p className="text-xs font-semibold text-gold-300 mt-1 truncate">
               Inspired by {perfume.originalBrand}
             </p>
           </div>
@@ -149,14 +149,14 @@ export function PerfumeCard({
 
       <CardContent className="pt-0 relative z-10 p-3 sm:p-6">
         <div className="space-y-2 sm:space-y-3">
-          <div className="text-xs sm:text-sm text-gray-800">
+          <div className="text-xs sm:text-sm text-gold-300">
             <span className={`font-bold ${colors.profileText}`}>Profile:</span>{" "}
-            <span className="font-semibold text-gray-900">
+            <span className="font-semibold text-gold-300">
               {perfume.fragranceProfile}
             </span>
           </div>
 
-          <div className="text-xs sm:text-sm text-gray-800">
+          <div className="text-xs sm:text-sm text-gold-300">
             <span className={`font-bold ${colors.profileText}`}>
               Top Notes:
             </span>
@@ -174,17 +174,17 @@ export function PerfumeCard({
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 text-xs">
-            <div className="flex items-center gap-1 text-gray-900">
+            <div className="flex items-center gap-1 text-gold-300">
               <Clock className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
               <span className="font-semibold truncate">{perfume.bestTime}</span>
             </div>
-            <div className="flex items-center gap-1 text-gray-900">
+            <div className="flex items-center gap-1 text-gold-300">
               <Droplets
                 className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`}
               />
               <span className="font-semibold truncate">{perfume.sillage}</span>
             </div>
-            <div className="flex items-center gap-1 text-gray-900 sm:col-span-2">
+            <div className="flex items-center gap-1 text-gold-300 sm:col-span-2">
               <Star className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
               <span className="font-semibold truncate">
                 {perfume.mainSeasons.join(", ")}

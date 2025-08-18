@@ -12,64 +12,32 @@ export function CompactPerfumeCard({
   perfume,
   onClick,
 }: CompactPerfumeCardProps) {
-  // Gender badge specific colors
+  // Gender badge specific colors - elegant gold variations
   const getGenderBadgeColor = (gender: string) => {
     switch (gender.toLowerCase()) {
       case "women":
-        return "bg-pink-200 text-pink-900 border-pink-400";
+        return "bg-gold-600 text-black-950 border-gold-500";
       case "men":
-        return "bg-blue-200 text-blue-900 border-blue-400";
+        return "bg-gold-700 text-black-950 border-gold-600";
       case "unisex":
-        return "bg-green-200 text-green-900 border-green-400";
+        return "bg-gold-500 text-black-950 border-gold-400";
       default:
-        return "bg-gray-200 text-gray-900 border-gray-400";
+        return "bg-gold-600 text-black-950 border-gold-500";
     }
   };
 
-  // Gender-based color schemes (simplified for compact design)
+  // Elegant gold color scheme for all cards
   const getGenderColors = (gender: string) => {
-    switch (gender.toLowerCase()) {
-      case "women":
-        return {
-          cardBg: "bg-gradient-to-br from-amber-100 to-amber-200",
-          cardBorder: "border-amber-400 hover:border-amber-500",
-          cardShadow: "shadow-amber-200/60",
-          titleColor: "text-amber-900",
-          brandText: "text-amber-800",
-          accordBorder: "border-amber-300 text-amber-800 bg-amber-50",
-          iconColor: "text-amber-700",
-        };
-      case "men":
-        return {
-          cardBg: "bg-gradient-to-br from-slate-200 to-slate-300",
-          cardBorder: "border-slate-500 hover:border-slate-600",
-          cardShadow: "shadow-slate-300/60",
-          titleColor: "text-slate-900",
-          brandText: "text-slate-800",
-          accordBorder: "border-slate-400 text-slate-800 bg-slate-100",
-          iconColor: "text-slate-700",
-        };
-      case "unisex":
-        return {
-          cardBg: "bg-gradient-to-br from-orange-100 to-orange-200",
-          cardBorder: "border-orange-400 hover:border-orange-500",
-          cardShadow: "shadow-orange-200/60",
-          titleColor: "text-orange-900",
-          brandText: "text-orange-800",
-          accordBorder: "border-orange-300 text-orange-800 bg-orange-50",
-          iconColor: "text-orange-700",
-        };
-      default:
-        return {
-          cardBg: "bg-gradient-to-br from-orange-100 to-orange-200",
-          cardBorder: "border-orange-400 hover:border-orange-500",
-          cardShadow: "shadow-orange-200/60",
-          titleColor: "text-orange-900",
-          brandText: "text-orange-800",
-          accordBorder: "border-orange-300 text-orange-800 bg-orange-50",
-          iconColor: "text-orange-700",
-        };
-    }
+    // All cards use elegant gold colors for premium feel
+    return {
+      cardBg: "bg-gradient-to-br from-black-950 to-black-900",
+      cardBorder: "border-gold-600 hover:border-gold-500",
+      cardShadow: "shadow-gold-500/20",
+      titleColor: "text-gold-200",
+      brandText: "text-gold-300",
+      accordBorder: "border-gold-500 text-gold-200 bg-black-800",
+      iconColor: "text-gold-400",
+    };
   };
 
   const colors = getGenderColors(perfume.gender);
@@ -77,7 +45,7 @@ export function CompactPerfumeCard({
   return (
     <Card
       className={`group cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${colors.cardBg} border ${colors.cardBorder} shadow-md ${colors.cardShadow} relative overflow-hidden
-      before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:translate-x-[-200%] group-hover:before:animate-shimmer before:transition-transform`}
+      before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-gold-500/10 before:to-transparent before:translate-x-[-200%] group-hover:before:animate-shimmer before:transition-transform`}
       onClick={onClick}
     >
       <CardContent className="p-1 sm:p-2 relative z-10 h-full">
@@ -86,19 +54,19 @@ export function CompactPerfumeCard({
           <div className="flex justify-between items-start gap-1 mb-1">
             <div className="flex-1 min-w-0">
               <h4
-                className={`text-sm sm:text-base md:text-lg font-bold ${colors.titleColor} leading-tight truncate`}
+                className={`text-sm sm:text-base md:text-lg font-extrabold ${colors.titleColor} leading-tight truncate tracking-wide`}
               >
                 {perfume.name}
               </h4>
               <p
-                className={`text-xs sm:text-sm font-bold ${colors.brandText} truncate`}
+                className={`text-xs sm:text-sm font-semibold ${colors.brandText} truncate tracking-wider uppercase opacity-90`}
               >
                 {perfume.brand}
               </p>
             </div>
             <Badge
               variant="secondary"
-              className={`${getGenderBadgeColor(perfume.gender)} text-xs font-bold shadow-sm flex-shrink-0`}
+              className={`${getGenderBadgeColor(perfume.gender)} text-xs font-extrabold shadow-lg flex-shrink-0 tracking-widest`}
             >
               {perfume.gender.charAt(0)}
             </Badge>
@@ -110,7 +78,7 @@ export function CompactPerfumeCard({
               <Badge
                 key={accord}
                 variant="outline"
-                className={`text-xs sm:text-sm ${colors.accordBorder} font-bold`}
+                className={`text-xs sm:text-sm ${colors.accordBorder} font-semibold tracking-wide shadow-sm`}
               >
                 {accord}
               </Badge>
@@ -123,19 +91,19 @@ export function CompactPerfumeCard({
               <Clock
                 className={`w-3 h-3 sm:w-4 sm:h-4 ${colors.iconColor} flex-shrink-0`}
               />
-              <span className="font-bold truncate">{perfume.bestTime}</span>
+              <span className="font-semibold truncate text-gold-200">{perfume.bestTime}</span>
             </div>
             <div className="flex items-center gap-1 truncate">
               <Droplets
                 className={`w-3 h-3 sm:w-4 sm:h-4 ${colors.iconColor} flex-shrink-0`}
               />
-              <span className="font-bold truncate">{perfume.sillage}</span>
+              <span className="font-semibold truncate text-gold-200">{perfume.sillage}</span>
             </div>
             <div className="flex items-center gap-1 truncate">
               <Star
                 className={`w-3 h-3 sm:w-4 sm:h-4 ${colors.iconColor} flex-shrink-0`}
               />
-              <span className="font-bold truncate">
+              <span className="font-semibold truncate text-gold-200">
                 {perfume.mainSeasons.join(", ")}
               </span>
             </div>

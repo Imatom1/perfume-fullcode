@@ -64,19 +64,19 @@ export function CompactFilters({
 
   return (
     <div
-      className="bg-gradient-to-r from-copper-100 via-copper-200 to-copper-300 p-3 sm:p-4 md:p-5 border-b border-copper-400 shadow-md relative overflow-hidden
-    before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
+      className="bg-gradient-to-r from-black-900 via-black-800 to-black-700 p-3 sm:p-4 md:p-5 border-b border-gold-400 shadow-md relative overflow-hidden
+    before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-gold-500/10 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
     >
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex items-center gap-3 sm:gap-4 md:gap-5">
           {/* Search - Always visible */}
           <div className="relative flex-1 max-w-xs">
-            <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 w-3 h-3 text-gray-400" />
+            <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 w-3 h-3 text-gold-400" />
             <Input
               placeholder="Search..."
               value={filters.search}
               onChange={(e) => updateFilter("search", e.target.value)}
-              className="pl-7 pr-3 h-7 text-xs border-copper-300 focus:border-copper-500 bg-white/90"
+              className="pl-7 pr-3 h-7 text-xs border-gold-300 focus:border-gold-500 bg-black-800"
             />
           </div>
 
@@ -86,12 +86,12 @@ export function CompactFilters({
               <Button
                 variant="outline"
                 size="sm"
-                className="h-7 px-2 text-xs border-copper-400 bg-white/90 hover:bg-copper-50 relative"
+                className="h-7 px-2 text-xs border-gold-400 bg-black-800 hover:bg-black-700 relative"
               >
                 <Filter className="w-3 h-3 mr-1" />
                 <span className="hidden sm:inline">Filters</span>
                 {activeFilterCount > 0 && (
-                  <Badge className="ml-1 h-4 w-4 p-0 text-xs bg-copper-600 text-white rounded-full flex items-center justify-center">
+                  <Badge className="ml-1 h-4 w-4 p-0 text-xs bg-gold-600 text-black-950 rounded-full flex items-center justify-center">
                     {activeFilterCount}
                   </Badge>
                 )}
@@ -107,7 +107,7 @@ export function CompactFilters({
                       variant="ghost"
                       size="sm"
                       onClick={onReset}
-                      className="h-6 px-2 text-xs text-copper-800 hover:bg-copper-100"
+                      className="h-6 px-2 text-xs text-gold-800 hover:bg-black-800"
                     >
                       <X className="w-3 h-3 mr-1" />
                       Clear
@@ -123,7 +123,7 @@ export function CompactFilters({
                       updateFilter("gender", value === "all" ? "" : value)
                     }
                   >
-                    <SelectTrigger className="h-8 text-xs border-copper-300">
+                    <SelectTrigger className="h-8 text-xs border-gold-300">
                       <SelectValue placeholder="Gender" />
                     </SelectTrigger>
                     <SelectContent>
@@ -143,7 +143,7 @@ export function CompactFilters({
                       updateFilter("season", value === "all" ? "" : value)
                     }
                   >
-                    <SelectTrigger className="h-8 text-xs border-copper-300">
+                    <SelectTrigger className="h-8 text-xs border-gold-300">
                       <SelectValue placeholder="Season" />
                     </SelectTrigger>
                     <SelectContent>
@@ -163,7 +163,7 @@ export function CompactFilters({
                       updateFilter("bestTime", value === "all" ? "" : value)
                     }
                   >
-                    <SelectTrigger className="h-8 text-xs border-copper-300">
+                    <SelectTrigger className="h-8 text-xs border-gold-300">
                       <SelectValue placeholder="Best Time" />
                     </SelectTrigger>
                     <SelectContent>
@@ -183,7 +183,7 @@ export function CompactFilters({
                       updateFilter("mainAccord", value === "all" ? "" : value)
                     }
                   >
-                    <SelectTrigger className="h-8 text-xs border-copper-300">
+                    <SelectTrigger className="h-8 text-xs border-gold-300">
                       <SelectValue placeholder="Scent Type" />
                     </SelectTrigger>
                     <SelectContent>
@@ -203,7 +203,7 @@ export function CompactFilters({
           {/* Results count */}
           <Badge
             variant="secondary"
-            className="bg-copper-200 text-copper-900 border-copper-400 text-xs px-2 py-1"
+            className="bg-black-700 text-gold-900 border-gold-400 text-xs px-2 py-1"
           >
             {resultCount}
           </Badge>
@@ -211,7 +211,7 @@ export function CompactFilters({
           {/* Sort - Compact */}
           <div className="hidden sm:block">
             <Select defaultValue="name">
-              <SelectTrigger className="h-7 w-24 text-xs border-copper-300 bg-white/90">
+              <SelectTrigger className="h-7 w-24 text-xs border-gold-300 bg-black-800">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>

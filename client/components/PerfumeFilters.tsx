@@ -53,17 +53,17 @@ export function PerfumeFilters({
 
   return (
     <Card
-      className="bg-gradient-to-br from-copper-100 via-copper-200 to-copper-300 border-2 border-copper-400 shadow-xl relative overflow-hidden
+      className="bg-gradient-to-br from-black-800 via-black-700 to-gold-300 border-2 border-gold-400 shadow-xl relative overflow-hidden
     before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] hover:before:animate-shimmer before:transition-transform"
     >
       <CardHeader className="relative z-10">
-        <CardTitle className="flex items-center gap-2 text-gray-900">
-          <Filter className="w-5 h-5 text-copper-700" />
+        <CardTitle className="flex items-center gap-2 text-gold-300">
+          <Filter className="w-5 h-5 text-gold-700" />
           <span className="font-bold">Filters</span>
           {resultCount > 0 && (
             <Badge
               variant="secondary"
-              className="bg-copper-200 text-copper-900 border-copper-400 ml-auto font-semibold shadow-sm"
+              className="bg-black-700 text-gold-900 border-gold-400 ml-auto font-semibold shadow-sm"
             >
               {resultCount} results
             </Badge>
@@ -74,7 +74,7 @@ export function PerfumeFilters({
       <CardContent className="space-y-4">
         {/* Search */}
         <div className="space-y-2">
-          <Label htmlFor="search" className="text-sm font-medium text-gray-700">
+          <Label htmlFor="search" className="text-sm font-medium text-gold-400">
             Search
           </Label>
           <div className="relative">
@@ -84,21 +84,21 @@ export function PerfumeFilters({
               placeholder="Search by name, brand, or notes..."
               value={filters.search}
               onChange={(e) => updateFilter("search", e.target.value)}
-              className="pl-10 border-gold-200 focus:border-gold-400"
+              className="pl-10 border-black-700 focus:border-gold-400"
             />
           </div>
         </div>
 
         {/* Brand */}
         <div className="space-y-2">
-          <Label className="text-sm font-medium text-gray-700">Brand</Label>
+          <Label className="text-sm font-medium text-gold-400">Brand</Label>
           <Select
             value={filters.brand || "all"}
             onValueChange={(value) =>
               updateFilter("brand", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-gold-200 focus:border-gold-400">
+            <SelectTrigger className="border-black-700 focus:border-gold-400">
               <SelectValue placeholder="All brands" />
             </SelectTrigger>
             <SelectContent>
@@ -114,14 +114,14 @@ export function PerfumeFilters({
 
         {/* Gender */}
         <div className="space-y-2">
-          <Label className="text-sm font-medium text-gray-700">Gender</Label>
+          <Label className="text-sm font-medium text-gold-400">Gender</Label>
           <Select
             value={filters.gender || "all"}
             onValueChange={(value) =>
               updateFilter("gender", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-gold-200 focus:border-gold-400">
+            <SelectTrigger className="border-black-700 focus:border-gold-400">
               <SelectValue placeholder="All genders" />
             </SelectTrigger>
             <SelectContent>
@@ -137,7 +137,7 @@ export function PerfumeFilters({
 
         {/* Fragrance Profile */}
         <div className="space-y-2">
-          <Label className="text-sm font-medium text-gray-700">
+          <Label className="text-sm font-medium text-gold-400">
             Fragrance Profile
           </Label>
           <Select
@@ -146,7 +146,7 @@ export function PerfumeFilters({
               updateFilter("fragranceProfile", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-gold-200 focus:border-gold-400">
+            <SelectTrigger className="border-black-700 focus:border-gold-400">
               <SelectValue placeholder="All profiles" />
             </SelectTrigger>
             <SelectContent>
@@ -162,14 +162,14 @@ export function PerfumeFilters({
 
         {/* Season */}
         <div className="space-y-2">
-          <Label className="text-sm font-medium text-gray-700">Season</Label>
+          <Label className="text-sm font-medium text-gold-400">Season</Label>
           <Select
             value={filters.season || "all"}
             onValueChange={(value) =>
               updateFilter("season", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-gold-200 focus:border-gold-400">
+            <SelectTrigger className="border-black-700 focus:border-gold-400">
               <SelectValue placeholder="All seasons" />
             </SelectTrigger>
             <SelectContent>
@@ -185,14 +185,14 @@ export function PerfumeFilters({
 
         {/* Best Time */}
         <div className="space-y-2">
-          <Label className="text-sm font-medium text-gray-700">Best Time</Label>
+          <Label className="text-sm font-medium text-gold-400">Best Time</Label>
           <Select
             value={filters.bestTime || "all"}
             onValueChange={(value) =>
               updateFilter("bestTime", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-gold-200 focus:border-gold-400">
+            <SelectTrigger className="border-black-700 focus:border-gold-400">
               <SelectValue placeholder="Any time" />
             </SelectTrigger>
             <SelectContent>
@@ -208,7 +208,7 @@ export function PerfumeFilters({
 
         {/* Price Range */}
         <div className="space-y-2">
-          <Label className="text-sm font-medium text-gray-700">
+          <Label className="text-sm font-medium text-gold-400">
             Price Range
           </Label>
           <div className="grid grid-cols-2 gap-2">
@@ -222,7 +222,7 @@ export function PerfumeFilters({
                   filters.priceRange[1],
                 ])
               }
-              className="border-gold-200 focus:border-gold-400"
+              className="border-black-700 focus:border-gold-400"
             />
             <Input
               type="number"
@@ -234,7 +234,7 @@ export function PerfumeFilters({
                   Number(e.target.value) || 0,
                 ])
               }
-              className="border-gold-200 focus:border-gold-400"
+              className="border-black-700 focus:border-gold-400"
             />
           </div>
         </div>
@@ -244,7 +244,7 @@ export function PerfumeFilters({
           <Button
             variant="outline"
             onClick={onReset}
-            className="w-full border-gold-300 text-gold-700 hover:bg-gold-50"
+            className="w-full border-gold-300 text-gold-700 hover:bg-black-800"
           >
             <X className="w-4 h-4 mr-2" />
             Clear Filters

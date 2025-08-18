@@ -45,14 +45,14 @@ export function PerfumeDetail({
 
       {/* Modal Content */}
       <div
-        className="relative bg-gradient-to-br from-copper-50 via-copper-100 to-copper-200 border border-copper-400 rounded-lg shadow-2xl w-full max-w-lg max-h-[75vh] overflow-hidden flex flex-col
+        className="relative bg-gradient-to-br from-black-800 via-black-800 to-black-700 border border-gold-400 rounded-lg shadow-2xl w-full max-w-lg max-h-[75vh] overflow-hidden flex flex-col
         before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}
         <button
           onClick={() => onOpenChange(false)}
-          className="absolute top-2 sm:top-3 right-2 sm:right-3 z-50 p-1 sm:p-2 rounded-full bg-copper-200 hover:bg-copper-300 text-copper-800 transition-colors shadow-md border border-copper-300"
+          className="absolute top-2 sm:top-3 right-2 sm:right-3 z-50 p-1 sm:p-2 rounded-full bg-black-700 hover:bg-gold-300 text-gold-800 transition-colors shadow-md border border-gold-300"
           type="button"
         >
           <X className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -61,12 +61,12 @@ export function PerfumeDetail({
         <div className="p-2 sm:p-3 relative z-10 overflow-y-auto flex-1">
           {/* Header */}
           <div className="mb-2">
-            <h2 className="text-base sm:text-lg font-bold text-gray-800 mb-1 pr-6">
+            <h2 className="text-base sm:text-lg font-bold text-gold-300 mb-1 pr-6">
               {perfume.name}
             </h2>
             <div className="flex items-center justify-between gap-2">
               <div>
-                <p className="text-sm font-medium text-copper-600">
+                <p className="text-sm font-medium text-gold-600">
                   {perfume.brand}
                 </p>
                 <p className="text-xs text-gray-500">
@@ -75,7 +75,7 @@ export function PerfumeDetail({
               </div>
               <Badge
                 variant="secondary"
-                className="bg-copper-100 text-copper-800 border-copper-300 text-xs"
+                className="bg-black-800 text-gold-800 border-gold-300 text-xs"
               >
                 {perfume.gender}
               </Badge>
@@ -84,8 +84,8 @@ export function PerfumeDetail({
 
           {/* Description */}
           {perfume.description && (
-            <div className="p-2 bg-copper-50 rounded border border-copper-200 mb-2">
-              <p className="text-xs text-gray-700 italic">
+            <div className="p-2 bg-black-800 rounded border border-black-700 mb-2">
+              <p className="text-xs text-gold-400 italic">
                 {perfume.description}
               </p>
             </div>
@@ -93,7 +93,7 @@ export function PerfumeDetail({
 
           {/* Main Accords */}
           <div className="mb-2">
-            <h3 className="text-sm font-semibold text-gray-800 mb-1">
+            <h3 className="text-sm font-semibold text-gold-300 mb-1">
               Main Accords
             </h3>
             <div className="flex flex-wrap gap-1">
@@ -101,7 +101,7 @@ export function PerfumeDetail({
                 <Badge
                   key={accord}
                   variant="outline"
-                  className="border-copper-200 text-copper-700 bg-copper-50 text-xs"
+                  className="border-black-700 text-gold-700 bg-black-800 text-xs"
                 >
                   {accord}
                 </Badge>
@@ -112,27 +112,27 @@ export function PerfumeDetail({
           {/* Fragrance Details */}
           <div className="grid grid-cols-1 gap-1 mb-2">
             <div className="flex items-center gap-1">
-              <Clock className="w-3 h-3 text-copper-500 flex-shrink-0" />
-              <span className="text-xs font-medium text-gray-700">Time:</span>
-              <span className="text-xs text-gray-600 truncate">
+              <Clock className="w-3 h-3 text-gold-500 flex-shrink-0" />
+              <span className="text-xs font-medium text-gold-400">Time:</span>
+              <span className="text-xs text-gold-300 truncate">
                 {perfume.bestTime}
               </span>
             </div>
             <div className="flex items-center gap-1">
-              <Star className="w-3 h-3 text-copper-500 flex-shrink-0" />
-              <span className="text-xs font-medium text-gray-700">
+              <Star className="w-3 h-3 text-gold-500 flex-shrink-0" />
+              <span className="text-xs font-medium text-gold-400">
                 Seasons:
               </span>
-              <span className="text-xs text-gray-600 truncate">
+              <span className="text-xs text-gold-300 truncate">
                 {perfume.mainSeasons.join(", ")}
               </span>
             </div>
             <div className="flex items-center gap-1">
-              <Droplets className="w-3 h-3 text-copper-500 flex-shrink-0" />
-              <span className="text-xs font-medium text-gray-700">
+              <Droplets className="w-3 h-3 text-gold-500 flex-shrink-0" />
+              <span className="text-xs font-medium text-gold-400">
                 Sillage:
               </span>
-              <span className="text-xs text-gray-600 truncate">
+              <span className="text-xs text-gold-300 truncate">
                 {perfume.sillage}
               </span>
             </div>
@@ -141,8 +141,8 @@ export function PerfumeDetail({
           {/* Notes Pyramid - Compact */}
           <div className="grid grid-cols-3 gap-1 mb-2">
             <div className="text-center">
-              <h4 className="text-xs font-semibold text-gray-800 mb-1">Top</h4>
-              <div className="text-xs text-gray-600">
+              <h4 className="text-xs font-semibold text-gold-300 mb-1">Top</h4>
+              <div className="text-xs text-gold-300">
                 {perfume.topNotes.map((note) => (
                   <p key={note} className="truncate">
                     {note}
@@ -152,10 +152,10 @@ export function PerfumeDetail({
             </div>
 
             <div className="text-center">
-              <h4 className="text-xs font-semibold text-gray-800 mb-1">
+              <h4 className="text-xs font-semibold text-gold-300 mb-1">
                 Middle
               </h4>
-              <div className="text-xs text-gray-600">
+              <div className="text-xs text-gold-300">
                 {perfume.middleNotes.map((note) => (
                   <p key={note} className="truncate">
                     {note}
@@ -165,8 +165,8 @@ export function PerfumeDetail({
             </div>
 
             <div className="text-center">
-              <h4 className="text-xs font-semibold text-gray-800 mb-1">Base</h4>
-              <div className="text-xs text-gray-600">
+              <h4 className="text-xs font-semibold text-gold-300 mb-1">Base</h4>
+              <div className="text-xs text-gold-300">
                 {perfume.baseNotes.map((note) => (
                   <p key={note} className="truncate">
                     {note}
@@ -178,20 +178,20 @@ export function PerfumeDetail({
 
           {/* Sizes and Pricing Display - Compact */}
           <div className="space-y-2">
-            <h3 className="text-sm font-semibold text-gray-800">
+            <h3 className="text-sm font-semibold text-gold-300">
               Sizes & Prices
             </h3>
             <div className="grid grid-cols-3 gap-1">
               {perfume.sizes.map((size) => (
                 <Card
                   key={size.size}
-                  className="border-copper-200 bg-copper-50"
+                  className="border-black-700 bg-black-800"
                 >
                   <CardContent className="p-1 text-center">
-                    <div className="text-xs font-semibold text-gray-800">
+                    <div className="text-xs font-semibold text-gold-300">
                       {size.size}
                     </div>
-                    <div className="text-sm font-bold text-copper-700">
+                    <div className="text-sm font-bold text-gold-700">
                       ${size.price}
                     </div>
                   </CardContent>
@@ -203,7 +203,7 @@ export function PerfumeDetail({
             <div className="space-y-2">
               {/* Buy Button */}
               <Button
-                className="w-full bg-copper-600 hover:bg-copper-700 text-white font-bold py-2 px-4 rounded transition-colors"
+                className="w-full bg-gold-600 hover:bg-gold-700 text-white font-bold py-2 px-4 rounded transition-colors"
                 onClick={() => {
                   const buyUrl = getPerfumeBuyUrl(perfume.id);
                   window.open(buyUrl, "_blank", "noopener,noreferrer");
@@ -214,10 +214,10 @@ export function PerfumeDetail({
               </Button>
 
               {/* Compare Section */}
-              <div className="p-2 bg-gradient-to-br from-copper-50 to-copper-100 rounded border border-copper-200">
+              <div className="p-2 bg-gradient-to-br from-black-800 to-black-800 rounded border border-black-700">
                 <Button
                   variant="outline"
-                  className="w-full border-copper-300 text-copper-700 hover:bg-copper-50 text-sm h-8"
+                  className="w-full border-gold-300 text-gold-700 hover:bg-black-800 text-sm h-8"
                   onClick={() => onCompare?.(perfume)}
                   disabled={isInComparison}
                 >

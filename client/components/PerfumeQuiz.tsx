@@ -256,14 +256,14 @@ export function PerfumeQuiz({
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
       <Card
-        className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-gradient-to-br from-copper-50 via-copper-100 to-copper-200 border-2 border-copper-400 relative overflow-hidden
+        className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-gradient-to-br from-black-800 via-black-800 to-black-700 border-2 border-gold-400 relative overflow-hidden
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <CardHeader className="relative z-10">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Heart className="w-6 h-6 text-copper-600" />
-              <CardTitle className="text-xl font-bold text-gray-900">
+              <Heart className="w-6 h-6 text-gold-600" />
+              <CardTitle className="text-xl font-bold text-gold-300">
                 {showResults
                   ? "Your Perfect Matches"
                   : "Perfume Personality Quiz"}
@@ -273,7 +273,7 @@ export function PerfumeQuiz({
               variant="ghost"
               size="sm"
               onClick={onClose}
-              className="text-gray-600 hover:text-gray-800"
+              className="text-gold-300 hover:text-gold-300"
             >
               <X className="w-5 h-5" />
             </Button>
@@ -281,8 +281,8 @@ export function PerfumeQuiz({
 
           {!showResults && (
             <div className="mt-4">
-              <Progress value={progress} className="h-2 bg-copper-200" />
-              <p className="text-sm text-gray-600 mt-2">
+              <Progress value={progress} className="h-2 bg-black-700" />
+              <p className="text-sm text-gold-300 mt-2">
                 Question {currentQuestion + 1} of {quizQuestions.length}
               </p>
             </div>
@@ -293,7 +293,7 @@ export function PerfumeQuiz({
           {!showResults ? (
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                <h3 className="text-lg font-semibold text-gold-300 mb-4">
                   {quizQuestions[currentQuestion].question}
                 </h3>
 
@@ -302,12 +302,12 @@ export function PerfumeQuiz({
                     <Button
                       key={option.id}
                       variant="outline"
-                      className="w-full text-left p-4 h-auto border-copper-300 text-copper-800 hover:bg-copper-100 hover:border-copper-500 font-medium"
+                      className="w-full text-left p-4 h-auto border-gold-300 text-gold-800 hover:bg-black-800 hover:border-gold-500 font-medium"
                       onClick={() => handleAnswer(option)}
                     >
                       <div>
                         <div className="font-semibold">{option.text}</div>
-                        <div className="text-sm text-gray-600 mt-1">
+                        <div className="text-sm text-gold-300 mt-1">
                           {option.traits.join(", ")}
                         </div>
                       </div>
@@ -319,11 +319,11 @@ export function PerfumeQuiz({
           ) : (
             <div className="space-y-6">
               <div className="text-center">
-                <Sparkles className="w-12 h-12 text-copper-600 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                <Sparkles className="w-12 h-12 text-gold-600 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-gold-300 mb-2">
                   Based on your answers, here are your perfect matches:
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gold-300">
                   These fragrances align with your personality and preferences
                 </p>
               </div>
@@ -332,7 +332,7 @@ export function PerfumeQuiz({
                 {recommendations.map((perfume, index) => (
                   <Card
                     key={perfume.id}
-                    className="border-copper-300 bg-gradient-to-r from-copper-50 to-copper-100 hover:from-copper-100 hover:to-copper-150 transition-all cursor-pointer"
+                    className="border-gold-300 bg-gradient-to-r from-black-800 to-black-800 hover:from-black-800 hover:to-gold-150 transition-all cursor-pointer"
                     onClick={() => {
                       onPerfumeSelect(perfume);
                       onClose();
@@ -342,19 +342,19 @@ export function PerfumeQuiz({
                       <div className="flex items-start justify-between">
                         <div className="flex-1">
                           <div className="flex items-center gap-2 mb-2">
-                            <Badge className="bg-copper-600 text-white text-xs">
+                            <Badge className="bg-gold-600 text-white text-xs">
                               #{index + 1} Match
                             </Badge>
-                            <Crown className="w-4 h-4 text-copper-600" />
+                            <Crown className="w-4 h-4 text-gold-600" />
                           </div>
 
-                          <h4 className="font-bold text-gray-900">
+                          <h4 className="font-bold text-gold-300">
                             {perfume.name}
                           </h4>
-                          <p className="text-sm font-semibold text-copper-700">
+                          <p className="text-sm font-semibold text-gold-700">
                             {perfume.brand}
                           </p>
-                          <p className="text-xs text-gray-600 mb-2">
+                          <p className="text-xs text-gold-300 mb-2">
                             Inspired by {perfume.originalBrand}
                           </p>
 
@@ -363,24 +363,24 @@ export function PerfumeQuiz({
                               <Badge
                                 key={accord}
                                 variant="outline"
-                                className="text-xs border-copper-300 text-copper-800 bg-copper-50"
+                                className="text-xs border-gold-300 text-gold-800 bg-black-800"
                               >
                                 {accord}
                               </Badge>
                             ))}
                           </div>
 
-                          <p className="text-sm text-gray-700">
+                          <p className="text-sm text-gold-400">
                             <span className="font-semibold">Profile:</span>{" "}
                             {perfume.fragranceProfile}
                           </p>
                         </div>
 
                         <div className="text-right">
-                          <div className="text-lg font-bold text-copper-800">
+                          <div className="text-lg font-bold text-gold-800">
                             ${perfume.sizes[0].price}
                           </div>
-                          <div className="text-xs text-gray-600">
+                          <div className="text-xs text-gold-300">
                             from {perfume.sizes[0].size}
                           </div>
                         </div>
@@ -394,13 +394,13 @@ export function PerfumeQuiz({
                 <Button
                   variant="outline"
                   onClick={resetQuiz}
-                  className="flex-1 border-copper-400 text-copper-800 hover:bg-copper-100 font-semibold"
+                  className="flex-1 border-gold-400 text-gold-800 hover:bg-black-800 font-semibold"
                 >
                   Take Quiz Again
                 </Button>
                 <Button
                   onClick={onClose}
-                  className="flex-1 bg-copper-600 hover:bg-copper-700 text-white font-semibold"
+                  className="flex-1 bg-gold-600 hover:bg-gold-700 text-white font-semibold"
                 >
                   Explore Collection
                 </Button>

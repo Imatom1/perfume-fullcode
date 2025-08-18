@@ -400,19 +400,19 @@ export default function PerfumeMixer() {
   const resultProfile = getResultingProfile();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-copper-50 via-cream-50 to-copper-100 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-black-800 flex flex-col">
       <Header />
 
       {/* Page Header */}
       <div
-        className="bg-gradient-to-r from-copper-100 via-copper-200 to-copper-300 py-2 relative overflow-hidden flex-shrink-0
+        className="bg-gradient-to-r from-black-800 via-black-700 to-gold-300 py-2 relative overflow-hidden flex-shrink-0
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-7xl mx-auto px-2 sm:px-3 relative z-10">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Beaker className="w-4 h-4 text-copper-700" />
-              <h1 className="text-sm sm:text-base font-bold bg-gradient-to-r from-copper-800 via-copper-700 to-copper-600 bg-clip-text text-transparent">
+              <Beaker className="w-4 h-4 text-gold-700" />
+              <h1 className="text-sm sm:text-base font-bold bg-gradient-to-r from-gold-800 via-gold-700 to-gold-600 bg-clip-text text-transparent">
                 Perfume Mixer
               </h1>
             </div>
@@ -420,7 +420,7 @@ export default function PerfumeMixer() {
               variant="outline"
               size="sm"
               onClick={() => navigate("/")}
-              className="border-copper-400 text-copper-800 hover:bg-copper-100 text-xs h-6 px-2"
+              className="border-gold-400 text-gold-800 hover:bg-black-800 text-xs h-6 px-2"
             >
               <ArrowLeft className="w-3 h-3 mr-1" />
               Back
@@ -433,11 +433,11 @@ export default function PerfumeMixer() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 sm:gap-2 min-h-[calc(100vh-8rem)]">
           {/* Left Panel - Mixer */}
           <div className="lg:col-span-2 flex flex-col min-h-[400px] mb-4 lg:mb-0">
-            <Card className="bg-gradient-to-br from-copper-50 via-copper-100 to-copper-200 border border-copper-400 shadow-lg flex-1 flex flex-col">
+            <Card className="bg-gradient-to-br from-black-800 via-black-800 to-black-700 border border-gold-400 shadow-lg flex-1 flex flex-col">
               <CardHeader className="p-1.5 sm:p-2 flex-shrink-0">
-                <CardTitle className="text-sm sm:text-base font-bold text-gray-900 flex items-center justify-between">
+                <CardTitle className="text-sm sm:text-base font-bold text-gold-300 flex items-center justify-between">
                   <span className="flex items-center gap-1">
-                    <Beaker className="w-4 h-4 text-copper-700" />
+                    <Beaker className="w-4 h-4 text-gold-700" />
                     Create Your Blend
                   </span>
                   {ingredients.length > 0 && (
@@ -445,7 +445,7 @@ export default function PerfumeMixer() {
                       variant="outline"
                       size="sm"
                       onClick={clearMixer}
-                      className="border-red-300 text-red-600 hover:bg-red-50 text-xs h-5 sm:h-6 px-1 sm:px-2"
+                      className="border-red-300 text-red-600 hover:bg-red-800 text-xs h-5 sm:h-6 px-1 sm:px-2"
                     >
                       <Trash2 className="w-2.5 h-2.5 sm:w-3 sm:h-3 sm:mr-1" />
                       <span className="hidden sm:inline">Clear</span>
@@ -459,8 +459,8 @@ export default function PerfumeMixer() {
                 <div className="space-y-1">
                   {ingredients.length === 0 ? (
                     <div className="text-center py-4">
-                      <Beaker className="w-8 h-8 text-copper-400 mx-auto mb-1" />
-                      <p className="text-xs text-gray-600">
+                      <Beaker className="w-8 h-8 text-gold-400 mx-auto mb-1" />
+                      <p className="text-xs text-gold-300">
                         Start by adding perfumes to your mix
                       </p>
                     </div>
@@ -468,21 +468,21 @@ export default function PerfumeMixer() {
                     ingredients.map((ingredient) => (
                       <Card
                         key={ingredient.id}
-                        className="border-copper-200 bg-white/80"
+                        className="border-black-700 bg-black-800"
                       >
                         <CardContent className="p-1.5">
                           <div className="space-y-1">
                             <div className="flex items-center justify-between">
                               <div className="flex-1 min-w-0">
-                                <h4 className="text-xs font-bold text-gray-900 truncate">
+                                <h4 className="text-xs font-bold text-gold-300 truncate">
                                   {ingredient.perfume.name}
                                 </h4>
-                                <p className="text-xs text-copper-600">
+                                <p className="text-xs text-gold-600">
                                   {ingredient.perfume.brand}
                                 </p>
                               </div>
                               <div className="flex items-center gap-1">
-                                <span className="text-xs font-bold text-copper-800 min-w-[2.5rem] text-right">
+                                <span className="text-xs font-bold text-gold-800 min-w-[2.5rem] text-right">
                                   {roundPercentage(ingredient.percentage)}%
                                 </span>
                                 <Button
@@ -491,7 +491,7 @@ export default function PerfumeMixer() {
                                   onClick={() =>
                                     removeIngredient(ingredient.id)
                                   }
-                                  className="border-red-300 text-red-600 hover:bg-red-50 h-5 w-5 p-0"
+                                  className="border-red-300 text-red-600 hover:bg-red-800 h-5 w-5 p-0"
                                 >
                                   <X className="w-3 h-3" />
                                 </Button>
@@ -509,7 +509,7 @@ export default function PerfumeMixer() {
                             />
 
                             {/* Key attributes */}
-                            <div className="flex items-center justify-between text-xs text-gray-600">
+                            <div className="flex items-center justify-between text-xs text-gold-300">
                               <span className="flex items-center gap-1">
                                 <Droplets className="w-3 h-3" />
                                 {ingredient.perfume.sillage}
@@ -525,7 +525,7 @@ export default function PerfumeMixer() {
                                   <Badge
                                     key={accord}
                                     variant="outline"
-                                    className="text-xs border-copper-200 text-copper-700 px-1 py-0"
+                                    className="text-xs border-black-700 text-gold-700 px-1 py-0"
                                   >
                                     {accord}
                                   </Badge>
@@ -539,23 +539,23 @@ export default function PerfumeMixer() {
 
                   {/* Result Preview */}
                   {resultProfile && (
-                    <Card className="mt-1.5 border-2 border-copper-400 bg-gradient-to-br from-copper-50 to-copper-100">
+                    <Card className="mt-1.5 border-2 border-gold-400 bg-gradient-to-br from-black-800 to-black-800">
                       <CardHeader className="p-1.5">
-                        <CardTitle className="text-xs font-bold text-gray-900 flex items-center gap-1">
-                          <Sparkles className="w-3 h-3 text-copper-700" />
+                        <CardTitle className="text-xs font-bold text-gold-300 flex items-center gap-1">
+                          <Sparkles className="w-3 h-3 text-gold-700" />
                           Predicted Result
                         </CardTitle>
                       </CardHeader>
                       <CardContent className="p-1.5 space-y-1">
                         <div>
-                          <p className="text-xs font-medium text-gray-700 mb-0.5">
+                          <p className="text-xs font-medium text-gold-400 mb-0.5">
                             Main Accords:
                           </p>
                           <div className="flex flex-wrap gap-0.5">
                             {resultProfile.accords.map((accord) => (
                               <Badge
                                 key={accord}
-                                className="bg-copper-600 text-white text-xs px-1 py-0"
+                                className="bg-gold-600 text-white text-xs px-1 py-0"
                               >
                                 {accord}
                               </Badge>
@@ -563,7 +563,7 @@ export default function PerfumeMixer() {
                           </div>
                         </div>
                         <div>
-                          <p className="text-xs font-medium text-gray-700 mb-0.5">
+                          <p className="text-xs font-medium text-gold-400 mb-0.5">
                             Best Seasons:
                           </p>
                           <div className="flex flex-wrap gap-0.5">
@@ -571,7 +571,7 @@ export default function PerfumeMixer() {
                               <Badge
                                 key={season}
                                 variant="outline"
-                                className="border-copper-300 text-copper-800 text-xs px-1 py-0"
+                                className="border-gold-300 text-gold-800 text-xs px-1 py-0"
                               >
                                 {season}
                               </Badge>
@@ -579,11 +579,11 @@ export default function PerfumeMixer() {
                           </div>
                         </div>
                         <div className="flex items-center gap-1.5">
-                          <Droplets className="w-3 h-3 text-copper-500" />
-                          <span className="text-xs font-medium text-gray-700">
+                          <Droplets className="w-3 h-3 text-gold-500" />
+                          <span className="text-xs font-medium text-gold-400">
                             Sillage:
                           </span>
-                          <span className="text-xs text-gray-600">
+                          <span className="text-xs text-gold-300">
                             {resultProfile.sillage}
                           </span>
                         </div>
@@ -595,11 +595,11 @@ export default function PerfumeMixer() {
                   {ingredients.length > 0 && (
                     <div className="mt-1.5 space-y-1">
                       {/* Blend Request Text */}
-                      <div className="bg-white border border-copper-300 rounded-lg p-2">
-                        <p className="text-xs font-medium text-copper-800 mb-1">
+                      <div className="bg-black-800 border border-gold-300 rounded-lg p-2">
+                        <p className="text-xs font-medium text-gold-800 mb-1">
                           Your Blend Request:
                         </p>
-                        <div className="bg-gray-50 border border-gray-200 rounded p-2 text-xs text-gray-700 font-mono whitespace-pre-line">
+                        <div className="bg-black-700 border border-gray-200 rounded p-2 text-xs text-gold-400 font-mono whitespace-pre-line">
                           {`Blend: ${ingredients.map((ing) => `${ing.perfume.name} ${roundPercentage(ing.percentage)}%`).join(", ")}`}
                         </div>
                       </div>
@@ -626,18 +626,18 @@ export default function PerfumeMixer() {
                             });
                         }}
                         variant="outline"
-                        className="w-full border-copper-400 text-copper-800 hover:bg-copper-100 font-semibold text-xs h-7"
+                        className="w-full border-gold-400 text-gold-800 hover:bg-black-800 font-semibold text-xs h-7"
                       >
                         <Copy className="w-3 h-3 mr-1" />
                         Copy Blend Request
                       </Button>
 
                       {/* Instructions */}
-                      <div className="bg-copper-50 border border-copper-200 rounded-lg p-2 mt-2">
-                        <p className="text-sm font-medium text-copper-800 text-center mb-1">
+                      <div className="bg-black-800 border border-black-700 rounded-lg p-2 mt-2">
+                        <p className="text-sm font-medium text-gold-800 text-center mb-1">
                           📋 How to Use Your Blend Request
                         </p>
-                        <p className="text-xs text-copper-700 text-center">
+                        <p className="text-xs text-gold-700 text-center">
                           Copy the text above, then paste it into our perfume
                           request form. Our team will review your custom blend
                           and get back to you with availability and pricing.
@@ -653,11 +653,11 @@ export default function PerfumeMixer() {
 
           {/* Right Panel - Perfume Browser */}
           <div className="flex flex-col min-h-[500px]">
-            <Card className="bg-gradient-to-br from-copper-100 via-copper-200 to-copper-300 border border-copper-400 shadow-lg flex-1 flex flex-col">
+            <Card className="bg-gradient-to-br from-black-800 via-black-700 to-gold-300 border border-gold-400 shadow-lg flex-1 flex flex-col">
               <CardHeader className="p-2 sm:p-3 flex-shrink-0">
-                <CardTitle className="text-sm font-bold text-gray-900 flex items-center justify-between">
+                <CardTitle className="text-sm font-bold text-gold-300 flex items-center justify-between">
                   <span className="flex items-center gap-2">
-                    <Crown className="w-4 h-4 text-copper-700" />
+                    <Crown className="w-4 h-4 text-gold-700" />
                     Add Fragrances ({ingredients.length}/3)
                   </span>
                   <div className="flex items-center gap-1">
@@ -674,7 +674,7 @@ export default function PerfumeMixer() {
                       placeholder="Search fragrances..."
                       value={filters.search}
                       onChange={(e) => updateFilter("search", e.target.value)}
-                      className="pl-7 text-xs h-7 border-copper-300 focus:border-copper-500 bg-white/90"
+                      className="pl-7 text-xs h-7 border-gold-300 focus:border-gold-500 bg-black-800"
                     />
                   </div>
 
@@ -683,7 +683,7 @@ export default function PerfumeMixer() {
                     <DropdownMenuTrigger asChild>
                       <Button
                         variant="outline"
-                        className="w-full justify-between text-xs h-7 border-copper-300 bg-white/90 hover:bg-copper-50"
+                        className="w-full justify-between text-xs h-7 border-gold-300 bg-black-800 hover:bg-black-800"
                       >
                         <span className="flex items-center gap-1">
                           <Filter className="w-3 h-3" />
@@ -698,7 +698,7 @@ export default function PerfumeMixer() {
                       <div className="space-y-4">
                         {/* Gender Dropdown */}
                         <div>
-                          <DropdownMenuLabel className="text-sm font-semibold text-copper-700 px-0 pb-2">
+                          <DropdownMenuLabel className="text-sm font-semibold text-gold-700 px-0 pb-2">
                             Gender
                           </DropdownMenuLabel>
                           <Select
@@ -710,7 +710,7 @@ export default function PerfumeMixer() {
                               )
                             }
                           >
-                            <SelectTrigger className="w-full text-sm h-9 border-copper-300 bg-white">
+                            <SelectTrigger className="w-full text-sm h-9 border-gold-300 bg-black-800">
                               <SelectValue placeholder="Select gender..." />
                             </SelectTrigger>
                             <SelectContent className="min-w-[200px]">
@@ -728,7 +728,7 @@ export default function PerfumeMixer() {
 
                         {/* Season Dropdown */}
                         <div>
-                          <DropdownMenuLabel className="text-sm font-semibold text-copper-700 px-0 pb-2">
+                          <DropdownMenuLabel className="text-sm font-semibold text-gold-700 px-0 pb-2">
                             Season
                           </DropdownMenuLabel>
                           <Select
@@ -740,7 +740,7 @@ export default function PerfumeMixer() {
                               )
                             }
                           >
-                            <SelectTrigger className="w-full text-sm h-9 border-copper-300 bg-white">
+                            <SelectTrigger className="w-full text-sm h-9 border-gold-300 bg-black-800">
                               <SelectValue placeholder="Select season..." />
                             </SelectTrigger>
                             <SelectContent className="min-w-[200px]">
@@ -758,7 +758,7 @@ export default function PerfumeMixer() {
 
                         {/* Best Time Dropdown */}
                         <div>
-                          <DropdownMenuLabel className="text-sm font-semibold text-copper-700 px-0 pb-2">
+                          <DropdownMenuLabel className="text-sm font-semibold text-gold-700 px-0 pb-2">
                             Best Time
                           </DropdownMenuLabel>
                           <Select
@@ -770,7 +770,7 @@ export default function PerfumeMixer() {
                               )
                             }
                           >
-                            <SelectTrigger className="w-full text-sm h-9 border-copper-300 bg-white">
+                            <SelectTrigger className="w-full text-sm h-9 border-gold-300 bg-black-800">
                               <SelectValue placeholder="Select time..." />
                             </SelectTrigger>
                             <SelectContent className="min-w-[200px]">
@@ -788,7 +788,7 @@ export default function PerfumeMixer() {
 
                         {/* Scent Profile Dropdown */}
                         <div>
-                          <DropdownMenuLabel className="text-sm font-semibold text-copper-700 px-0 pb-2">
+                          <DropdownMenuLabel className="text-sm font-semibold text-gold-700 px-0 pb-2">
                             Scent Profile
                           </DropdownMenuLabel>
                           <Select
@@ -800,7 +800,7 @@ export default function PerfumeMixer() {
                               )
                             }
                           >
-                            <SelectTrigger className="w-full text-sm h-9 border-copper-300 bg-white">
+                            <SelectTrigger className="w-full text-sm h-9 border-gold-300 bg-black-800">
                               <SelectValue placeholder="Select scent..." />
                             </SelectTrigger>
                             <SelectContent className="min-w-[200px]">
@@ -821,7 +821,7 @@ export default function PerfumeMixer() {
                               <Button
                                 variant="outline"
                                 onClick={resetFilters}
-                                className="w-full border-copper-400 text-copper-800 hover:bg-copper-100 text-sm h-8"
+                                className="w-full border-gold-400 text-gold-800 hover:bg-black-800 text-sm h-8"
                               >
                                 <X className="w-4 h-4 mr-2" />
                                 Clear All Filters
@@ -839,7 +839,7 @@ export default function PerfumeMixer() {
                       variant="outline"
                       size="sm"
                       onClick={resetFilters}
-                      className="w-full border-copper-400 text-copper-800 hover:bg-copper-100 text-xs h-6"
+                      className="w-full border-gold-400 text-gold-800 hover:bg-black-800 text-xs h-6"
                     >
                       <X className="w-3 h-3 mr-1" />
                       Clear Filters
@@ -851,8 +851,8 @@ export default function PerfumeMixer() {
               <CardContent className="p-2 sm:p-3 flex-1 max-h-[50vh] lg:max-h-none overflow-y-auto">
                 {!canAddMore ? (
                   <div className="text-center py-8">
-                    <Crown className="w-12 h-12 text-copper-400 mx-auto mb-2" />
-                    <p className="text-sm text-gray-600 font-semibold">
+                    <Crown className="w-12 h-12 text-gold-400 mx-auto mb-2" />
+                    <p className="text-sm text-gold-300 font-semibold">
                       Maximum 3 fragrances reached
                     </p>
                     <p className="text-xs text-gray-500 mt-1">
@@ -861,8 +861,8 @@ export default function PerfumeMixer() {
                   </div>
                 ) : filteredAndSortedPerfumes.length === 0 ? (
                   <div className="text-center py-8">
-                    <Crown className="w-12 h-12 text-copper-400 mx-auto mb-2" />
-                    <p className="text-sm text-gray-600">
+                    <Crown className="w-12 h-12 text-gold-400 mx-auto mb-2" />
+                    <p className="text-sm text-gold-300">
                       {hasActiveFilters
                         ? "No fragrances match your filters"
                         : "All fragrances are in your mix"}
