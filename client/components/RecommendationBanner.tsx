@@ -18,7 +18,7 @@ export function RecommendationBanner({
   );
 
   return (
-    <Card className="bg-gradient-to-r from-black-800 via-black-800 to-gold-100 border-gold-300 mb-8">
+    <Card className="bg-gradient-to-r from-black-800 via-black-800 to-black-800 border-gold-300 mb-8">
       <CardContent className="p-6">
         <div className="flex items-center gap-2 mb-4">
           <Sparkles className="w-6 h-6 text-gold-600" />
@@ -37,7 +37,7 @@ export function RecommendationBanner({
           {featuredPerfumes.map((perfume) => (
             <div
               key={perfume.id}
-              className="bg-gradient-to-br from-black-800 to-gold-100 rounded-lg p-4 border border-gold-200 hover:border-gold-400 transition-all duration-200 hover:shadow-md cursor-pointer group"
+              className="bg-gradient-to-br from-black-800 to-black-800 rounded-lg p-4 border border-black-700 hover:border-gold-400 transition-all duration-200 hover:shadow-md cursor-pointer group"
               onClick={() => onPerfumeSelect(perfume.id)}
             >
               <div className="flex items-start justify-between mb-2">

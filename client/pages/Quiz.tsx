@@ -412,12 +412,12 @@ export default function Quiz() {
   const progress = ((currentQuestion + 1) / quizQuestions.length) * 100;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-gold-100 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-black-800 flex flex-col">
       <Header />
 
       {/* Page Header */}
       <div
-        className="bg-gradient-to-r from-gold-100 via-gold-200 to-gold-300 py-3 sm:py-4 relative overflow-hidden flex-shrink-0
+        className="bg-gradient-to-r from-black-800 via-black-700 to-gold-300 py-3 sm:py-4 relative overflow-hidden flex-shrink-0
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -439,7 +439,7 @@ export default function Quiz() {
 
       <div className="flex-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
         <Card
-          className="bg-gradient-to-br from-black-800 via-gold-100 to-gold-200 border-2 border-gold-400 shadow-xl relative flex flex-col min-h-[calc(100vh-16rem)]
+          className="bg-gradient-to-br from-black-800 via-black-800 to-black-700 border-2 border-gold-400 shadow-xl relative flex flex-col min-h-[calc(100vh-16rem)]
         before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
         >
           <CardHeader className="relative z-10 flex-shrink-0">
@@ -455,7 +455,7 @@ export default function Quiz() {
                     variant="outline"
                     size="sm"
                     onClick={restartQuiz}
-                    className="border-gold-400 text-gold-800 hover:bg-gold-100 flex-1 sm:flex-none"
+                    className="border-gold-400 text-gold-800 hover:bg-black-800 flex-1 sm:flex-none"
                   >
                     <RefreshCw className="w-4 h-4 mr-1" />
                     <span className="hidden sm:inline">Restart Quiz</span>
@@ -467,7 +467,7 @@ export default function Quiz() {
                     variant="outline"
                     size="sm"
                     onClick={goToPreviousQuestion}
-                    className="border-gold-400 text-gold-800 hover:bg-gold-100 flex-1 sm:flex-none"
+                    className="border-gold-400 text-gold-800 hover:bg-black-800 flex-1 sm:flex-none"
                   >
                     <ArrowLeft className="w-4 h-4 mr-1" />
                     <span className="hidden sm:inline">
@@ -485,7 +485,7 @@ export default function Quiz() {
               <div className="mt-4 sm:mt-6">
                 <Progress
                   value={progress}
-                  className="h-2 sm:h-3 bg-gold-200"
+                  className="h-2 sm:h-3 bg-black-700"
                 />
                 <p className="text-xs sm:text-sm text-gold-300 mt-2">
                   {Math.round(progress)}% complete
@@ -509,7 +509,7 @@ export default function Quiz() {
                         <Button
                           key={option.id}
                           variant="outline"
-                          className="aspect-square p-3 sm:p-4 border-gold-300 text-gold-800 hover:bg-gold-100 hover:border-black-8000 font-medium flex flex-col items-center justify-center text-center w-full h-auto"
+                          className="aspect-square p-3 sm:p-4 border-gold-300 text-gold-800 hover:bg-black-800 hover:border-black-8000 font-medium flex flex-col items-center justify-center text-center w-full h-auto"
                           onClick={() => handleAnswer(option)}
                           style={{
                             minHeight: "calc(min(40vw, 180px))",
@@ -551,7 +551,7 @@ export default function Quiz() {
                     {recommendations.map((perfume, index) => (
                       <Card
                         key={perfume.id}
-                        className="border-gold-300 bg-gradient-to-br from-black-800 to-gold-100 hover:from-gold-100 hover:to-gold-150 transition-all cursor-pointer group"
+                        className="border-gold-300 bg-gradient-to-br from-black-800 to-black-800 hover:from-black-800 hover:to-gold-150 transition-all cursor-pointer group"
                         onClick={() => handlePerfumeClick(perfume)}
                       >
                         <CardContent className="p-3 sm:p-4 md:p-5">
@@ -598,7 +598,7 @@ export default function Quiz() {
                               </p>
                             </div>
 
-                            <div className="flex justify-between items-center pt-2 border-t border-gold-200">
+                            <div className="flex justify-between items-center pt-2 border-t border-black-700">
                               <div className="text-right">
                                 <div className="text-sm sm:text-base md:text-lg font-bold text-gold-800">
                                   ${perfume.sizes[0].price}
@@ -619,7 +619,7 @@ export default function Quiz() {
                   <Button
                     variant="outline"
                     onClick={resetQuiz}
-                    className="flex-1 border-gold-400 text-gold-800 hover:bg-gold-100 font-semibold py-2 sm:py-3 text-sm sm:text-base"
+                    className="flex-1 border-gold-400 text-gold-800 hover:bg-black-800 font-semibold py-2 sm:py-3 text-sm sm:text-base"
                   >
                     Take Quiz Again
                   </Button>

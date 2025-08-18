@@ -17,7 +17,7 @@ export default function QuizIntro() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-gold-100">
+    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-black-800">
       <Header />
 
       <div className="max-w-lg mx-auto px-4 py-6">
@@ -40,7 +40,7 @@ export default function QuizIntro() {
         </div>
 
         {/* What You'll Get */}
-        <Card className="bg-black-800 border border-gold-200 shadow-sm mb-4">
+        <Card className="bg-black-800 border border-black-700 shadow-sm mb-4">
           <CardContent className="p-4">
             <h3 className="text-sm font-semibold text-gold-300 mb-3 flex items-center gap-2">
               <Target className="w-4 h-4 text-gold-600" />
@@ -85,7 +85,7 @@ export default function QuizIntro() {
         </Card>
 
         {/* Quick Facts */}
-        <Card className="bg-black-800 border border-gold-200 shadow-sm mb-6">
+        <Card className="bg-black-800 border border-black-700 shadow-sm mb-6">
           <CardContent className="p-4">
             <div className="grid grid-cols-3 gap-3 text-center">
               <div className="space-y-1">
@@ -140,11 +140,11 @@ export default function QuizIntro() {
           </p>
           <div className="space-y-2">
             <div className="flex justify-center items-center gap-2 text-xs text-gold-300">
-              <span className="bg-gold-100 px-3 py-1.5 rounded-full font-medium">
+              <span className="bg-black-800 px-3 py-1.5 rounded-full font-medium">
                 1. Answer 6 Questions
               </span>
               <span className="text-gold-400">→</span>
-              <span className="bg-gold-100 px-3 py-1.5 rounded-full font-medium">
+              <span className="bg-black-800 px-3 py-1.5 rounded-full font-medium">
                 2. AI Analysis
               </span>
             </div>
@@ -152,7 +152,7 @@ export default function QuizIntro() {
               <span className="text-gold-400 text-xs">↓</span>
             </div>
             <div className="flex justify-center">
-              <span className="bg-gold-200 px-3 py-1.5 rounded-full font-medium text-xs text-gold-400">
+              <span className="bg-black-700 px-3 py-1.5 rounded-full font-medium text-xs text-gold-400">
                 3. Get Perfect Matches
               </span>
             </div>

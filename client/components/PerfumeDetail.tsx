@@ -45,14 +45,14 @@ export function PerfumeDetail({
 
       {/* Modal Content */}
       <div
-        className="relative bg-gradient-to-br from-black-800 via-gold-100 to-gold-200 border border-gold-400 rounded-lg shadow-2xl w-full max-w-lg max-h-[75vh] overflow-hidden flex flex-col
+        className="relative bg-gradient-to-br from-black-800 via-black-800 to-black-700 border border-gold-400 rounded-lg shadow-2xl w-full max-w-lg max-h-[75vh] overflow-hidden flex flex-col
         before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}
         <button
           onClick={() => onOpenChange(false)}
-          className="absolute top-2 sm:top-3 right-2 sm:right-3 z-50 p-1 sm:p-2 rounded-full bg-gold-200 hover:bg-gold-300 text-gold-800 transition-colors shadow-md border border-gold-300"
+          className="absolute top-2 sm:top-3 right-2 sm:right-3 z-50 p-1 sm:p-2 rounded-full bg-black-700 hover:bg-gold-300 text-gold-800 transition-colors shadow-md border border-gold-300"
           type="button"
         >
           <X className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -75,7 +75,7 @@ export function PerfumeDetail({
               </div>
               <Badge
                 variant="secondary"
-                className="bg-gold-100 text-gold-800 border-gold-300 text-xs"
+                className="bg-black-800 text-gold-800 border-gold-300 text-xs"
               >
                 {perfume.gender}
               </Badge>
@@ -84,7 +84,7 @@ export function PerfumeDetail({
 
           {/* Description */}
           {perfume.description && (
-            <div className="p-2 bg-black-800 rounded border border-gold-200 mb-2">
+            <div className="p-2 bg-black-800 rounded border border-black-700 mb-2">
               <p className="text-xs text-gold-400 italic">
                 {perfume.description}
               </p>
@@ -101,7 +101,7 @@ export function PerfumeDetail({
                 <Badge
                   key={accord}
                   variant="outline"
-                  className="border-gold-200 text-gold-700 bg-black-800 text-xs"
+                  className="border-black-700 text-gold-700 bg-black-800 text-xs"
                 >
                   {accord}
                 </Badge>
@@ -185,7 +185,7 @@ export function PerfumeDetail({
               {perfume.sizes.map((size) => (
                 <Card
                   key={size.size}
-                  className="border-gold-200 bg-black-800"
+                  className="border-black-700 bg-black-800"
                 >
                   <CardContent className="p-1 text-center">
                     <div className="text-xs font-semibold text-gold-300">
@@ -214,7 +214,7 @@ export function PerfumeDetail({
               </Button>
 
               {/* Compare Section */}
-              <div className="p-2 bg-gradient-to-br from-black-800 to-gold-100 rounded border border-gold-200">
+              <div className="p-2 bg-gradient-to-br from-black-800 to-black-800 rounded border border-black-700">
                 <Button
                   variant="outline"
                   className="w-full border-gold-300 text-gold-700 hover:bg-black-800 text-sm h-8"

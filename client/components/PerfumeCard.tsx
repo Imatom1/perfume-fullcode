@@ -37,16 +37,16 @@ export function PerfumeCard({
       case "women":
         // Better Gold theme - using amber for more authentic gold
         return {
-          cardBg: "bg-gradient-to-br from-gold-200 via-gold-300 to-gold-400",
+          cardBg: "bg-gradient-to-br from-black-700 via-gold-300 to-gold-400",
           cardBorder: "border-black-8000 hover:border-gold-600",
           cardShadow: "shadow-gold-300/60",
           titleHover: "group-hover:text-gold-900",
           brandText: "text-gold-900",
           profileText: "text-gold-950",
           badge: "bg-gold-300 text-gold-950 border-black-8000",
-          accordBorder: "border-gold-400 text-gold-900 bg-gold-100",
+          accordBorder: "border-gold-400 text-gold-900 bg-black-800",
           iconColor: "text-gold-800",
-          compareButton: "border-black-8000 text-gold-900 hover:bg-gold-200",
+          compareButton: "border-black-8000 text-gold-900 hover:bg-black-700",
           shimmer: "before:via-white/15",
         };
       case "men":
@@ -68,34 +68,34 @@ export function PerfumeCard({
         // More saturated copper theme
         return {
           cardBg:
-            "bg-gradient-to-br from-gold-200 via-gold-300 to-gold-400",
+            "bg-gradient-to-br from-black-700 via-gold-300 to-gold-400",
           cardBorder: "border-black-8000 hover:border-gold-600",
           cardShadow: "shadow-gold-300/60",
           titleHover: "group-hover:text-gold-900",
           brandText: "text-gold-900",
           profileText: "text-gold-950",
           badge: "bg-gold-300 text-gold-950 border-black-8000",
-          accordBorder: "border-gold-400 text-gold-900 bg-gold-100",
+          accordBorder: "border-gold-400 text-gold-900 bg-black-800",
           iconColor: "text-gold-800",
           compareButton:
-            "border-black-8000 text-gold-900 hover:bg-gold-200",
+            "border-black-8000 text-gold-900 hover:bg-black-700",
           shimmer: "before:via-white/15",
         };
       default:
         // Fallback to saturated copper
         return {
           cardBg:
-            "bg-gradient-to-br from-gold-200 via-gold-300 to-gold-400",
+            "bg-gradient-to-br from-black-700 via-gold-300 to-gold-400",
           cardBorder: "border-black-8000 hover:border-gold-600",
           cardShadow: "shadow-gold-300/60",
           titleHover: "group-hover:text-gold-900",
           brandText: "text-gold-900",
           profileText: "text-gold-950",
           badge: "bg-gold-300 text-gold-950 border-black-8000",
-          accordBorder: "border-gold-400 text-gold-900 bg-gold-100",
+          accordBorder: "border-gold-400 text-gold-900 bg-black-800",
           iconColor: "text-gold-800",
           compareButton:
-            "border-black-8000 text-gold-900 hover:bg-gold-200",
+            "border-black-8000 text-gold-900 hover:bg-black-700",
           shimmer: "before:via-white/15",
         };
     }

@@ -32,7 +32,7 @@ export function StatsSection() {
 
   return (
     <div
-      className="bg-gradient-to-r from-gold-100 via-gold-200 to-gold-300 py-20 border-y-2 border-gold-400 relative overflow-hidden
+      className="bg-gradient-to-r from-black-800 via-black-700 to-gold-300 py-20 border-y-2 border-gold-400 relative overflow-hidden
     before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -52,7 +52,7 @@ export function StatsSection() {
             return (
               <Card
                 key={index}
-                className="text-center bg-gradient-to-br from-black-800 to-gold-100 border-gold-200 hover:border-gold-400 transition-all duration-300 hover:shadow-lg"
+                className="text-center bg-gradient-to-br from-black-800 to-black-800 border-black-700 hover:border-gold-400 transition-all duration-300 hover:shadow-lg"
               >
                 <CardContent className="p-6">
                   <div className="flex justify-center mb-4">

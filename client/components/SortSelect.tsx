@@ -28,7 +28,7 @@ export function SortSelect({ value, onChange }: SortSelectProps) {
       <Select value={value} onValueChange={onChange}>
         <SelectTrigger
           id="sort"
-          className="w-20 sm:w-32 h-7 sm:h-10 text-xs sm:text-sm border-gold-200 focus:border-gold-400"
+          className="w-20 sm:w-32 h-7 sm:h-10 text-xs sm:text-sm border-black-700 focus:border-gold-400"
         >
           <SelectValue />
         </SelectTrigger>

@@ -16,12 +16,12 @@ export default function CompareIntro() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-gold-100">
+    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-black-800">
       <Header />
 
       {/* Page Header */}
       <div
-        className="bg-gradient-to-r from-gold-100 via-gold-200 to-gold-300 py-16 relative overflow-hidden
+        className="bg-gradient-to-r from-black-800 via-black-700 to-gold-300 py-16 relative overflow-hidden
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -44,7 +44,7 @@ export default function CompareIntro() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Column - How It Works */}
           <Card
-            className="bg-gradient-to-br from-black-800 via-gold-100 to-gold-200 border-2 border-gold-400 shadow-xl relative overflow-hidden
+            className="bg-gradient-to-br from-black-800 via-black-800 to-black-700 border-2 border-gold-400 shadow-xl relative overflow-hidden
           before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
           >
             <CardHeader className="relative z-10">
@@ -101,7 +101,7 @@ export default function CompareIntro() {
 
           {/* Right Column - Features */}
           <Card
-            className="bg-gradient-to-br from-black-800 via-gold-100 to-gold-200 border-2 border-gold-400 shadow-xl relative overflow-hidden
+            className="bg-gradient-to-br from-black-800 via-black-800 to-black-700 border-2 border-gold-400 shadow-xl relative overflow-hidden
           before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
           >
             <CardHeader className="relative z-10">
@@ -126,7 +126,7 @@ export default function CompareIntro() {
         {/* CTA Section */}
         <div className="text-center mt-12">
           <Card
-            className="bg-gradient-to-r from-gold-200 via-gold-300 to-gold-400 border-2 border-black-8000 shadow-xl relative overflow-hidden
+            className="bg-gradient-to-r from-black-700 via-gold-300 to-gold-400 border-2 border-black-8000 shadow-xl relative overflow-hidden
           before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
           >
             <CardContent className="p-8 relative z-10">
@@ -150,7 +150,7 @@ export default function CompareIntro() {
                   <Button
                     variant="outline"
                     onClick={() => navigate("/")}
-                    className="border-gold-600 text-gold-800 hover:bg-gold-100 font-semibold text-lg px-8 py-4"
+                    className="border-gold-600 text-gold-800 hover:bg-black-800 font-semibold text-lg px-8 py-4"
                   >
                     Browse All Fragrances
                   </Button>

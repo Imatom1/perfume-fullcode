@@ -43,7 +43,7 @@ export function ComparisonTable({
     {
       label: "Gender",
       getValue: (p: Perfume) => (
-        <Badge className="bg-gold-200 text-gold-900 border-gold-400 font-semibold">
+        <Badge className="bg-black-700 text-gold-900 border-gold-400 font-semibold">
           {p.gender}
         </Badge>
       ),
@@ -99,7 +99,7 @@ export function ComparisonTable({
           {p.topNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-black-800 px-2 py-1 rounded border border-gold-200"
+              className="text-xs bg-black-800 px-2 py-1 rounded border border-black-700"
             >
               {note}
             </div>
@@ -114,7 +114,7 @@ export function ComparisonTable({
           {p.middleNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-black-800 px-2 py-1 rounded border border-gold-200"
+              className="text-xs bg-black-800 px-2 py-1 rounded border border-black-700"
             >
               {note}
             </div>
@@ -129,7 +129,7 @@ export function ComparisonTable({
           {p.baseNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-black-800 px-2 py-1 rounded border border-gold-200"
+              className="text-xs bg-black-800 px-2 py-1 rounded border border-black-700"
             >
               {note}
             </div>
@@ -146,7 +146,7 @@ export function ComparisonTable({
         {perfumes.map((perfume, index) => (
           <Card
             key={perfume.id}
-            className="bg-gradient-to-br from-black-800 to-gold-100 border border-gold-300"
+            className="bg-gradient-to-br from-black-800 to-black-800 border border-gold-300"
           >
             <CardContent className="p-4">
               <div className="text-center mb-3">
@@ -181,7 +181,7 @@ export function ComparisonTable({
 
       {/* Comparison Table */}
       <Card
-        className="bg-gradient-to-br from-black-800 via-gold-100 to-gold-200 border-2 border-gold-400 shadow-xl relative overflow-hidden
+        className="bg-gradient-to-br from-black-800 via-black-800 to-black-700 border-2 border-gold-400 shadow-xl relative overflow-hidden
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] hover:before:animate-shimmer before:transition-transform"
       >
         <CardHeader className="relative z-10">
@@ -198,13 +198,13 @@ export function ComparisonTable({
               <Table>
                 <TableHeader>
                   <TableRow className="border-b border-gold-300">
-                    <TableHead className="font-bold text-gold-300 bg-gold-200 min-w-[120px] sticky left-0 z-20">
+                    <TableHead className="font-bold text-gold-300 bg-black-700 min-w-[120px] sticky left-0 z-20">
                       Attribute
                     </TableHead>
                     {perfumes.map((perfume, index) => (
                       <TableHead
                         key={perfume.id}
-                        className="font-semibold text-gold-400 bg-gold-100 text-center min-w-[180px]"
+                        className="font-semibold text-gold-400 bg-black-800 text-center min-w-[180px]"
                       >
                         Fragrance {index + 1}
                       </TableHead>
@@ -215,9 +215,9 @@ export function ComparisonTable({
                   {comparisonRows.map((row, rowIndex) => (
                     <TableRow
                       key={row.label}
-                      className={`border-b border-gold-200 ${rowIndex % 2 === 0 ? "bg-black-800/50" : "bg-black-800/30"}`}
+                      className={`border-b border-black-700 ${rowIndex % 2 === 0 ? "bg-black-800/50" : "bg-black-800/30"}`}
                     >
-                      <TableCell className="font-medium text-gold-300 bg-black-800 sticky left-0 z-20 border-r border-gold-200 min-w-[120px]">
+                      <TableCell className="font-medium text-gold-300 bg-black-800 sticky left-0 z-20 border-r border-black-700 min-w-[120px]">
                         {row.label}
                       </TableCell>
                       {perfumes.map((perfume) => (

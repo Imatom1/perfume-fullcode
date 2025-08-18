@@ -36,7 +36,7 @@ export function CompactPerfumeCard({
           cardShadow: "shadow-black-8000/20",
           titleColor: "text-gold-400",
           brandText: "text-gold-300",
-          accordBorder: "border-black-8000 text-gold-200 bg-black-800",
+          accordBorder: "border-black-8000 text-black-700 bg-black-800",
           iconColor: "text-black-8000",
         };
       case "men":
@@ -45,8 +45,8 @@ export function CompactPerfumeCard({
           cardBorder: "border-black-8000 hover:border-gold-400",
           cardShadow: "shadow-gold-400/20",
           titleColor: "text-gold-300",
-          brandText: "text-gold-200",
-          accordBorder: "border-gold-400 text-gold-100 bg-black-900",
+          brandText: "text-black-700",
+          accordBorder: "border-gold-400 text-black-800 bg-black-900",
           iconColor: "text-gold-400",
         };
       case "unisex":
@@ -56,7 +56,7 @@ export function CompactPerfumeCard({
           cardShadow: "shadow-gold-400/20",
           titleColor: "text-gold-400",
           brandText: "text-gold-300",
-          accordBorder: "border-gold-400 text-gold-200 bg-black-800",
+          accordBorder: "border-gold-400 text-black-700 bg-black-800",
           iconColor: "text-black-8000",
         };
       default:
@@ -66,7 +66,7 @@ export function CompactPerfumeCard({
           cardShadow: "shadow-gold-400/20",
           titleColor: "text-gold-400",
           brandText: "text-gold-300",
-          accordBorder: "border-gold-400 text-gold-200 bg-black-800",
+          accordBorder: "border-gold-400 text-black-700 bg-black-800",
           iconColor: "text-black-8000",
         };
     }

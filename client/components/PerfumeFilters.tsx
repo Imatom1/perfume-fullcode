@@ -53,7 +53,7 @@ export function PerfumeFilters({
 
   return (
     <Card
-      className="bg-gradient-to-br from-gold-100 via-gold-200 to-gold-300 border-2 border-gold-400 shadow-xl relative overflow-hidden
+      className="bg-gradient-to-br from-black-800 via-black-700 to-gold-300 border-2 border-gold-400 shadow-xl relative overflow-hidden
     before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] hover:before:animate-shimmer before:transition-transform"
     >
       <CardHeader className="relative z-10">
@@ -63,7 +63,7 @@ export function PerfumeFilters({
           {resultCount > 0 && (
             <Badge
               variant="secondary"
-              className="bg-gold-200 text-gold-900 border-gold-400 ml-auto font-semibold shadow-sm"
+              className="bg-black-700 text-gold-900 border-gold-400 ml-auto font-semibold shadow-sm"
             >
               {resultCount} results
             </Badge>
@@ -84,7 +84,7 @@ export function PerfumeFilters({
               placeholder="Search by name, brand, or notes..."
               value={filters.search}
               onChange={(e) => updateFilter("search", e.target.value)}
-              className="pl-10 border-gold-200 focus:border-gold-400"
+              className="pl-10 border-black-700 focus:border-gold-400"
             />
           </div>
         </div>
@@ -98,7 +98,7 @@ export function PerfumeFilters({
               updateFilter("brand", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-gold-200 focus:border-gold-400">
+            <SelectTrigger className="border-black-700 focus:border-gold-400">
               <SelectValue placeholder="All brands" />
             </SelectTrigger>
             <SelectContent>
@@ -121,7 +121,7 @@ export function PerfumeFilters({
               updateFilter("gender", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-gold-200 focus:border-gold-400">
+            <SelectTrigger className="border-black-700 focus:border-gold-400">
               <SelectValue placeholder="All genders" />
             </SelectTrigger>
             <SelectContent>
@@ -146,7 +146,7 @@ export function PerfumeFilters({
               updateFilter("fragranceProfile", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-gold-200 focus:border-gold-400">
+            <SelectTrigger className="border-black-700 focus:border-gold-400">
               <SelectValue placeholder="All profiles" />
             </SelectTrigger>
             <SelectContent>
@@ -169,7 +169,7 @@ export function PerfumeFilters({
               updateFilter("season", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-gold-200 focus:border-gold-400">
+            <SelectTrigger className="border-black-700 focus:border-gold-400">
               <SelectValue placeholder="All seasons" />
             </SelectTrigger>
             <SelectContent>
@@ -192,7 +192,7 @@ export function PerfumeFilters({
               updateFilter("bestTime", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-gold-200 focus:border-gold-400">
+            <SelectTrigger className="border-black-700 focus:border-gold-400">
               <SelectValue placeholder="Any time" />
             </SelectTrigger>
             <SelectContent>
@@ -222,7 +222,7 @@ export function PerfumeFilters({
                   filters.priceRange[1],
                 ])
               }
-              className="border-gold-200 focus:border-gold-400"
+              className="border-black-700 focus:border-gold-400"
             />
             <Input
               type="number"
@@ -234,7 +234,7 @@ export function PerfumeFilters({
                   Number(e.target.value) || 0,
                 ])
               }
-              className="border-gold-200 focus:border-gold-400"
+              className="border-black-700 focus:border-gold-400"
             />
           </div>
         </div>

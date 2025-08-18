@@ -132,12 +132,12 @@ export default function MostPopular() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-gold-100">
+    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-black-800">
       <Header />
 
       {/* Page Header */}
       <div
-        className="bg-gradient-to-r from-gold-100 via-gold-200 to-gold-300 py-6 relative overflow-hidden
+        className="bg-gradient-to-r from-black-800 via-black-700 to-gold-300 py-6 relative overflow-hidden
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -156,7 +156,7 @@ export default function MostPopular() {
             <Button
               variant="outline"
               onClick={() => navigate("/")}
-              className="border-gold-400 text-gold-800 hover:bg-gold-100"
+              className="border-gold-400 text-gold-800 hover:bg-black-800"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Collection
@@ -181,7 +181,7 @@ export default function MostPopular() {
                   className={`flex items-center gap-2 ${
                     selectedCategory === category.id
                       ? "bg-gold-600 hover:bg-gold-700 text-white"
-                      : "border-gold-300 text-gold-800 hover:bg-gold-100"
+                      : "border-gold-300 text-gold-800 hover:bg-black-800"
                   }`}
                 >
                   <Icon className="w-4 h-4" />
@@ -193,7 +193,7 @@ export default function MostPopular() {
         </div>
 
         {/* Stats Card */}
-        <Card className="mb-8 bg-gradient-to-r from-black-800 to-black-800 border-gold-200">
+        <Card className="mb-8 bg-gradient-to-r from-black-800 to-black-800 border-black-700">
           <CardContent className="p-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="flex flex-col items-center">
@@ -255,7 +255,7 @@ export default function MostPopular() {
         </div>
 
         {/* Popular Insights */}
-        <Card className="mt-12 bg-gradient-to-r from-black-800 to-black-800 border-gold-200">
+        <Card className="mt-12 bg-gradient-to-r from-black-800 to-black-800 border-black-700">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-gold-800">
               <Sparkles className="w-5 h-5" />

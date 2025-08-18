@@ -160,7 +160,7 @@ export default function Compare() {
                 variant="outline"
                 size="sm"
                 onClick={clearComparison}
-                className="border-gold-400 text-gold-800 hover:bg-gold-100 font-medium text-xs h-6 px-2"
+                className="border-gold-400 text-gold-800 hover:bg-black-800 font-medium text-xs h-6 px-2"
               >
                 Clear All
               </Button>
@@ -201,7 +201,7 @@ export default function Compare() {
           {/* Perfume selection sidebar */}
           <div className="order-2 lg:w-[640px] flex-shrink-0">
             <Card
-              className="bg-gradient-to-br from-gold-100 via-gold-200 to-gold-300 border border-gold-400 shadow-lg relative overflow-hidden
+              className="bg-gradient-to-br from-black-800 via-black-700 to-gold-300 border border-gold-400 shadow-lg relative overflow-hidden
             before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
             >
               <CardHeader className="relative z-10 p-2 sm:p-3">
@@ -304,7 +304,7 @@ export default function Compare() {
                         setSeasonFilter("");
                         setAccordFilter("");
                       }}
-                      className="w-full border-gold-400 text-gold-800 hover:bg-gold-100 text-xs h-6"
+                      className="w-full border-gold-400 text-gold-800 hover:bg-black-800 text-xs h-6"
                     >
                       <X className="w-3 h-3 mr-1" />
                       Clear
@@ -317,7 +317,7 @@ export default function Compare() {
                 {comparisonList.length === 3 ? (
                   <div className="text-center py-6">
                     <div className="mb-4">
-                      <div className="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <div className="w-12 h-12 bg-black-800 rounded-full flex items-center justify-center mx-auto mb-3">
                         <Scale className="w-6 h-6 text-gold-600" />
                       </div>
                       <p className="text-sm font-semibold text-gold-300 mb-2">
