@@ -26,50 +26,18 @@ export function CompactPerfumeCard({
     }
   };
 
-  // Gender-based color schemes (black and gold theme)
+  // Uniform dark color scheme for all cards
   const getGenderColors = (gender: string) => {
-    switch (gender.toLowerCase()) {
-      case "women":
-        return {
-          cardBg: "bg-gradient-to-br from-black-900 to-black-800",
-          cardBorder: "border-gold-600 hover:border-black-8000",
-          cardShadow: "shadow-black-8000/20",
-          titleColor: "text-gold-400",
-          brandText: "text-gold-300",
-          accordBorder: "border-black-8000 text-black-700 bg-black-800",
-          iconColor: "text-black-8000",
-        };
-      case "men":
-        return {
-          cardBg: "bg-gradient-to-br from-black-950 to-black-900",
-          cardBorder: "border-black-8000 hover:border-gold-400",
-          cardShadow: "shadow-gold-400/20",
-          titleColor: "text-gold-300",
-          brandText: "text-black-700",
-          accordBorder: "border-gold-400 text-black-800 bg-black-900",
-          iconColor: "text-gold-400",
-        };
-      case "unisex":
-        return {
-          cardBg: "bg-gradient-to-br from-black-900 to-black-800",
-          cardBorder: "border-black-8000 hover:border-gold-400",
-          cardShadow: "shadow-gold-400/20",
-          titleColor: "text-gold-400",
-          brandText: "text-gold-300",
-          accordBorder: "border-gold-400 text-black-700 bg-black-800",
-          iconColor: "text-black-8000",
-        };
-      default:
-        return {
-          cardBg: "bg-gradient-to-br from-black-900 to-black-800",
-          cardBorder: "border-black-8000 hover:border-gold-400",
-          cardShadow: "shadow-gold-400/20",
-          titleColor: "text-gold-400",
-          brandText: "text-gold-300",
-          accordBorder: "border-gold-400 text-black-700 bg-black-800",
-          iconColor: "text-black-8000",
-        };
-    }
+    // All cards use the same dark black colors like men's section
+    return {
+      cardBg: "bg-gradient-to-br from-black-950 to-black-900",
+      cardBorder: "border-gray-700 hover:border-gray-600",
+      cardShadow: "shadow-gray-800/20",
+      titleColor: "text-gray-300",
+      brandText: "text-gray-400",
+      accordBorder: "border-gray-600 text-gray-300 bg-black-800",
+      iconColor: "text-gray-400",
+    };
   };
 
   const colors = getGenderColors(perfume.gender);
