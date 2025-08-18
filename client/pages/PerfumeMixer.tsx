@@ -595,11 +595,11 @@ export default function PerfumeMixer() {
                   {ingredients.length > 0 && (
                     <div className="mt-1.5 space-y-1">
                       {/* Blend Request Text */}
-                      <div className="bg-white border border-gold-300 rounded-lg p-2">
+                      <div className="bg-black-800 border border-gold-300 rounded-lg p-2">
                         <p className="text-xs font-medium text-gold-800 mb-1">
                           Your Blend Request:
                         </p>
-                        <div className="bg-gray-50 border border-gray-200 rounded p-2 text-xs text-gold-400 font-mono whitespace-pre-line">
+                        <div className="bg-black-700 border border-gray-200 rounded p-2 text-xs text-gold-400 font-mono whitespace-pre-line">
                           {`Blend: ${ingredients.map((ing) => `${ing.perfume.name} ${roundPercentage(ing.percentage)}%`).join(", ")}`}
                         </div>
                       </div>
@@ -710,7 +710,7 @@ export default function PerfumeMixer() {
                               )
                             }
                           >
-                            <SelectTrigger className="w-full text-sm h-9 border-gold-300 bg-white">
+                            <SelectTrigger className="w-full text-sm h-9 border-gold-300 bg-black-800">
                               <SelectValue placeholder="Select gender..." />
                             </SelectTrigger>
                             <SelectContent className="min-w-[200px]">
@@ -740,7 +740,7 @@ export default function PerfumeMixer() {
                               )
                             }
                           >
-                            <SelectTrigger className="w-full text-sm h-9 border-gold-300 bg-white">
+                            <SelectTrigger className="w-full text-sm h-9 border-gold-300 bg-black-800">
                               <SelectValue placeholder="Select season..." />
                             </SelectTrigger>
                             <SelectContent className="min-w-[200px]">
@@ -770,7 +770,7 @@ export default function PerfumeMixer() {
                               )
                             }
                           >
-                            <SelectTrigger className="w-full text-sm h-9 border-gold-300 bg-white">
+                            <SelectTrigger className="w-full text-sm h-9 border-gold-300 bg-black-800">
                               <SelectValue placeholder="Select time..." />
                             </SelectTrigger>
                             <SelectContent className="min-w-[200px]">
@@ -800,7 +800,7 @@ export default function PerfumeMixer() {
                               )
                             }
                           >
-                            <SelectTrigger className="w-full text-sm h-9 border-gold-300 bg-white">
+                            <SelectTrigger className="w-full text-sm h-9 border-gold-300 bg-black-800">
                               <SelectValue placeholder="Select scent..." />
                             </SelectTrigger>
                             <SelectContent className="min-w-[200px]">

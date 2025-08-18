@@ -85,7 +85,7 @@ export function ComparisonCards({
         return {
           titleText: "text-slate-900",
           brandText: "text-slate-800",
-          accordBorder: "border-slate-500 text-slate-900 bg-slate-100",
+          accordBorder: "border-slate-500 text-slate-900 bg-black-800",
           iconColor: "text-slate-700",
         };
       case "unisex":
