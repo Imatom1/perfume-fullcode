@@ -17,7 +17,7 @@ export default function QuizIntro() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gold-50 via-black-50 to-gold-100">
+    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-gold-100">
       <Header />
 
       <div className="max-w-lg mx-auto px-4 py-6">
@@ -26,7 +26,7 @@ export default function QuizIntro() {
           <div className="flex items-center justify-center gap-2 mb-3">
             <div className="relative">
               <Heart className="w-7 h-7 text-gold-700" />
-              <Sparkles className="w-3 h-3 text-gold-500 absolute -top-1 -right-1" />
+              <Sparkles className="w-3 h-3 text-black-8000 absolute -top-1 -right-1" />
             </div>
             <h1 className="text-2xl font-bold text-gold-300">Fragrance Quiz</h1>
           </div>
@@ -127,7 +127,7 @@ export default function QuizIntro() {
           <Button
             variant="outline"
             onClick={() => navigate("/")}
-            className="w-full border-gold-300 text-gold-700 hover:bg-gold-50"
+            className="w-full border-gold-300 text-gold-700 hover:bg-black-800"
           >
             Browse All Fragrances Instead
           </Button>

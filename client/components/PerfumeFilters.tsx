@@ -244,7 +244,7 @@ export function PerfumeFilters({
           <Button
             variant="outline"
             onClick={onReset}
-            className="w-full border-gold-300 text-gold-700 hover:bg-gold-50"
+            className="w-full border-gold-300 text-gold-700 hover:bg-black-800"
           >
             <X className="w-4 h-4 mr-2" />
             Clear Filters

@@ -256,7 +256,7 @@ export function PerfumeQuiz({
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
       <Card
-        className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-gradient-to-br from-gold-50 via-gold-100 to-gold-200 border-2 border-gold-400 relative overflow-hidden
+        className="w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-gradient-to-br from-black-800 via-gold-100 to-gold-200 border-2 border-gold-400 relative overflow-hidden
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <CardHeader className="relative z-10">
@@ -302,7 +302,7 @@ export function PerfumeQuiz({
                     <Button
                       key={option.id}
                       variant="outline"
-                      className="w-full text-left p-4 h-auto border-gold-300 text-gold-800 hover:bg-gold-100 hover:border-gold-500 font-medium"
+                      className="w-full text-left p-4 h-auto border-gold-300 text-gold-800 hover:bg-gold-100 hover:border-black-8000 font-medium"
                       onClick={() => handleAnswer(option)}
                     >
                       <div>
@@ -332,7 +332,7 @@ export function PerfumeQuiz({
                 {recommendations.map((perfume, index) => (
                   <Card
                     key={perfume.id}
-                    className="border-gold-300 bg-gradient-to-r from-gold-50 to-gold-100 hover:from-gold-100 hover:to-gold-150 transition-all cursor-pointer"
+                    className="border-gold-300 bg-gradient-to-r from-black-800 to-gold-100 hover:from-gold-100 hover:to-gold-150 transition-all cursor-pointer"
                     onClick={() => {
                       onPerfumeSelect(perfume);
                       onClose();
@@ -363,7 +363,7 @@ export function PerfumeQuiz({
                               <Badge
                                 key={accord}
                                 variant="outline"
-                                className="text-xs border-gold-300 text-gold-800 bg-gold-50"
+                                className="text-xs border-gold-300 text-gold-800 bg-black-800"
                               >
                                 {accord}
                               </Badge>

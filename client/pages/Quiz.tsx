@@ -412,7 +412,7 @@ export default function Quiz() {
   const progress = ((currentQuestion + 1) / quizQuestions.length) * 100;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gold-50 via-black-50 to-gold-100 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-gold-100 flex flex-col">
       <Header />
 
       {/* Page Header */}
@@ -439,7 +439,7 @@ export default function Quiz() {
 
       <div className="flex-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
         <Card
-          className="bg-gradient-to-br from-gold-50 via-gold-100 to-gold-200 border-2 border-gold-400 shadow-xl relative flex flex-col min-h-[calc(100vh-16rem)]
+          className="bg-gradient-to-br from-black-800 via-gold-100 to-gold-200 border-2 border-gold-400 shadow-xl relative flex flex-col min-h-[calc(100vh-16rem)]
         before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
         >
           <CardHeader className="relative z-10 flex-shrink-0">
@@ -509,7 +509,7 @@ export default function Quiz() {
                         <Button
                           key={option.id}
                           variant="outline"
-                          className="aspect-square p-3 sm:p-4 border-gold-300 text-gold-800 hover:bg-gold-100 hover:border-gold-500 font-medium flex flex-col items-center justify-center text-center w-full h-auto"
+                          className="aspect-square p-3 sm:p-4 border-gold-300 text-gold-800 hover:bg-gold-100 hover:border-black-8000 font-medium flex flex-col items-center justify-center text-center w-full h-auto"
                           onClick={() => handleAnswer(option)}
                           style={{
                             minHeight: "calc(min(40vw, 180px))",
@@ -551,7 +551,7 @@ export default function Quiz() {
                     {recommendations.map((perfume, index) => (
                       <Card
                         key={perfume.id}
-                        className="border-gold-300 bg-gradient-to-br from-gold-50 to-gold-100 hover:from-gold-100 hover:to-gold-150 transition-all cursor-pointer group"
+                        className="border-gold-300 bg-gradient-to-br from-black-800 to-gold-100 hover:from-gold-100 hover:to-gold-150 transition-all cursor-pointer group"
                         onClick={() => handlePerfumeClick(perfume)}
                       >
                         <CardContent className="p-3 sm:p-4 md:p-5">
@@ -580,7 +580,7 @@ export default function Quiz() {
                                 <Badge
                                   key={accord}
                                   variant="outline"
-                                  className="text-xs border-gold-300 text-gold-800 bg-gold-50"
+                                  className="text-xs border-gold-300 text-gold-800 bg-black-800"
                                 >
                                   {accord}
                                 </Badge>

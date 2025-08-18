@@ -45,7 +45,7 @@ export function PerfumeDetail({
 
       {/* Modal Content */}
       <div
-        className="relative bg-gradient-to-br from-gold-50 via-gold-100 to-gold-200 border border-gold-400 rounded-lg shadow-2xl w-full max-w-lg max-h-[75vh] overflow-hidden flex flex-col
+        className="relative bg-gradient-to-br from-black-800 via-gold-100 to-gold-200 border border-gold-400 rounded-lg shadow-2xl w-full max-w-lg max-h-[75vh] overflow-hidden flex flex-col
         before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
         onClick={(e) => e.stopPropagation()}
       >
@@ -84,7 +84,7 @@ export function PerfumeDetail({
 
           {/* Description */}
           {perfume.description && (
-            <div className="p-2 bg-gold-50 rounded border border-gold-200 mb-2">
+            <div className="p-2 bg-black-800 rounded border border-gold-200 mb-2">
               <p className="text-xs text-gold-400 italic">
                 {perfume.description}
               </p>
@@ -101,7 +101,7 @@ export function PerfumeDetail({
                 <Badge
                   key={accord}
                   variant="outline"
-                  className="border-gold-200 text-gold-700 bg-gold-50 text-xs"
+                  className="border-gold-200 text-gold-700 bg-black-800 text-xs"
                 >
                   {accord}
                 </Badge>
@@ -112,14 +112,14 @@ export function PerfumeDetail({
           {/* Fragrance Details */}
           <div className="grid grid-cols-1 gap-1 mb-2">
             <div className="flex items-center gap-1">
-              <Clock className="w-3 h-3 text-gold-500 flex-shrink-0" />
+              <Clock className="w-3 h-3 text-black-8000 flex-shrink-0" />
               <span className="text-xs font-medium text-gold-400">Time:</span>
               <span className="text-xs text-gold-300 truncate">
                 {perfume.bestTime}
               </span>
             </div>
             <div className="flex items-center gap-1">
-              <Star className="w-3 h-3 text-gold-500 flex-shrink-0" />
+              <Star className="w-3 h-3 text-black-8000 flex-shrink-0" />
               <span className="text-xs font-medium text-gold-400">
                 Seasons:
               </span>
@@ -128,7 +128,7 @@ export function PerfumeDetail({
               </span>
             </div>
             <div className="flex items-center gap-1">
-              <Droplets className="w-3 h-3 text-gold-500 flex-shrink-0" />
+              <Droplets className="w-3 h-3 text-black-8000 flex-shrink-0" />
               <span className="text-xs font-medium text-gold-400">
                 Sillage:
               </span>
@@ -185,7 +185,7 @@ export function PerfumeDetail({
               {perfume.sizes.map((size) => (
                 <Card
                   key={size.size}
-                  className="border-gold-200 bg-gold-50"
+                  className="border-gold-200 bg-black-800"
                 >
                   <CardContent className="p-1 text-center">
                     <div className="text-xs font-semibold text-gold-300">
@@ -214,10 +214,10 @@ export function PerfumeDetail({
               </Button>
 
               {/* Compare Section */}
-              <div className="p-2 bg-gradient-to-br from-gold-50 to-gold-100 rounded border border-gold-200">
+              <div className="p-2 bg-gradient-to-br from-black-800 to-gold-100 rounded border border-gold-200">
                 <Button
                   variant="outline"
-                  className="w-full border-gold-300 text-gold-700 hover:bg-gold-50 text-sm h-8"
+                  className="w-full border-gold-300 text-gold-700 hover:bg-black-800 text-sm h-8"
                   onClick={() => onCompare?.(perfume)}
                   disabled={isInComparison}
                 >

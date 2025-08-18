@@ -400,7 +400,7 @@ export default function PerfumeMixer() {
   const resultProfile = getResultingProfile();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gold-50 via-black-50 to-gold-100 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-gold-100 flex flex-col">
       <Header />
 
       {/* Page Header */}
@@ -433,7 +433,7 @@ export default function PerfumeMixer() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-1 sm:gap-2 min-h-[calc(100vh-8rem)]">
           {/* Left Panel - Mixer */}
           <div className="lg:col-span-2 flex flex-col min-h-[400px] mb-4 lg:mb-0">
-            <Card className="bg-gradient-to-br from-gold-50 via-gold-100 to-gold-200 border border-gold-400 shadow-lg flex-1 flex flex-col">
+            <Card className="bg-gradient-to-br from-black-800 via-gold-100 to-gold-200 border border-gold-400 shadow-lg flex-1 flex flex-col">
               <CardHeader className="p-1.5 sm:p-2 flex-shrink-0">
                 <CardTitle className="text-sm sm:text-base font-bold text-gold-300 flex items-center justify-between">
                   <span className="flex items-center gap-1">
@@ -539,7 +539,7 @@ export default function PerfumeMixer() {
 
                   {/* Result Preview */}
                   {resultProfile && (
-                    <Card className="mt-1.5 border-2 border-gold-400 bg-gradient-to-br from-gold-50 to-gold-100">
+                    <Card className="mt-1.5 border-2 border-gold-400 bg-gradient-to-br from-black-800 to-gold-100">
                       <CardHeader className="p-1.5">
                         <CardTitle className="text-xs font-bold text-gold-300 flex items-center gap-1">
                           <Sparkles className="w-3 h-3 text-gold-700" />
@@ -579,7 +579,7 @@ export default function PerfumeMixer() {
                           </div>
                         </div>
                         <div className="flex items-center gap-1.5">
-                          <Droplets className="w-3 h-3 text-gold-500" />
+                          <Droplets className="w-3 h-3 text-black-8000" />
                           <span className="text-xs font-medium text-gold-400">
                             Sillage:
                           </span>
@@ -633,7 +633,7 @@ export default function PerfumeMixer() {
                       </Button>
 
                       {/* Instructions */}
-                      <div className="bg-gold-50 border border-gold-200 rounded-lg p-2 mt-2">
+                      <div className="bg-black-800 border border-gold-200 rounded-lg p-2 mt-2">
                         <p className="text-sm font-medium text-gold-800 text-center mb-1">
                           📋 How to Use Your Blend Request
                         </p>
@@ -674,7 +674,7 @@ export default function PerfumeMixer() {
                       placeholder="Search fragrances..."
                       value={filters.search}
                       onChange={(e) => updateFilter("search", e.target.value)}
-                      className="pl-7 text-xs h-7 border-gold-300 focus:border-gold-500 bg-black-800"
+                      className="pl-7 text-xs h-7 border-gold-300 focus:border-black-8000 bg-black-800"
                     />
                   </div>
 
@@ -683,7 +683,7 @@ export default function PerfumeMixer() {
                     <DropdownMenuTrigger asChild>
                       <Button
                         variant="outline"
-                        className="w-full justify-between text-xs h-7 border-gold-300 bg-black-800 hover:bg-gold-50"
+                        className="w-full justify-between text-xs h-7 border-gold-300 bg-black-800 hover:bg-black-800"
                       >
                         <span className="flex items-center gap-1">
                           <Filter className="w-3 h-3" />

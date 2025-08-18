@@ -52,7 +52,7 @@ export function StatsSection() {
             return (
               <Card
                 key={index}
-                className="text-center bg-gradient-to-br from-gold-50 to-gold-100 border-gold-200 hover:border-gold-400 transition-all duration-300 hover:shadow-lg"
+                className="text-center bg-gradient-to-br from-black-800 to-gold-100 border-gold-200 hover:border-gold-400 transition-all duration-300 hover:shadow-lg"
               >
                 <CardContent className="p-6">
                   <div className="flex justify-center mb-4">

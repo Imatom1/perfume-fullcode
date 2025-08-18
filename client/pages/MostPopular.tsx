@@ -132,7 +132,7 @@ export default function MostPopular() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gold-50 via-black-50 to-gold-100">
+    <div className="min-h-screen bg-gradient-to-br from-black-800 via-black-800 to-gold-100">
       <Header />
 
       {/* Page Header */}
@@ -193,7 +193,7 @@ export default function MostPopular() {
         </div>
 
         {/* Stats Card */}
-        <Card className="mb-8 bg-gradient-to-r from-gold-50 to-black-50 border-gold-200">
+        <Card className="mb-8 bg-gradient-to-r from-black-800 to-black-800 border-gold-200">
           <CardContent className="p-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="flex flex-col items-center">
@@ -255,7 +255,7 @@ export default function MostPopular() {
         </div>
 
         {/* Popular Insights */}
-        <Card className="mt-12 bg-gradient-to-r from-gold-50 to-black-50 border-gold-200">
+        <Card className="mt-12 bg-gradient-to-r from-black-800 to-black-800 border-gold-200">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-gold-800">
               <Sparkles className="w-5 h-5" />

@@ -16,13 +16,13 @@ export function CompactPerfumeCard({
   const getGenderBadgeColor = (gender: string) => {
     switch (gender.toLowerCase()) {
       case "women":
-        return "bg-gold-600 text-black-950 border-gold-500";
+        return "bg-gold-600 text-black-950 border-black-8000";
       case "men":
-        return "bg-gold-500 text-black-950 border-gold-400";
+        return "bg-black-8000 text-black-950 border-gold-400";
       case "unisex":
         return "bg-gold-400 text-black-950 border-gold-300";
       default:
-        return "bg-gold-500 text-black-950 border-gold-400";
+        return "bg-black-8000 text-black-950 border-gold-400";
     }
   };
 
@@ -32,17 +32,17 @@ export function CompactPerfumeCard({
       case "women":
         return {
           cardBg: "bg-gradient-to-br from-black-900 to-black-800",
-          cardBorder: "border-gold-600 hover:border-gold-500",
-          cardShadow: "shadow-gold-500/20",
+          cardBorder: "border-gold-600 hover:border-black-8000",
+          cardShadow: "shadow-black-8000/20",
           titleColor: "text-gold-400",
           brandText: "text-gold-300",
-          accordBorder: "border-gold-500 text-gold-200 bg-black-800",
-          iconColor: "text-gold-500",
+          accordBorder: "border-black-8000 text-gold-200 bg-black-800",
+          iconColor: "text-black-8000",
         };
       case "men":
         return {
           cardBg: "bg-gradient-to-br from-black-950 to-black-900",
-          cardBorder: "border-gold-500 hover:border-gold-400",
+          cardBorder: "border-black-8000 hover:border-gold-400",
           cardShadow: "shadow-gold-400/20",
           titleColor: "text-gold-300",
           brandText: "text-gold-200",
@@ -52,22 +52,22 @@ export function CompactPerfumeCard({
       case "unisex":
         return {
           cardBg: "bg-gradient-to-br from-black-900 to-black-800",
-          cardBorder: "border-gold-500 hover:border-gold-400",
+          cardBorder: "border-black-8000 hover:border-gold-400",
           cardShadow: "shadow-gold-400/20",
           titleColor: "text-gold-400",
           brandText: "text-gold-300",
           accordBorder: "border-gold-400 text-gold-200 bg-black-800",
-          iconColor: "text-gold-500",
+          iconColor: "text-black-8000",
         };
       default:
         return {
           cardBg: "bg-gradient-to-br from-black-900 to-black-800",
-          cardBorder: "border-gold-500 hover:border-gold-400",
+          cardBorder: "border-black-8000 hover:border-gold-400",
           cardShadow: "shadow-gold-400/20",
           titleColor: "text-gold-400",
           brandText: "text-gold-300",
           accordBorder: "border-gold-400 text-gold-200 bg-black-800",
-          iconColor: "text-gold-500",
+          iconColor: "text-black-8000",
         };
     }
   };
@@ -77,7 +77,7 @@ export function CompactPerfumeCard({
   return (
     <Card
       className={`group cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${colors.cardBg} border ${colors.cardBorder} shadow-md ${colors.cardShadow} relative overflow-hidden
-      before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-gold-500/10 before:to-transparent before:translate-x-[-200%] group-hover:before:animate-shimmer before:transition-transform`}
+      before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-black-8000/10 before:to-transparent before:translate-x-[-200%] group-hover:before:animate-shimmer before:transition-transform`}
       onClick={onClick}
     >
       <CardContent className="p-1 sm:p-2 relative z-10 h-full">

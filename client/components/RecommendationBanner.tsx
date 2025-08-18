@@ -18,14 +18,14 @@ export function RecommendationBanner({
   );
 
   return (
-    <Card className="bg-gradient-to-r from-gold-50 via-black-50 to-gold-100 border-gold-300 mb-8">
+    <Card className="bg-gradient-to-r from-black-800 via-black-800 to-gold-100 border-gold-300 mb-8">
       <CardContent className="p-6">
         <div className="flex items-center gap-2 mb-4">
           <Sparkles className="w-6 h-6 text-gold-600" />
           <h3 className="text-xl font-bold text-gold-300">
             Staff Picks & Bestsellers
           </h3>
-          <Star className="w-5 h-5 text-gold-500" />
+          <Star className="w-5 h-5 text-black-8000" />
         </div>
 
         <p className="text-gold-400 mb-6">
@@ -37,7 +37,7 @@ export function RecommendationBanner({
           {featuredPerfumes.map((perfume) => (
             <div
               key={perfume.id}
-              className="bg-gradient-to-br from-gold-50 to-gold-100 rounded-lg p-4 border border-gold-200 hover:border-gold-400 transition-all duration-200 hover:shadow-md cursor-pointer group"
+              className="bg-gradient-to-br from-black-800 to-gold-100 rounded-lg p-4 border border-gold-200 hover:border-gold-400 transition-all duration-200 hover:shadow-md cursor-pointer group"
               onClick={() => onPerfumeSelect(perfume.id)}
             >
               <div className="flex items-start justify-between mb-2">
@@ -72,7 +72,7 @@ export function RecommendationBanner({
         <div className="mt-6 text-center">
           <Button
             variant="outline"
-            className="border-gold-400 text-gold-700 hover:bg-gold-50"
+            className="border-gold-400 text-gold-700 hover:bg-black-800"
           >
             <Sparkles className="w-4 h-4 mr-2" />
             View All Premium Collection

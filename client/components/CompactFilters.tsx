@@ -65,7 +65,7 @@ export function CompactFilters({
   return (
     <div
       className="bg-gradient-to-r from-black-900 via-black-800 to-black-700 p-3 sm:p-4 md:p-5 border-b border-gold-400 shadow-md relative overflow-hidden
-    before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-gold-500/10 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
+    before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-black-8000/10 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
     >
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex items-center gap-3 sm:gap-4 md:gap-5">
@@ -76,7 +76,7 @@ export function CompactFilters({
               placeholder="Search..."
               value={filters.search}
               onChange={(e) => updateFilter("search", e.target.value)}
-              className="pl-7 pr-3 h-7 text-xs border-gold-300 focus:border-gold-500 bg-black-800"
+              className="pl-7 pr-3 h-7 text-xs border-gold-300 focus:border-black-8000 bg-black-800"
             />
           </div>
 

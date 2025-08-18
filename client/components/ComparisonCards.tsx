@@ -67,7 +67,7 @@ export function ComparisonCards({
       case "unisex":
         return "bg-green-200 text-green-900 border-green-400";
       default:
-        return "bg-black-800 text-gold-300 border-gold-500";
+        return "bg-black-800 text-gold-300 border-black-8000";
     }
   };
 
@@ -192,7 +192,7 @@ export function ComparisonCards({
           {perfume.topNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gold-500 font-medium truncate"
+              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-black-8000 font-medium truncate"
             >
               {note}
             </div>
@@ -207,7 +207,7 @@ export function ComparisonCards({
           {perfume.middleNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gold-500 font-medium truncate"
+              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-black-8000 font-medium truncate"
             >
               {note}
             </div>
@@ -222,7 +222,7 @@ export function ComparisonCards({
           {perfume.baseNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gold-500 font-medium truncate"
+              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-black-8000 font-medium truncate"
             >
               {note}
             </div>
@@ -325,7 +325,7 @@ export function ComparisonCards({
                   <Button
                     variant="outline"
                     onClick={() => onViewDetails(perfume)}
-                    className="w-full border-gold-500 bg-black-800 text-gold-300 hover:bg-gold-600 font-semibold text-xs h-8"
+                    className="w-full border-black-8000 bg-black-800 text-gold-300 hover:bg-gold-600 font-semibold text-xs h-8"
                   >
                     <Eye className="w-3 h-3 mr-1" />
                     <span className="hidden sm:inline">Details</span>

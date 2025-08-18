@@ -5,13 +5,13 @@ import { Tag, DollarSign, Crown } from "lucide-react";
 export function PricingBanner() {
   return (
     <Card
-      className="bg-gradient-to-r from-black-900 via-black-800 to-black-700 border border-gold-500 shadow-md relative overflow-hidden my-3 sm:my-4
-    before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-gold-500/10 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
+      className="bg-gradient-to-r from-black-900 via-black-800 to-black-700 border border-black-8000 shadow-md relative overflow-hidden my-3 sm:my-4
+    before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-black-8000/10 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
     >
       <CardContent className="p-3 sm:p-4 md:p-5 relative z-10">
         <div className="flex items-center justify-center gap-2 sm:gap-4 text-center">
           <div className="hidden sm:flex items-center gap-1">
-            <Crown className="w-4 h-4 text-gold-500" />
+            <Crown className="w-4 h-4 text-black-8000" />
             <span className="font-bold text-gold-400 text-sm">Premium</span>
           </div>
 
@@ -43,7 +43,7 @@ export function PricingBanner() {
           </div>
 
           <div className="hidden sm:flex items-center gap-1">
-            <Tag className="w-4 h-4 text-gold-500" />
+            <Tag className="w-4 h-4 text-black-8000" />
             <span className="font-bold text-gold-400 text-sm">Best Value</span>
           </div>
         </div>

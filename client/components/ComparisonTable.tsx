@@ -84,7 +84,7 @@ export function ComparisonTable({
             <Badge
               key={accord}
               variant="outline"
-              className="text-xs border-gold-300 text-gold-800 bg-gold-50 font-medium"
+              className="text-xs border-gold-300 text-gold-800 bg-black-800 font-medium"
             >
               {accord}
             </Badge>
@@ -99,7 +99,7 @@ export function ComparisonTable({
           {p.topNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-gold-50 px-2 py-1 rounded border border-gold-200"
+              className="text-xs bg-black-800 px-2 py-1 rounded border border-gold-200"
             >
               {note}
             </div>
@@ -114,7 +114,7 @@ export function ComparisonTable({
           {p.middleNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-gold-50 px-2 py-1 rounded border border-gold-200"
+              className="text-xs bg-black-800 px-2 py-1 rounded border border-gold-200"
             >
               {note}
             </div>
@@ -129,7 +129,7 @@ export function ComparisonTable({
           {p.baseNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-gold-50 px-2 py-1 rounded border border-gold-200"
+              className="text-xs bg-black-800 px-2 py-1 rounded border border-gold-200"
             >
               {note}
             </div>
@@ -146,7 +146,7 @@ export function ComparisonTable({
         {perfumes.map((perfume, index) => (
           <Card
             key={perfume.id}
-            className="bg-gradient-to-br from-gold-50 to-gold-100 border border-gold-300"
+            className="bg-gradient-to-br from-black-800 to-gold-100 border border-gold-300"
           >
             <CardContent className="p-4">
               <div className="text-center mb-3">
@@ -160,7 +160,7 @@ export function ComparisonTable({
                   variant="outline"
                   size="sm"
                   onClick={() => onViewDetails(perfume)}
-                  className="border-gold-400 text-gold-800 hover:bg-gold-50 font-semibold text-xs"
+                  className="border-gold-400 text-gold-800 hover:bg-black-800 font-semibold text-xs"
                 >
                   <Eye className="w-3 h-3 mr-1" />
                   View
@@ -181,7 +181,7 @@ export function ComparisonTable({
 
       {/* Comparison Table */}
       <Card
-        className="bg-gradient-to-br from-gold-50 via-gold-100 to-gold-200 border-2 border-gold-400 shadow-xl relative overflow-hidden
+        className="bg-gradient-to-br from-black-800 via-gold-100 to-gold-200 border-2 border-gold-400 shadow-xl relative overflow-hidden
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] hover:before:animate-shimmer before:transition-transform"
       >
         <CardHeader className="relative z-10">
@@ -215,9 +215,9 @@ export function ComparisonTable({
                   {comparisonRows.map((row, rowIndex) => (
                     <TableRow
                       key={row.label}
-                      className={`border-b border-gold-200 ${rowIndex % 2 === 0 ? "bg-gold-50/50" : "bg-gold-50/30"}`}
+                      className={`border-b border-gold-200 ${rowIndex % 2 === 0 ? "bg-black-800/50" : "bg-black-800/30"}`}
                     >
-                      <TableCell className="font-medium text-gold-300 bg-gold-50 sticky left-0 z-20 border-r border-gold-200 min-w-[120px]">
+                      <TableCell className="font-medium text-gold-300 bg-black-800 sticky left-0 z-20 border-r border-gold-200 min-w-[120px]">
                         {row.label}
                       </TableCell>
                       {perfumes.map((perfume) => (
