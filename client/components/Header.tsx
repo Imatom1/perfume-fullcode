@@ -17,8 +17,8 @@ export function Header() {
 
   return (
     <header
-      className="sticky top-0 z-50 bg-gradient-to-r from-copper-100 via-copper-200 to-copper-300 border-b-2 border-copper-400 shadow-xl backdrop-blur-sm
-    before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] hover:before:animate-shimmer before:transition-transform"
+      className="sticky top-0 z-50 bg-gradient-to-r from-black-950 via-black-900 to-black-800 border-b-2 border-gold-500 shadow-xl backdrop-blur-sm
+    before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-gold-500/10 before:to-transparent before:translate-x-[-200%] hover:before:animate-shimmer before:transition-transform"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex items-center justify-between h-16 sm:h-18 md:h-20">
