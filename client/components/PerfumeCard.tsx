@@ -37,16 +37,16 @@ export function PerfumeCard({
       case "women":
         // Better Gold theme - using amber for more authentic gold
         return {
-          cardBg: "bg-gradient-to-br from-amber-200 via-amber-300 to-amber-400",
-          cardBorder: "border-amber-500 hover:border-amber-600",
-          cardShadow: "shadow-amber-300/60",
-          titleHover: "group-hover:text-amber-900",
-          brandText: "text-amber-900",
-          profileText: "text-amber-950",
-          badge: "bg-amber-300 text-amber-950 border-amber-500",
-          accordBorder: "border-amber-400 text-amber-900 bg-amber-100",
-          iconColor: "text-amber-800",
-          compareButton: "border-amber-500 text-amber-900 hover:bg-amber-200",
+          cardBg: "bg-gradient-to-br from-gold-200 via-gold-300 to-gold-400",
+          cardBorder: "border-gold-500 hover:border-gold-600",
+          cardShadow: "shadow-gold-300/60",
+          titleHover: "group-hover:text-gold-900",
+          brandText: "text-gold-900",
+          profileText: "text-gold-950",
+          badge: "bg-gold-300 text-gold-950 border-gold-500",
+          accordBorder: "border-gold-400 text-gold-900 bg-gold-100",
+          iconColor: "text-gold-800",
+          compareButton: "border-gold-500 text-gold-900 hover:bg-gold-200",
           shimmer: "before:via-white/15",
         };
       case "men":
@@ -68,34 +68,34 @@ export function PerfumeCard({
         // More saturated copper theme
         return {
           cardBg:
-            "bg-gradient-to-br from-orange-200 via-orange-300 to-orange-400",
-          cardBorder: "border-orange-500 hover:border-orange-600",
-          cardShadow: "shadow-orange-300/60",
-          titleHover: "group-hover:text-orange-900",
-          brandText: "text-orange-900",
-          profileText: "text-orange-950",
-          badge: "bg-orange-300 text-orange-950 border-orange-500",
-          accordBorder: "border-orange-400 text-orange-900 bg-orange-100",
-          iconColor: "text-orange-800",
+            "bg-gradient-to-br from-gold-200 via-gold-300 to-gold-400",
+          cardBorder: "border-gold-500 hover:border-gold-600",
+          cardShadow: "shadow-gold-300/60",
+          titleHover: "group-hover:text-gold-900",
+          brandText: "text-gold-900",
+          profileText: "text-gold-950",
+          badge: "bg-gold-300 text-gold-950 border-gold-500",
+          accordBorder: "border-gold-400 text-gold-900 bg-gold-100",
+          iconColor: "text-gold-800",
           compareButton:
-            "border-orange-500 text-orange-900 hover:bg-orange-200",
+            "border-gold-500 text-gold-900 hover:bg-gold-200",
           shimmer: "before:via-white/15",
         };
       default:
         // Fallback to saturated copper
         return {
           cardBg:
-            "bg-gradient-to-br from-orange-200 via-orange-300 to-orange-400",
-          cardBorder: "border-orange-500 hover:border-orange-600",
-          cardShadow: "shadow-orange-300/60",
-          titleHover: "group-hover:text-orange-900",
-          brandText: "text-orange-900",
-          profileText: "text-orange-950",
-          badge: "bg-orange-300 text-orange-950 border-orange-500",
-          accordBorder: "border-orange-400 text-orange-900 bg-orange-100",
-          iconColor: "text-orange-800",
+            "bg-gradient-to-br from-gold-200 via-gold-300 to-gold-400",
+          cardBorder: "border-gold-500 hover:border-gold-600",
+          cardShadow: "shadow-gold-300/60",
+          titleHover: "group-hover:text-gold-900",
+          brandText: "text-gold-900",
+          profileText: "text-gold-950",
+          badge: "bg-gold-300 text-gold-950 border-gold-500",
+          accordBorder: "border-gold-400 text-gold-900 bg-gold-100",
+          iconColor: "text-gold-800",
           compareButton:
-            "border-orange-500 text-orange-900 hover:bg-orange-200",
+            "border-gold-500 text-gold-900 hover:bg-gold-200",
           shimmer: "before:via-white/15",
         };
     }

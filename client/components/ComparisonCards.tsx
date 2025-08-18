@@ -33,13 +33,13 @@ export function ComparisonCards({
           </p>
         </div>
 
-        <Card className="bg-gradient-to-br from-copper-100 via-copper-200 to-copper-300 border-2 border-copper-400 shadow-xl">
+        <Card className="bg-gradient-to-br from-gold-100 via-gold-200 to-gold-300 border-2 border-gold-400 shadow-xl">
           <CardContent className="p-6">
             <div className="text-center">
               <h3 className="text-lg font-bold text-gray-800 mb-2">
                 {perfume.name}
               </h3>
-              <p className="text-sm text-copper-700 mb-4">
+              <p className="text-sm text-gold-700 mb-4">
                 Add another fragrance to begin your comparison
               </p>
               <Button
@@ -76,10 +76,10 @@ export function ComparisonCards({
     switch (gender.toLowerCase()) {
       case "women":
         return {
-          titleText: "text-amber-900",
-          brandText: "text-amber-800",
-          accordBorder: "border-amber-400 text-amber-900 bg-amber-50",
-          iconColor: "text-amber-700",
+          titleText: "text-gold-900",
+          brandText: "text-gold-800",
+          accordBorder: "border-gold-400 text-gold-900 bg-gold-50",
+          iconColor: "text-gold-700",
         };
       case "men":
         return {
@@ -90,17 +90,17 @@ export function ComparisonCards({
         };
       case "unisex":
         return {
-          titleText: "text-orange-900",
-          brandText: "text-orange-800",
-          accordBorder: "border-orange-400 text-orange-900 bg-orange-50",
-          iconColor: "text-orange-700",
+          titleText: "text-gold-900",
+          brandText: "text-gold-800",
+          accordBorder: "border-gold-400 text-gold-900 bg-gold-50",
+          iconColor: "text-gold-700",
         };
       default:
         return {
-          titleText: "text-orange-900",
-          brandText: "text-orange-800",
-          accordBorder: "border-orange-400 text-orange-900 bg-orange-50",
-          iconColor: "text-orange-700",
+          titleText: "text-gold-900",
+          brandText: "text-gold-800",
+          accordBorder: "border-gold-400 text-gold-900 bg-gold-50",
+          iconColor: "text-gold-700",
         };
     }
   };
@@ -264,7 +264,7 @@ export function ComparisonCards({
       </div>
 
       {/* Single Comparison Card */}
-      <Card className="bg-gradient-to-br from-copper-50 via-cream-50 to-copper-100 border-2 border-copper-400 shadow-xl relative overflow-hidden -mt-2">
+      <Card className="bg-gradient-to-br from-gold-50 via-black-50 to-gold-100 border-2 border-gold-400 shadow-xl relative overflow-hidden -mt-2">
         <CardHeader className="text-center pb-1 sm:pb-2 relative">
           <CardTitle className="text-sm sm:text-xl font-bold text-gray-800 flex items-center justify-center gap-1 sm:gap-2 flex-wrap">
             Fragrance Comparison Chart
@@ -298,14 +298,14 @@ export function ComparisonCards({
 
                       {/* Divider (not after last item) */}
                       {perfumeIndex < perfumes.length - 1 && (
-                        <div className="bg-copper-300"></div>
+                        <div className="bg-gold-300"></div>
                       )}
                     </div>
                   ))}
                 </div>
                 {/* Horizontal line separator between sections (except after last section) */}
                 {index < comparisonSections.length - 1 && (
-                  <div className="w-full h-px bg-copper-300 my-2 sm:my-3"></div>
+                  <div className="w-full h-px bg-gold-300 my-2 sm:my-3"></div>
                 )}
               </div>
             ))}
@@ -334,7 +334,7 @@ export function ComparisonCards({
 
                   {/* Divider (not after last item) */}
                   {perfumeIndex < perfumes.length - 1 && (
-                    <div className="bg-copper-300"></div>
+                    <div className="bg-gold-300"></div>
                   )}
                 </div>
               ))}

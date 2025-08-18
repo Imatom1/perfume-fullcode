@@ -18,7 +18,7 @@ interface SortSelectProps {
 export function SortSelect({ value, onChange }: SortSelectProps) {
   return (
     <div className="flex items-center gap-1 sm:gap-2">
-      <ArrowUpDown className="w-3 h-3 sm:w-4 sm:h-4 text-copper-600" />
+      <ArrowUpDown className="w-3 h-3 sm:w-4 sm:h-4 text-gold-600" />
       <Label
         htmlFor="sort"
         className="text-xs sm:text-sm font-medium text-gray-700 whitespace-nowrap hidden sm:inline"
@@ -28,7 +28,7 @@ export function SortSelect({ value, onChange }: SortSelectProps) {
       <Select value={value} onValueChange={onChange}>
         <SelectTrigger
           id="sort"
-          className="w-20 sm:w-32 h-7 sm:h-10 text-xs sm:text-sm border-copper-200 focus:border-copper-400"
+          className="w-20 sm:w-32 h-7 sm:h-10 text-xs sm:text-sm border-gold-200 focus:border-gold-400"
         >
           <SelectValue />
         </SelectTrigger>

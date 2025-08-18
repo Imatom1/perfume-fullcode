@@ -45,14 +45,14 @@ export function PerfumeDetail({
 
       {/* Modal Content */}
       <div
-        className="relative bg-gradient-to-br from-copper-50 via-copper-100 to-copper-200 border border-copper-400 rounded-lg shadow-2xl w-full max-w-lg max-h-[75vh] overflow-hidden flex flex-col
+        className="relative bg-gradient-to-br from-gold-50 via-gold-100 to-gold-200 border border-gold-400 rounded-lg shadow-2xl w-full max-w-lg max-h-[75vh] overflow-hidden flex flex-col
         before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}
         <button
           onClick={() => onOpenChange(false)}
-          className="absolute top-2 sm:top-3 right-2 sm:right-3 z-50 p-1 sm:p-2 rounded-full bg-copper-200 hover:bg-copper-300 text-copper-800 transition-colors shadow-md border border-copper-300"
+          className="absolute top-2 sm:top-3 right-2 sm:right-3 z-50 p-1 sm:p-2 rounded-full bg-gold-200 hover:bg-gold-300 text-gold-800 transition-colors shadow-md border border-gold-300"
           type="button"
         >
           <X className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -66,7 +66,7 @@ export function PerfumeDetail({
             </h2>
             <div className="flex items-center justify-between gap-2">
               <div>
-                <p className="text-sm font-medium text-copper-600">
+                <p className="text-sm font-medium text-gold-600">
                   {perfume.brand}
                 </p>
                 <p className="text-xs text-gray-500">
@@ -75,7 +75,7 @@ export function PerfumeDetail({
               </div>
               <Badge
                 variant="secondary"
-                className="bg-copper-100 text-copper-800 border-copper-300 text-xs"
+                className="bg-gold-100 text-gold-800 border-gold-300 text-xs"
               >
                 {perfume.gender}
               </Badge>
@@ -84,7 +84,7 @@ export function PerfumeDetail({
 
           {/* Description */}
           {perfume.description && (
-            <div className="p-2 bg-copper-50 rounded border border-copper-200 mb-2">
+            <div className="p-2 bg-gold-50 rounded border border-gold-200 mb-2">
               <p className="text-xs text-gray-700 italic">
                 {perfume.description}
               </p>
@@ -101,7 +101,7 @@ export function PerfumeDetail({
                 <Badge
                   key={accord}
                   variant="outline"
-                  className="border-copper-200 text-copper-700 bg-copper-50 text-xs"
+                  className="border-gold-200 text-gold-700 bg-gold-50 text-xs"
                 >
                   {accord}
                 </Badge>
@@ -112,14 +112,14 @@ export function PerfumeDetail({
           {/* Fragrance Details */}
           <div className="grid grid-cols-1 gap-1 mb-2">
             <div className="flex items-center gap-1">
-              <Clock className="w-3 h-3 text-copper-500 flex-shrink-0" />
+              <Clock className="w-3 h-3 text-gold-500 flex-shrink-0" />
               <span className="text-xs font-medium text-gray-700">Time:</span>
               <span className="text-xs text-gray-600 truncate">
                 {perfume.bestTime}
               </span>
             </div>
             <div className="flex items-center gap-1">
-              <Star className="w-3 h-3 text-copper-500 flex-shrink-0" />
+              <Star className="w-3 h-3 text-gold-500 flex-shrink-0" />
               <span className="text-xs font-medium text-gray-700">
                 Seasons:
               </span>
@@ -128,7 +128,7 @@ export function PerfumeDetail({
               </span>
             </div>
             <div className="flex items-center gap-1">
-              <Droplets className="w-3 h-3 text-copper-500 flex-shrink-0" />
+              <Droplets className="w-3 h-3 text-gold-500 flex-shrink-0" />
               <span className="text-xs font-medium text-gray-700">
                 Sillage:
               </span>
@@ -185,13 +185,13 @@ export function PerfumeDetail({
               {perfume.sizes.map((size) => (
                 <Card
                   key={size.size}
-                  className="border-copper-200 bg-copper-50"
+                  className="border-gold-200 bg-gold-50"
                 >
                   <CardContent className="p-1 text-center">
                     <div className="text-xs font-semibold text-gray-800">
                       {size.size}
                     </div>
-                    <div className="text-sm font-bold text-copper-700">
+                    <div className="text-sm font-bold text-gold-700">
                       ${size.price}
                     </div>
                   </CardContent>
@@ -203,7 +203,7 @@ export function PerfumeDetail({
             <div className="space-y-2">
               {/* Buy Button */}
               <Button
-                className="w-full bg-copper-600 hover:bg-copper-700 text-white font-bold py-2 px-4 rounded transition-colors"
+                className="w-full bg-gold-600 hover:bg-gold-700 text-white font-bold py-2 px-4 rounded transition-colors"
                 onClick={() => {
                   const buyUrl = getPerfumeBuyUrl(perfume.id);
                   window.open(buyUrl, "_blank", "noopener,noreferrer");
@@ -214,10 +214,10 @@ export function PerfumeDetail({
               </Button>
 
               {/* Compare Section */}
-              <div className="p-2 bg-gradient-to-br from-copper-50 to-copper-100 rounded border border-copper-200">
+              <div className="p-2 bg-gradient-to-br from-gold-50 to-gold-100 rounded border border-gold-200">
                 <Button
                   variant="outline"
-                  className="w-full border-copper-300 text-copper-700 hover:bg-copper-50 text-sm h-8"
+                  className="w-full border-gold-300 text-gold-700 hover:bg-gold-50 text-sm h-8"
                   onClick={() => onCompare?.(perfume)}
                   disabled={isInComparison}
                 >

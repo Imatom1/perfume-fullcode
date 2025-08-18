@@ -18,7 +18,7 @@ export function RecommendationBanner({
   );
 
   return (
-    <Card className="bg-gradient-to-r from-gold-50 via-cream-50 to-gold-100 border-gold-300 mb-8">
+    <Card className="bg-gradient-to-r from-gold-50 via-black-50 to-gold-100 border-gold-300 mb-8">
       <CardContent className="p-6">
         <div className="flex items-center gap-2 mb-4">
           <Sparkles className="w-6 h-6 text-gold-600" />
