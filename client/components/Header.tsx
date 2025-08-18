@@ -25,12 +25,12 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2 group">
-              <Crown className="w-8 h-8 text-copper-700 group-hover:text-copper-800 transition-colors" />
+              <Crown className="w-8 h-8 text-gold-500 group-hover:text-gold-400 transition-colors" />
               <div className="flex flex-col">
-                <span className="text-xl font-bold bg-gradient-to-r from-copper-800 via-copper-700 to-copper-600 bg-clip-text text-transparent">
+                <span className="text-xl font-bold bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600 bg-clip-text text-transparent">
                   Golden Aroma
                 </span>
-                <span className="text-xs font-semibold text-copper-600 -mt-1">
+                <span className="text-xs font-semibold text-gold-400 -mt-1">
                   PREMIUM FRAGRANCES
                 </span>
               </div>
@@ -49,8 +49,8 @@ export function Header() {
                   to={item.href}
                   className={`flex items-center gap-2 px-3 py-2 rounded-lg font-semibold transition-all duration-200 ${
                     isActive
-                      ? "bg-copper-300 text-copper-900 shadow-md"
-                      : "text-copper-800 hover:bg-copper-200 hover:text-copper-900"
+                      ? "bg-gold-500 text-black-950 shadow-md"
+                      : "text-gold-300 hover:bg-gold-600 hover:text-black-950"
                   }`}
                 >
                   <Icon className="w-4 h-4" />
@@ -66,7 +66,7 @@ export function Header() {
               variant="ghost"
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-copper-800 hover:bg-copper-200"
+              className="text-gold-400 hover:bg-gold-600"
             >
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -79,7 +79,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-copper-300 bg-copper-100/90 backdrop-blur-sm">
+          <div className="md:hidden border-t border-gold-500 bg-black-900/90 backdrop-blur-sm">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => {
                 const Icon = item.icon;
@@ -92,8 +92,8 @@ export function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`flex items-center gap-3 px-3 py-2 rounded-lg font-semibold transition-colors ${
                       isActive
-                        ? "bg-copper-300 text-copper-900"
-                        : "text-copper-800 hover:bg-copper-200"
+                        ? "bg-gold-500 text-black-950"
+                        : "text-gold-300 hover:bg-gold-600 hover:text-black-950"
                     }`}
                   >
                     <Icon className="w-5 h-5" />
