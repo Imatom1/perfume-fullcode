@@ -97,13 +97,13 @@ export function CompactPerfumeCard({
               <Droplets
                 className={`w-3 h-3 sm:w-4 sm:h-4 ${colors.iconColor} flex-shrink-0`}
               />
-              <span className="font-bold truncate">{perfume.sillage}</span>
+              <span className="font-semibold truncate text-gold-200">{perfume.sillage}</span>
             </div>
             <div className="flex items-center gap-1 truncate">
               <Star
                 className={`w-3 h-3 sm:w-4 sm:h-4 ${colors.iconColor} flex-shrink-0`}
               />
-              <span className="font-bold truncate">
+              <span className="font-semibold truncate text-gold-200">
                 {perfume.mainSeasons.join(", ")}
               </span>
             </div>
