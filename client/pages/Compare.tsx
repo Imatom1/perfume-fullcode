@@ -205,7 +205,7 @@ export default function Compare() {
             before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
             >
               <CardHeader className="relative z-10 p-2 sm:p-3">
-                <CardTitle className="text-sm font-bold text-gray-900 flex items-center gap-2">
+                <CardTitle className="text-sm font-bold text-gold-300 flex items-center gap-2">
                   <Plus className="w-4 h-4 text-gold-700" />
                   Add Fragrances
                   {comparisonList.length === 3 && (

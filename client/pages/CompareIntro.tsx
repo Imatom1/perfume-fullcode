@@ -48,7 +48,7 @@ export default function CompareIntro() {
           before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
           >
             <CardHeader className="relative z-10">
-              <CardTitle className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+              <CardTitle className="text-2xl font-bold text-gold-300 flex items-center gap-2">
                 <Crown className="w-6 h-6 text-gold-700" />
                 How It Works
               </CardTitle>
@@ -105,7 +105,7 @@ export default function CompareIntro() {
           before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
           >
             <CardHeader className="relative z-10">
-              <CardTitle className="text-2xl font-bold text-gray-900 flex items-center gap-2">
+              <CardTitle className="text-2xl font-bold text-gold-300 flex items-center gap-2">
                 <Scale className="w-6 h-6 text-gold-700" />
                 Comparison Features
               </CardTitle>
@@ -131,7 +131,7 @@ export default function CompareIntro() {
           >
             <CardContent className="p-8 relative z-10">
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold text-gray-900">
+                <h2 className="text-3xl font-bold text-gold-300">
                   Ready to Compare Fragrances?
                 </h2>
                 <p className="text-lg text-gold-400 max-w-2xl mx-auto">

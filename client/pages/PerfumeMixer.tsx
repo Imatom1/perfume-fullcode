@@ -435,7 +435,7 @@ export default function PerfumeMixer() {
           <div className="lg:col-span-2 flex flex-col min-h-[400px] mb-4 lg:mb-0">
             <Card className="bg-gradient-to-br from-gold-50 via-gold-100 to-gold-200 border border-gold-400 shadow-lg flex-1 flex flex-col">
               <CardHeader className="p-1.5 sm:p-2 flex-shrink-0">
-                <CardTitle className="text-sm sm:text-base font-bold text-gray-900 flex items-center justify-between">
+                <CardTitle className="text-sm sm:text-base font-bold text-gold-300 flex items-center justify-between">
                   <span className="flex items-center gap-1">
                     <Beaker className="w-4 h-4 text-gold-700" />
                     Create Your Blend
@@ -474,7 +474,7 @@ export default function PerfumeMixer() {
                           <div className="space-y-1">
                             <div className="flex items-center justify-between">
                               <div className="flex-1 min-w-0">
-                                <h4 className="text-xs font-bold text-gray-900 truncate">
+                                <h4 className="text-xs font-bold text-gold-300 truncate">
                                   {ingredient.perfume.name}
                                 </h4>
                                 <p className="text-xs text-gold-600">
@@ -541,7 +541,7 @@ export default function PerfumeMixer() {
                   {resultProfile && (
                     <Card className="mt-1.5 border-2 border-gold-400 bg-gradient-to-br from-gold-50 to-gold-100">
                       <CardHeader className="p-1.5">
-                        <CardTitle className="text-xs font-bold text-gray-900 flex items-center gap-1">
+                        <CardTitle className="text-xs font-bold text-gold-300 flex items-center gap-1">
                           <Sparkles className="w-3 h-3 text-gold-700" />
                           Predicted Result
                         </CardTitle>
@@ -655,7 +655,7 @@ export default function PerfumeMixer() {
           <div className="flex flex-col min-h-[500px]">
             <Card className="bg-gradient-to-br from-gold-100 via-gold-200 to-gold-300 border border-gold-400 shadow-lg flex-1 flex flex-col">
               <CardHeader className="p-2 sm:p-3 flex-shrink-0">
-                <CardTitle className="text-sm font-bold text-gray-900 flex items-center justify-between">
+                <CardTitle className="text-sm font-bold text-gold-300 flex items-center justify-between">
                   <span className="flex items-center gap-2">
                     <Crown className="w-4 h-4 text-gold-700" />
                     Add Fragrances ({ingredients.length}/3)

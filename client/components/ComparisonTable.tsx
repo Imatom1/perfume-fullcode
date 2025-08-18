@@ -32,7 +32,7 @@ export function ComparisonTable({
       label: "Name",
       getValue: (p: Perfume) => (
         <div className="space-y-1">
-          <div className="font-bold text-gray-900">{p.name}</div>
+          <div className="font-bold text-gold-300">{p.name}</div>
           <div className="text-sm font-semibold text-gold-700">{p.brand}</div>
           <div className="text-xs font-medium text-gold-400">
             Inspired by {p.originalBrand}
@@ -150,7 +150,7 @@ export function ComparisonTable({
           >
             <CardContent className="p-4">
               <div className="text-center mb-3">
-                <h4 className="font-bold text-gray-900 text-sm mb-1">
+                <h4 className="font-bold text-gold-300 text-sm mb-1">
                   {perfume.name}
                 </h4>
                 <p className="text-xs text-gold-700">{perfume.brand}</p>
@@ -185,7 +185,7 @@ export function ComparisonTable({
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] hover:before:animate-shimmer before:transition-transform"
       >
         <CardHeader className="relative z-10">
-          <CardTitle className="text-lg sm:text-xl font-bold text-gray-900 flex items-center gap-2">
+          <CardTitle className="text-lg sm:text-xl font-bold text-gold-300 flex items-center gap-2">
             Fragrance Comparison Table
           </CardTitle>
           <p className="text-xs text-gold-300 mt-2 sm:hidden">

@@ -61,7 +61,7 @@ export function QuickFilters({
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 mb-3 sm:mb-4">
           <div className="flex items-center gap-2">
             <Filter className="w-4 h-4 sm:w-5 sm:h-5 text-copper-700" />
-            <span className="font-bold text-gray-900 text-sm sm:text-base">
+            <span className="font-bold text-gold-300 text-sm sm:text-base">
               Filters
             </span>
             {resultCount > 0 && (

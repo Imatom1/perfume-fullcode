@@ -28,7 +28,7 @@ export default function QuizIntro() {
               <Heart className="w-7 h-7 text-gold-700" />
               <Sparkles className="w-3 h-3 text-gold-500 absolute -top-1 -right-1" />
             </div>
-            <h1 className="text-2xl font-bold text-gray-900">Fragrance Quiz</h1>
+            <h1 className="text-2xl font-bold text-gold-300">Fragrance Quiz</h1>
           </div>
           <p className="text-sm text-gold-300 mb-3">
             Find your perfect scent in under 3 minutes

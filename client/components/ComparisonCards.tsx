@@ -67,7 +67,7 @@ export function ComparisonCards({
       case "unisex":
         return "bg-green-200 text-green-900 border-green-400";
       default:
-        return "bg-gray-200 text-gray-900 border-gray-400";
+        return "bg-black-800 text-gold-300 border-gold-500";
     }
   };
 
@@ -141,7 +141,7 @@ export function ComparisonCards({
     {
       title: "Profile",
       getValue: (perfume: Perfume, colors: any) => (
-        <p className="text-xs font-semibold text-gray-900 text-center">
+        <p className="text-xs font-semibold text-gold-300 text-center">
           {perfume.fragranceProfile}
         </p>
       ),
@@ -150,17 +150,17 @@ export function ComparisonCards({
       title: "Details",
       getValue: (perfume: Perfume, colors: any) => (
         <div className="space-y-1 text-xs">
-          <div className="flex items-center justify-center gap-1 text-gray-900">
+          <div className="flex items-center justify-center gap-1 text-gold-300">
             <Clock className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
             <span className="font-semibold text-center">
               {perfume.bestTime}
             </span>
           </div>
-          <div className="flex items-center justify-center gap-1 text-gray-900">
+          <div className="flex items-center justify-center gap-1 text-gold-300">
             <Droplets className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
             <span className="font-semibold text-center">{perfume.sillage}</span>
           </div>
-          <div className="flex items-center justify-center gap-1 text-gray-900">
+          <div className="flex items-center justify-center gap-1 text-gold-300">
             <Star className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
             <span className="font-semibold text-center">
               {perfume.mainSeasons.join(", ")}
@@ -192,7 +192,7 @@ export function ComparisonCards({
           {perfume.topNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gray-300 font-medium truncate"
+              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gold-500 font-medium truncate"
             >
               {note}
             </div>
@@ -207,7 +207,7 @@ export function ComparisonCards({
           {perfume.middleNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gray-300 font-medium truncate"
+              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gold-500 font-medium truncate"
             >
               {note}
             </div>
@@ -222,7 +222,7 @@ export function ComparisonCards({
           {perfume.baseNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gray-300 font-medium truncate"
+              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gold-500 font-medium truncate"
             >
               {note}
             </div>
@@ -325,7 +325,7 @@ export function ComparisonCards({
                   <Button
                     variant="outline"
                     onClick={() => onViewDetails(perfume)}
-                    className="w-full border-gray-400 bg-black-800 text-gold-300 hover:bg-gray-100 font-semibold text-xs h-8"
+                    className="w-full border-gold-500 bg-black-800 text-gold-300 hover:bg-gold-600 font-semibold text-xs h-8"
                   >
                     <Eye className="w-3 h-3 mr-1" />
                     <span className="hidden sm:inline">Details</span>

@@ -263,7 +263,7 @@ export function PerfumeQuiz({
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Heart className="w-6 h-6 text-gold-600" />
-              <CardTitle className="text-xl font-bold text-gray-900">
+              <CardTitle className="text-xl font-bold text-gold-300">
                 {showResults
                   ? "Your Perfect Matches"
                   : "Perfume Personality Quiz"}
@@ -348,7 +348,7 @@ export function PerfumeQuiz({
                             <Crown className="w-4 h-4 text-gold-600" />
                           </div>
 
-                          <h4 className="font-bold text-gray-900">
+                          <h4 className="font-bold text-gold-300">
                             {perfume.name}
                           </h4>
                           <p className="text-sm font-semibold text-gold-700">

@@ -444,7 +444,7 @@ export default function Quiz() {
         >
           <CardHeader className="relative z-10 flex-shrink-0">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <CardTitle className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">
+              <CardTitle className="text-lg sm:text-xl md:text-2xl font-bold text-gold-300">
                 {showResults
                   ? "Your Perfect Matches"
                   : `Question ${currentQuestion + 1} of ${quizQuestions.length}`}
@@ -564,7 +564,7 @@ export default function Quiz() {
                             </div>
 
                             <div>
-                              <h4 className="font-bold text-gray-900 text-sm sm:text-base md:text-lg group-hover:text-gold-800 transition-colors">
+                              <h4 className="font-bold text-gold-300 text-sm sm:text-base md:text-lg group-hover:text-gold-800 transition-colors">
                                 {perfume.name}
                               </h4>
                               <p className="text-xs sm:text-sm font-semibold text-gold-700">
