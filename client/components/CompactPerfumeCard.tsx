@@ -16,58 +16,58 @@ export function CompactPerfumeCard({
   const getGenderBadgeColor = (gender: string) => {
     switch (gender.toLowerCase()) {
       case "women":
-        return "bg-pink-200 text-pink-900 border-pink-400";
+        return "bg-gold-600 text-black-950 border-gold-500";
       case "men":
-        return "bg-blue-200 text-blue-900 border-blue-400";
+        return "bg-gold-500 text-black-950 border-gold-400";
       case "unisex":
-        return "bg-green-200 text-green-900 border-green-400";
+        return "bg-gold-400 text-black-950 border-gold-300";
       default:
-        return "bg-gray-200 text-gray-900 border-gray-400";
+        return "bg-gold-500 text-black-950 border-gold-400";
     }
   };
 
-  // Gender-based color schemes (simplified for compact design)
+  // Gender-based color schemes (black and gold theme)
   const getGenderColors = (gender: string) => {
     switch (gender.toLowerCase()) {
       case "women":
         return {
-          cardBg: "bg-gradient-to-br from-amber-100 to-amber-200",
-          cardBorder: "border-amber-400 hover:border-amber-500",
-          cardShadow: "shadow-amber-200/60",
-          titleColor: "text-amber-900",
-          brandText: "text-amber-800",
-          accordBorder: "border-amber-300 text-amber-800 bg-amber-50",
-          iconColor: "text-amber-700",
+          cardBg: "bg-gradient-to-br from-black-900 to-black-800",
+          cardBorder: "border-gold-600 hover:border-gold-500",
+          cardShadow: "shadow-gold-500/20",
+          titleColor: "text-gold-400",
+          brandText: "text-gold-300",
+          accordBorder: "border-gold-500 text-gold-200 bg-black-800",
+          iconColor: "text-gold-500",
         };
       case "men":
         return {
-          cardBg: "bg-gradient-to-br from-slate-200 to-slate-300",
-          cardBorder: "border-slate-500 hover:border-slate-600",
-          cardShadow: "shadow-slate-300/60",
-          titleColor: "text-slate-900",
-          brandText: "text-slate-800",
-          accordBorder: "border-slate-400 text-slate-800 bg-slate-100",
-          iconColor: "text-slate-700",
+          cardBg: "bg-gradient-to-br from-black-950 to-black-900",
+          cardBorder: "border-gold-500 hover:border-gold-400",
+          cardShadow: "shadow-gold-400/20",
+          titleColor: "text-gold-300",
+          brandText: "text-gold-200",
+          accordBorder: "border-gold-400 text-gold-100 bg-black-900",
+          iconColor: "text-gold-400",
         };
       case "unisex":
         return {
-          cardBg: "bg-gradient-to-br from-orange-100 to-orange-200",
-          cardBorder: "border-orange-400 hover:border-orange-500",
-          cardShadow: "shadow-orange-200/60",
-          titleColor: "text-orange-900",
-          brandText: "text-orange-800",
-          accordBorder: "border-orange-300 text-orange-800 bg-orange-50",
-          iconColor: "text-orange-700",
+          cardBg: "bg-gradient-to-br from-black-900 to-black-800",
+          cardBorder: "border-gold-500 hover:border-gold-400",
+          cardShadow: "shadow-gold-400/20",
+          titleColor: "text-gold-400",
+          brandText: "text-gold-300",
+          accordBorder: "border-gold-400 text-gold-200 bg-black-800",
+          iconColor: "text-gold-500",
         };
       default:
         return {
-          cardBg: "bg-gradient-to-br from-orange-100 to-orange-200",
-          cardBorder: "border-orange-400 hover:border-orange-500",
-          cardShadow: "shadow-orange-200/60",
-          titleColor: "text-orange-900",
-          brandText: "text-orange-800",
-          accordBorder: "border-orange-300 text-orange-800 bg-orange-50",
-          iconColor: "text-orange-700",
+          cardBg: "bg-gradient-to-br from-black-900 to-black-800",
+          cardBorder: "border-gold-500 hover:border-gold-400",
+          cardShadow: "shadow-gold-400/20",
+          titleColor: "text-gold-400",
+          brandText: "text-gold-300",
+          accordBorder: "border-gold-400 text-gold-200 bg-black-800",
+          iconColor: "text-gold-500",
         };
     }
   };
@@ -77,7 +77,7 @@ export function CompactPerfumeCard({
   return (
     <Card
       className={`group cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${colors.cardBg} border ${colors.cardBorder} shadow-md ${colors.cardShadow} relative overflow-hidden
-      before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:translate-x-[-200%] group-hover:before:animate-shimmer before:transition-transform`}
+      before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-gold-500/10 before:to-transparent before:translate-x-[-200%] group-hover:before:animate-shimmer before:transition-transform`}
       onClick={onClick}
     >
       <CardContent className="p-1 sm:p-2 relative z-10 h-full">
