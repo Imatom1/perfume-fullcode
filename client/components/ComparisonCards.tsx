@@ -33,7 +33,7 @@ export function ComparisonCards({
           </p>
         </div>
 
-        <Card className="bg-gradient-to-br from-gold-100 via-gold-200 to-gold-300 border-2 border-gold-400 shadow-xl">
+        <Card className="bg-gradient-to-br from-black-900 via-black-800 to-black-700 border-2 border-gold-400 shadow-xl">
           <CardContent className="p-6">
             <div className="text-center">
               <h3 className="text-lg font-bold text-gold-300 mb-2">
@@ -76,9 +76,9 @@ export function ComparisonCards({
     switch (gender.toLowerCase()) {
       case "women":
         return {
-          titleText: "text-gold-900",
+          titleText: "text-gold-200",
           brandText: "text-gold-800",
-          accordBorder: "border-gold-400 text-gold-900 bg-gold-50",
+          accordBorder: "border-gold-400 text-gold-200 bg-black-800",
           iconColor: "text-gold-700",
         };
       case "men":
@@ -90,16 +90,16 @@ export function ComparisonCards({
         };
       case "unisex":
         return {
-          titleText: "text-gold-900",
+          titleText: "text-gold-200",
           brandText: "text-gold-800",
-          accordBorder: "border-gold-400 text-gold-900 bg-gold-50",
+          accordBorder: "border-gold-400 text-gold-200 bg-black-800",
           iconColor: "text-gold-700",
         };
       default:
         return {
-          titleText: "text-gold-900",
+          titleText: "text-gold-200",
           brandText: "text-gold-800",
-          accordBorder: "border-gold-400 text-gold-900 bg-gold-50",
+          accordBorder: "border-gold-400 text-gold-200 bg-black-800",
           iconColor: "text-gold-700",
         };
     }
@@ -264,7 +264,7 @@ export function ComparisonCards({
       </div>
 
       {/* Single Comparison Card */}
-      <Card className="bg-gradient-to-br from-gold-50 via-black-50 to-gold-100 border-2 border-gold-400 shadow-xl relative overflow-hidden -mt-2">
+      <Card className="bg-gradient-to-br from-black-950 via-black-900 to-black-800 border-2 border-gold-400 shadow-xl relative overflow-hidden -mt-2">
         <CardHeader className="text-center pb-1 sm:pb-2 relative">
           <CardTitle className="text-sm sm:text-xl font-bold text-gold-300 flex items-center justify-center gap-1 sm:gap-2 flex-wrap">
             Fragrance Comparison Chart
