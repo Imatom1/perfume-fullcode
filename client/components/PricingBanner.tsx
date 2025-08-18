@@ -20,7 +20,7 @@ export function PricingBanner() {
               <span className="font-medium text-gray-800 text-xs sm:text-sm">
                 30ml:
               </span>
-              <Badge className="bg-copper-600 text-white font-bold text-xs">
+              <Badge className="bg-gold-600 text-white font-bold text-xs">
                 $29.99
               </Badge>
             </div>
@@ -28,7 +28,7 @@ export function PricingBanner() {
               <span className="font-medium text-gray-800 text-xs sm:text-sm">
                 50ml:
               </span>
-              <Badge className="bg-copper-600 text-white font-bold text-xs">
+              <Badge className="bg-gold-600 text-white font-bold text-xs">
                 $44.99
               </Badge>
             </div>
@@ -36,7 +36,7 @@ export function PricingBanner() {
               <span className="font-medium text-gray-800 text-xs sm:text-sm">
                 100ml:
               </span>
-              <Badge className="bg-copper-600 text-white font-bold text-xs">
+              <Badge className="bg-gold-600 text-white font-bold text-xs">
                 $74.99
               </Badge>
             </div>
