@@ -26,7 +26,7 @@ export default function QuizIntro() {
           <div className="flex items-center justify-center gap-2 mb-3">
             <div className="relative">
               <Heart className="w-7 h-7 text-gold-700" />
-              <Sparkles className="w-3 h-3 text-black-8000 absolute -top-1 -right-1" />
+              <Sparkles className="w-3 h-3 text-gold-500 absolute -top-1 -right-1" />
             </div>
             <h1 className="text-2xl font-bold text-gold-300">Fragrance Quiz</h1>
           </div>

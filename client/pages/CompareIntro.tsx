@@ -126,7 +126,7 @@ export default function CompareIntro() {
         {/* CTA Section */}
         <div className="text-center mt-12">
           <Card
-            className="bg-gradient-to-r from-black-700 via-gold-300 to-gold-400 border-2 border-black-8000 shadow-xl relative overflow-hidden
+            className="bg-gradient-to-r from-black-700 via-gold-300 to-gold-400 border-2 border-gold-500 shadow-xl relative overflow-hidden
           before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
           >
             <CardContent className="p-8 relative z-10">

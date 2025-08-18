@@ -27,7 +27,7 @@ export function PerfumeCard({
       case "unisex":
         return "bg-green-200 text-green-900 border-green-400";
       default:
-        return "bg-black-800 text-gold-300 border-black-8000";
+        return "bg-black-800 text-gold-300 border-gold-500";
     }
   };
 
@@ -38,15 +38,15 @@ export function PerfumeCard({
         // Better Gold theme - using amber for more authentic gold
         return {
           cardBg: "bg-gradient-to-br from-black-700 via-gold-300 to-gold-400",
-          cardBorder: "border-black-8000 hover:border-gold-600",
+          cardBorder: "border-gold-500 hover:border-gold-600",
           cardShadow: "shadow-gold-300/60",
           titleHover: "group-hover:text-gold-900",
           brandText: "text-gold-900",
           profileText: "text-gold-950",
-          badge: "bg-gold-300 text-gold-950 border-black-8000",
+          badge: "bg-gold-300 text-gold-950 border-gold-500",
           accordBorder: "border-gold-400 text-gold-900 bg-black-800",
           iconColor: "text-gold-800",
-          compareButton: "border-black-8000 text-gold-900 hover:bg-black-700",
+          compareButton: "border-gold-500 text-gold-900 hover:bg-black-700",
           shimmer: "before:via-white/15",
         };
       case "men":
@@ -69,16 +69,16 @@ export function PerfumeCard({
         return {
           cardBg:
             "bg-gradient-to-br from-black-700 via-gold-300 to-gold-400",
-          cardBorder: "border-black-8000 hover:border-gold-600",
+          cardBorder: "border-gold-500 hover:border-gold-600",
           cardShadow: "shadow-gold-300/60",
           titleHover: "group-hover:text-gold-900",
           brandText: "text-gold-900",
           profileText: "text-gold-950",
-          badge: "bg-gold-300 text-gold-950 border-black-8000",
+          badge: "bg-gold-300 text-gold-950 border-gold-500",
           accordBorder: "border-gold-400 text-gold-900 bg-black-800",
           iconColor: "text-gold-800",
           compareButton:
-            "border-black-8000 text-gold-900 hover:bg-black-700",
+            "border-gold-500 text-gold-900 hover:bg-black-700",
           shimmer: "before:via-white/15",
         };
       default:
@@ -86,16 +86,16 @@ export function PerfumeCard({
         return {
           cardBg:
             "bg-gradient-to-br from-black-700 via-gold-300 to-gold-400",
-          cardBorder: "border-black-8000 hover:border-gold-600",
+          cardBorder: "border-gold-500 hover:border-gold-600",
           cardShadow: "shadow-gold-300/60",
           titleHover: "group-hover:text-gold-900",
           brandText: "text-gold-900",
           profileText: "text-gold-950",
-          badge: "bg-gold-300 text-gold-950 border-black-8000",
+          badge: "bg-gold-300 text-gold-950 border-gold-500",
           accordBorder: "border-gold-400 text-gold-900 bg-black-800",
           iconColor: "text-gold-800",
           compareButton:
-            "border-black-8000 text-gold-900 hover:bg-black-700",
+            "border-gold-500 text-gold-900 hover:bg-black-700",
           shimmer: "before:via-white/15",
         };
     }

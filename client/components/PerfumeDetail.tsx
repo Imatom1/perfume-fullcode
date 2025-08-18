@@ -112,14 +112,14 @@ export function PerfumeDetail({
           {/* Fragrance Details */}
           <div className="grid grid-cols-1 gap-1 mb-2">
             <div className="flex items-center gap-1">
-              <Clock className="w-3 h-3 text-black-8000 flex-shrink-0" />
+              <Clock className="w-3 h-3 text-gold-500 flex-shrink-0" />
               <span className="text-xs font-medium text-gold-400">Time:</span>
               <span className="text-xs text-gold-300 truncate">
                 {perfume.bestTime}
               </span>
             </div>
             <div className="flex items-center gap-1">
-              <Star className="w-3 h-3 text-black-8000 flex-shrink-0" />
+              <Star className="w-3 h-3 text-gold-500 flex-shrink-0" />
               <span className="text-xs font-medium text-gold-400">
                 Seasons:
               </span>
@@ -128,7 +128,7 @@ export function PerfumeDetail({
               </span>
             </div>
             <div className="flex items-center gap-1">
-              <Droplets className="w-3 h-3 text-black-8000 flex-shrink-0" />
+              <Droplets className="w-3 h-3 text-gold-500 flex-shrink-0" />
               <span className="text-xs font-medium text-gold-400">
                 Sillage:
               </span>

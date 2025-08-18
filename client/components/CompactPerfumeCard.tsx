@@ -54,12 +54,12 @@ export function CompactPerfumeCard({
           <div className="flex justify-between items-start gap-1 mb-1">
             <div className="flex-1 min-w-0">
               <h4
-                className={`text-sm sm:text-base md:text-lg font-bold ${colors.titleColor} leading-tight truncate`}
+                className={`text-sm sm:text-base md:text-lg font-extrabold ${colors.titleColor} leading-tight truncate tracking-wide`}
               >
                 {perfume.name}
               </h4>
               <p
-                className={`text-xs sm:text-sm font-bold ${colors.brandText} truncate`}
+                className={`text-xs sm:text-sm font-semibold ${colors.brandText} truncate tracking-wider uppercase opacity-90`}
               >
                 {perfume.brand}
               </p>

@@ -302,7 +302,7 @@ export function PerfumeQuiz({
                     <Button
                       key={option.id}
                       variant="outline"
-                      className="w-full text-left p-4 h-auto border-gold-300 text-gold-800 hover:bg-black-800 hover:border-black-8000 font-medium"
+                      className="w-full text-left p-4 h-auto border-gold-300 text-gold-800 hover:bg-black-800 hover:border-gold-500 font-medium"
                       onClick={() => handleAnswer(option)}
                     >
                       <div>

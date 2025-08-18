@@ -177,7 +177,7 @@ export default function Index() {
           {filteredAndSortedPerfumes.length === 0 ? (
             <div className="flex items-center justify-center h-full">
               <div className="text-center max-w-md mx-auto px-4">
-                <Sparkles className="w-12 h-12 sm:w-16 sm:h-16 text-black-8000 mx-auto mb-4" />
+                <Sparkles className="w-12 h-12 sm:w-16 sm:h-16 text-gold-500 mx-auto mb-4" />
                 <h3 className="text-base sm:text-lg font-semibold text-gold-400 mb-2">
                   No fragrances found
                 </h3>
@@ -186,7 +186,7 @@ export default function Index() {
                 </p>
                 <button
                   onClick={resetFilters}
-                  className="text-black-8000 hover:text-gold-400 font-medium text-sm"
+                  className="text-gold-500 hover:text-gold-400 font-medium text-sm"
                 >
                   Clear all filters
                 </button>

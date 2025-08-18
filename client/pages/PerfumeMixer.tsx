@@ -579,7 +579,7 @@ export default function PerfumeMixer() {
                           </div>
                         </div>
                         <div className="flex items-center gap-1.5">
-                          <Droplets className="w-3 h-3 text-black-8000" />
+                          <Droplets className="w-3 h-3 text-gold-500" />
                           <span className="text-xs font-medium text-gold-400">
                             Sillage:
                           </span>
@@ -674,7 +674,7 @@ export default function PerfumeMixer() {
                       placeholder="Search fragrances..."
                       value={filters.search}
                       onChange={(e) => updateFilter("search", e.target.value)}
-                      className="pl-7 text-xs h-7 border-gold-300 focus:border-black-8000 bg-black-800"
+                      className="pl-7 text-xs h-7 border-gold-300 focus:border-gold-500 bg-black-800"
                     />
                   </div>
 

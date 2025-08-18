@@ -509,7 +509,7 @@ export default function Quiz() {
                         <Button
                           key={option.id}
                           variant="outline"
-                          className="aspect-square p-3 sm:p-4 border-gold-300 text-gold-800 hover:bg-black-800 hover:border-black-8000 font-medium flex flex-col items-center justify-center text-center w-full h-auto"
+                          className="aspect-square p-3 sm:p-4 border-gold-300 text-gold-800 hover:bg-black-800 hover:border-gold-500 font-medium flex flex-col items-center justify-center text-center w-full h-auto"
                           onClick={() => handleAnswer(option)}
                           style={{
                             minHeight: "calc(min(40vw, 180px))",

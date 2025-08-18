@@ -25,7 +25,7 @@ export function RecommendationBanner({
           <h3 className="text-xl font-bold text-gold-300">
             Staff Picks & Bestsellers
           </h3>
-          <Star className="w-5 h-5 text-black-8000" />
+          <Star className="w-5 h-5 text-gold-500" />
         </div>
 
         <p className="text-gold-400 mb-6">
