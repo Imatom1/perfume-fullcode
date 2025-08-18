@@ -145,7 +145,7 @@ export default function Compare() {
                 variant="outline"
                 size="sm"
                 onClick={() => navigate("/")}
-                className="border-gold-400 text-gold-800 hover:bg-gold-100 font-medium text-sm h-8 px-4"
+                className="border-gold-500 text-gold-300 hover:bg-gold-600 hover:text-black-950 font-medium text-sm h-8 px-4"
               >
                 <ArrowLeft className="w-4 h-4 mr-1" />
                 Back to Main Page
