@@ -1,0 +1,213 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Clock, Droplets, Star, Heart } from "lucide-react";
+import { Perfume } from "../data/perfumes";
+
+interface PerfumeCardProps {
+  perfume: Perfume;
+  onClick?: () => void;
+  onCompare?: (perfume: Perfume) => void;
+  showCompareButton?: boolean;
+}
+
+export function PerfumeCard({
+  perfume,
+  onClick,
+  onCompare,
+  showCompareButton = false,
+}: PerfumeCardProps) {
+  // Gender badge specific colors
+  const getGenderBadgeColor = (gender: string) => {
+    switch (gender.toLowerCase()) {
+      case "women":
+        return "bg-pink-200 text-pink-900 border-pink-400";
+      case "men":
+        return "bg-blue-200 text-blue-900 border-blue-400";
+      case "unisex":
+        return "bg-green-200 text-green-900 border-green-400";
+      default:
+        return "bg-gray-200 text-gray-900 border-gray-400";
+    }
+  };
+
+  // Gender-based metallic color schemes: Better Gold, Darker Silver, Copper
+  const getGenderColors = (gender: string) => {
+    switch (gender.toLowerCase()) {
+      case "women":
+        // Better Gold theme - using amber for more authentic gold
+        return {
+          cardBg: "bg-gradient-to-br from-amber-200 via-amber-300 to-amber-400",
+          cardBorder: "border-amber-500 hover:border-amber-600",
+          cardShadow: "shadow-amber-300/60",
+          titleHover: "group-hover:text-amber-900",
+          brandText: "text-amber-900",
+          profileText: "text-amber-950",
+          badge: "bg-amber-300 text-amber-950 border-amber-500",
+          accordBorder: "border-amber-400 text-amber-900 bg-amber-100",
+          iconColor: "text-amber-800",
+          compareButton: "border-amber-500 text-amber-900 hover:bg-amber-200",
+          shimmer: "before:via-white/15",
+        };
+      case "men":
+        // Darker Silver theme - using slate for deeper silver
+        return {
+          cardBg: "bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500",
+          cardBorder: "border-slate-600 hover:border-slate-700",
+          cardShadow: "shadow-slate-400/60",
+          titleHover: "group-hover:text-slate-900",
+          brandText: "text-slate-900",
+          profileText: "text-slate-950",
+          badge: "bg-slate-400 text-slate-950 border-slate-600",
+          accordBorder: "border-slate-500 text-slate-900 bg-slate-200",
+          iconColor: "text-slate-800",
+          compareButton: "border-slate-600 text-slate-900 hover:bg-slate-300",
+          shimmer: "before:via-white/15",
+        };
+      case "unisex":
+        // More saturated copper theme
+        return {
+          cardBg:
+            "bg-gradient-to-br from-orange-200 via-orange-300 to-orange-400",
+          cardBorder: "border-orange-500 hover:border-orange-600",
+          cardShadow: "shadow-orange-300/60",
+          titleHover: "group-hover:text-orange-900",
+          brandText: "text-orange-900",
+          profileText: "text-orange-950",
+          badge: "bg-orange-300 text-orange-950 border-orange-500",
+          accordBorder: "border-orange-400 text-orange-900 bg-orange-100",
+          iconColor: "text-orange-800",
+          compareButton:
+            "border-orange-500 text-orange-900 hover:bg-orange-200",
+          shimmer: "before:via-white/15",
+        };
+      default:
+        // Fallback to saturated copper
+        return {
+          cardBg:
+            "bg-gradient-to-br from-orange-200 via-orange-300 to-orange-400",
+          cardBorder: "border-orange-500 hover:border-orange-600",
+          cardShadow: "shadow-orange-300/60",
+          titleHover: "group-hover:text-orange-900",
+          brandText: "text-orange-900",
+          profileText: "text-orange-950",
+          badge: "bg-orange-300 text-orange-950 border-orange-500",
+          accordBorder: "border-orange-400 text-orange-900 bg-orange-100",
+          iconColor: "text-orange-800",
+          compareButton:
+            "border-orange-500 text-orange-900 hover:bg-orange-200",
+          shimmer: "before:via-white/15",
+        };
+    }
+  };
+
+  const colors = getGenderColors(perfume.gender);
+
+  return (
+    <Card
+      className={`group cursor-pointer transition-all duration-500 hover:shadow-2xl hover:scale-105 ${colors.cardBg} border-2 ${colors.cardBorder} shadow-xl ${colors.cardShadow} relative overflow-hidden
+      before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent ${colors.shimmer} before:to-transparent before:translate-x-[-200%] group-hover:before:animate-shimmer before:transition-transform`}
+      onClick={onClick}
+    >
+      <CardHeader className="pb-2 sm:pb-3 relative z-10 p-3 sm:p-6">
+        <div className="flex justify-between items-start mb-2">
+          <div className="flex-1 min-w-0">
+            <CardTitle
+              className={`text-sm sm:text-base md:text-lg font-bold text-gray-900 ${colors.titleHover} transition-colors leading-tight truncate`}
+            >
+              {perfume.name}
+            </CardTitle>
+            <p
+              className={`text-xs sm:text-sm font-bold ${colors.brandText} mt-1 truncate`}
+            >
+              {perfume.brand}
+            </p>
+            <p className="text-xs font-semibold text-gray-800 mt-1 truncate">
+              Inspired by {perfume.originalBrand}
+            </p>
+          </div>
+          <Badge
+            variant="secondary"
+            className={`${getGenderBadgeColor(perfume.gender)} text-xs font-semibold shadow-sm flex-shrink-0 ml-2`}
+          >
+            {perfume.gender}
+          </Badge>
+        </div>
+
+        <div className="flex flex-wrap gap-1 mb-2 sm:mb-3">
+          {perfume.mainAccords.map((accord) => (
+            <Badge
+              key={accord}
+              variant="outline"
+              className={`text-xs ${colors.accordBorder} font-medium shadow-sm`}
+            >
+              {accord}
+            </Badge>
+          ))}
+        </div>
+      </CardHeader>
+
+      <CardContent className="pt-0 relative z-10 p-3 sm:p-6">
+        <div className="space-y-2 sm:space-y-3">
+          <div className="text-xs sm:text-sm text-gray-800">
+            <span className={`font-bold ${colors.profileText}`}>Profile:</span>{" "}
+            <span className="font-semibold text-gray-900">
+              {perfume.fragranceProfile}
+            </span>
+          </div>
+
+          <div className="text-xs sm:text-sm text-gray-800">
+            <span className={`font-bold ${colors.profileText}`}>
+              Top Notes:
+            </span>
+            <div className="flex flex-wrap gap-1 mt-1">
+              {perfume.topNotes.map((note) => (
+                <Badge
+                  key={note}
+                  variant="outline"
+                  className={`text-xs ${colors.accordBorder} font-medium`}
+                >
+                  {note}
+                </Badge>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 text-xs">
+            <div className="flex items-center gap-1 text-gray-900">
+              <Clock className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
+              <span className="font-semibold truncate">{perfume.bestTime}</span>
+            </div>
+            <div className="flex items-center gap-1 text-gray-900">
+              <Droplets
+                className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`}
+              />
+              <span className="font-semibold truncate">{perfume.sillage}</span>
+            </div>
+            <div className="flex items-center gap-1 text-gray-900 sm:col-span-2">
+              <Star className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
+              <span className="font-semibold truncate">
+                {perfume.mainSeasons.join(", ")}
+              </span>
+            </div>
+          </div>
+
+          {showCompareButton && onCompare && (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={(e) => {
+                e.stopPropagation(); // Prevent card click
+                onCompare(perfume);
+              }}
+              className={`w-full ${colors.compareButton} font-semibold mt-2 sm:mt-3 text-xs sm:text-sm h-8 sm:h-10 bg-transparent hover:bg-opacity-20`}
+            >
+              <Heart className="w-3 h-3 mr-1" />
+              Compare Perfumes
+            </Button>
+          )}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
