@@ -12,31 +12,31 @@ export function CompactPerfumeCard({
   perfume,
   onClick,
 }: CompactPerfumeCardProps) {
-  // Gender badge specific colors - subtle grey variations
+  // Gender badge specific colors - elegant gold variations
   const getGenderBadgeColor = (gender: string) => {
     switch (gender.toLowerCase()) {
       case "women":
-        return "bg-gray-700 text-gray-200 border-gray-600";
+        return "bg-gold-600 text-black-950 border-gold-500";
       case "men":
-        return "bg-gray-800 text-gray-200 border-gray-700";
+        return "bg-gold-700 text-black-950 border-gold-600";
       case "unisex":
-        return "bg-gray-600 text-gray-200 border-gray-500";
+        return "bg-gold-500 text-black-950 border-gold-400";
       default:
-        return "bg-gray-700 text-gray-200 border-gray-600";
+        return "bg-gold-600 text-black-950 border-gold-500";
     }
   };
 
-  // Uniform dark color scheme for all cards
+  // Elegant gold color scheme for all cards
   const getGenderColors = (gender: string) => {
-    // All cards use the same dark black colors like men's section
+    // All cards use elegant gold colors for premium feel
     return {
       cardBg: "bg-gradient-to-br from-black-950 to-black-900",
-      cardBorder: "border-gray-700 hover:border-gray-600",
-      cardShadow: "shadow-gray-800/20",
-      titleColor: "text-gray-300",
-      brandText: "text-gray-400",
-      accordBorder: "border-gray-600 text-gray-300 bg-black-800",
-      iconColor: "text-gray-400",
+      cardBorder: "border-gold-600 hover:border-gold-500",
+      cardShadow: "shadow-gold-500/20",
+      titleColor: "text-gold-200",
+      brandText: "text-gold-300",
+      accordBorder: "border-gold-500 text-gold-200 bg-black-800",
+      iconColor: "text-gold-400",
     };
   };
 
