@@ -45,7 +45,7 @@ export function CompactPerfumeCard({
   return (
     <Card
       className={`group cursor-pointer transition-all duration-300 hover:shadow-lg hover:scale-[1.02] ${colors.cardBg} border ${colors.cardBorder} shadow-md ${colors.cardShadow} relative overflow-hidden
-      before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-gray-500/10 before:to-transparent before:translate-x-[-200%] group-hover:before:animate-shimmer before:transition-transform`}
+      before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-gold-500/10 before:to-transparent before:translate-x-[-200%] group-hover:before:animate-shimmer before:transition-transform`}
       onClick={onClick}
     >
       <CardContent className="p-1 sm:p-2 relative z-10 h-full">
