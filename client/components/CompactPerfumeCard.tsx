@@ -12,17 +12,17 @@ export function CompactPerfumeCard({
   perfume,
   onClick,
 }: CompactPerfumeCardProps) {
-  // Gender badge specific colors
+  // Gender badge specific colors - subtle grey variations
   const getGenderBadgeColor = (gender: string) => {
     switch (gender.toLowerCase()) {
       case "women":
-        return "bg-gold-600 text-black-950 border-black-8000";
+        return "bg-gray-700 text-gray-200 border-gray-600";
       case "men":
-        return "bg-black-8000 text-black-950 border-gold-400";
+        return "bg-gray-800 text-gray-200 border-gray-700";
       case "unisex":
-        return "bg-gold-400 text-black-950 border-gold-300";
+        return "bg-gray-600 text-gray-200 border-gray-500";
       default:
-        return "bg-black-8000 text-black-950 border-gold-400";
+        return "bg-gray-700 text-gray-200 border-gray-600";
     }
   };
 
