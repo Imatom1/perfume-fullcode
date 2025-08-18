@@ -222,7 +222,7 @@ export default function Compare() {
                     placeholder="Search..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="pl-7 border-gold-300 focus:border-gold-500 bg-white/90 text-xs h-7"
+                    className="pl-7 border-gold-300 focus:border-gold-500 bg-black-800 text-xs h-7"
                   />
                 </div>
 
@@ -236,7 +236,7 @@ export default function Compare() {
                         setGenderFilter(value === "all" ? "" : value)
                       }
                     >
-                      <SelectTrigger className="border-gold-300 focus:border-gold-500 bg-white/90 text-xs h-7">
+                      <SelectTrigger className="border-gold-300 focus:border-gold-500 bg-black-800 text-xs h-7">
                         <SelectValue placeholder="Gender" />
                       </SelectTrigger>
                       <SelectContent>
@@ -254,7 +254,7 @@ export default function Compare() {
                         setSeasonFilter(value === "all" ? "" : value)
                       }
                     >
-                      <SelectTrigger className="border-gold-300 focus:border-gold-500 bg-white/90 text-xs h-7">
+                      <SelectTrigger className="border-gold-300 focus:border-gold-500 bg-black-800 text-xs h-7">
                         <SelectValue placeholder="Season" />
                       </SelectTrigger>
                       <SelectContent>
@@ -273,7 +273,7 @@ export default function Compare() {
                         setAccordFilter(value === "all" ? "" : value)
                       }
                     >
-                      <SelectTrigger className="border-gold-300 focus:border-gold-500 bg-white/90 text-xs h-7">
+                      <SelectTrigger className="border-gold-300 focus:border-gold-500 bg-black-800 text-xs h-7">
                         <SelectValue placeholder="Scent Type" />
                       </SelectTrigger>
                       <SelectContent>

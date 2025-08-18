@@ -192,7 +192,7 @@ export function ComparisonCards({
           {perfume.topNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-white/60 px-1 sm:px-2 py-1 rounded border border-gray-300 font-medium truncate"
+              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gray-300 font-medium truncate"
             >
               {note}
             </div>
@@ -207,7 +207,7 @@ export function ComparisonCards({
           {perfume.middleNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-white/60 px-1 sm:px-2 py-1 rounded border border-gray-300 font-medium truncate"
+              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gray-300 font-medium truncate"
             >
               {note}
             </div>
@@ -222,7 +222,7 @@ export function ComparisonCards({
           {perfume.baseNotes.map((note, idx) => (
             <div
               key={idx}
-              className="text-xs bg-white/60 px-1 sm:px-2 py-1 rounded border border-gray-300 font-medium truncate"
+              className="text-xs bg-black-700 px-1 sm:px-2 py-1 rounded border border-gray-300 font-medium truncate"
             >
               {note}
             </div>
@@ -325,7 +325,7 @@ export function ComparisonCards({
                   <Button
                     variant="outline"
                     onClick={() => onViewDetails(perfume)}
-                    className="w-full border-gray-400 bg-white/90 text-gray-800 hover:bg-gray-100 font-semibold text-xs h-8"
+                    className="w-full border-gray-400 bg-black-800 text-gray-800 hover:bg-gray-100 font-semibold text-xs h-8"
                   >
                     <Eye className="w-3 h-3 mr-1" />
                     <span className="hidden sm:inline">Details</span>

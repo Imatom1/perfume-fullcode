@@ -95,7 +95,7 @@ export function QuickFilters({
               placeholder="Search fragrances..."
               value={filters.search}
               onChange={(e) => updateFilter("search", e.target.value)}
-              className="pl-8 sm:pl-10 border-copper-300 focus:border-copper-500 bg-white/80 text-sm sm:text-base h-8 sm:h-10"
+              className="pl-8 sm:pl-10 border-copper-300 focus:border-copper-500 bg-black-800 text-sm sm:text-base h-8 sm:h-10"
             />
           </div>
 
@@ -106,7 +106,7 @@ export function QuickFilters({
               updateFilter("gender", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-copper-300 focus:border-copper-500 bg-white/80 text-xs sm:text-sm h-8 sm:h-10">
+            <SelectTrigger className="border-copper-300 focus:border-copper-500 bg-black-800 text-xs sm:text-sm h-8 sm:h-10">
               <SelectValue placeholder="Gender" />
             </SelectTrigger>
             <SelectContent>
@@ -126,7 +126,7 @@ export function QuickFilters({
               updateFilter("season", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-copper-300 focus:border-copper-500 bg-white/80 text-xs sm:text-sm h-8 sm:h-10">
+            <SelectTrigger className="border-copper-300 focus:border-copper-500 bg-black-800 text-xs sm:text-sm h-8 sm:h-10">
               <SelectValue placeholder="Season" />
             </SelectTrigger>
             <SelectContent>
@@ -146,7 +146,7 @@ export function QuickFilters({
               updateFilter("bestTime", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-copper-300 focus:border-copper-500 bg-white/80 text-xs sm:text-sm h-8 sm:h-10">
+            <SelectTrigger className="border-copper-300 focus:border-copper-500 bg-black-800 text-xs sm:text-sm h-8 sm:h-10">
               <SelectValue placeholder="Best Time" />
             </SelectTrigger>
             <SelectContent>
@@ -166,7 +166,7 @@ export function QuickFilters({
               updateFilter("mainAccord", value === "all" ? "" : value)
             }
           >
-            <SelectTrigger className="border-copper-300 focus:border-copper-500 bg-white/80 text-xs sm:text-sm h-8 sm:h-10">
+            <SelectTrigger className="border-copper-300 focus:border-copper-500 bg-black-800 text-xs sm:text-sm h-8 sm:h-10">
               <SelectValue placeholder="Scent Type" />
             </SelectTrigger>
             <SelectContent>

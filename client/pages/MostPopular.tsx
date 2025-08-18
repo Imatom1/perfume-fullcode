@@ -231,7 +231,7 @@ export default function MostPopular() {
           {popularPerfumes.map((perfume, index) => (
             <div key={perfume.id} className="relative">
               {/* Rank Badge */}
-              <div className="absolute top-2 left-2 z-10 flex items-center gap-1 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1 shadow-sm">
+              <div className="absolute top-2 left-2 z-10 flex items-center gap-1 bg-black-800 backdrop-blur-sm rounded-full px-2 py-1 shadow-sm">
                 {getRankIcon(index)}
                 <span className="text-sm font-bold text-gold-800">
                   #{index + 1}

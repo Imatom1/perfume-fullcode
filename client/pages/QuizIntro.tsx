@@ -40,7 +40,7 @@ export default function QuizIntro() {
         </div>
 
         {/* What You'll Get */}
-        <Card className="bg-white/80 border border-gold-200 shadow-sm mb-4">
+        <Card className="bg-black-800 border border-gold-200 shadow-sm mb-4">
           <CardContent className="p-4">
             <h3 className="text-sm font-semibold text-gray-800 mb-3 flex items-center gap-2">
               <Target className="w-4 h-4 text-gold-600" />
@@ -85,7 +85,7 @@ export default function QuizIntro() {
         </Card>
 
         {/* Quick Facts */}
-        <Card className="bg-white/80 border border-gold-200 shadow-sm mb-6">
+        <Card className="bg-black-800 border border-gold-200 shadow-sm mb-6">
           <CardContent className="p-4">
             <div className="grid grid-cols-3 gap-3 text-center">
               <div className="space-y-1">

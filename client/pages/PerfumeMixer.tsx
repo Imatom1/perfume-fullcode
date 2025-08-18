@@ -468,7 +468,7 @@ export default function PerfumeMixer() {
                     ingredients.map((ingredient) => (
                       <Card
                         key={ingredient.id}
-                        className="border-gold-200 bg-white/80"
+                        className="border-gold-200 bg-black-800"
                       >
                         <CardContent className="p-1.5">
                           <div className="space-y-1">
@@ -674,7 +674,7 @@ export default function PerfumeMixer() {
                       placeholder="Search fragrances..."
                       value={filters.search}
                       onChange={(e) => updateFilter("search", e.target.value)}
-                      className="pl-7 text-xs h-7 border-gold-300 focus:border-gold-500 bg-white/90"
+                      className="pl-7 text-xs h-7 border-gold-300 focus:border-gold-500 bg-black-800"
                     />
                   </div>
 
@@ -683,7 +683,7 @@ export default function PerfumeMixer() {
                     <DropdownMenuTrigger asChild>
                       <Button
                         variant="outline"
-                        className="w-full justify-between text-xs h-7 border-gold-300 bg-white/90 hover:bg-gold-50"
+                        className="w-full justify-between text-xs h-7 border-gold-300 bg-black-800 hover:bg-gold-50"
                       >
                         <span className="flex items-center gap-1">
                           <Filter className="w-3 h-3" />
