@@ -135,8 +135,8 @@ export default function Compare() {
 
       {/* Compact Header */}
       <div
-        className="bg-gradient-to-r from-gold-100 via-gold-200 to-gold-300 py-2 relative overflow-hidden
-      before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
+        className="bg-gradient-to-r from-black-900 via-black-800 to-black-700 py-2 relative overflow-hidden border-b border-gold-500
+      before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-gold-500/10 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-7xl mx-auto px-2 sm:px-3 relative z-10">
           <div className="flex items-center justify-between">
