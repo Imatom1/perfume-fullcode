@@ -169,7 +169,7 @@ export function ComparisonTable({
                   variant="outline"
                   size="sm"
                   onClick={() => onRemove(perfume.id)}
-                  className="border-red-300 text-red-600 hover:bg-red-50 text-xs"
+                  className="border-red-300 text-red-600 hover:bg-red-800 text-xs"
                 >
                   <X className="w-3 h-3" />
                 </Button>

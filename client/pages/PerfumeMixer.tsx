@@ -445,7 +445,7 @@ export default function PerfumeMixer() {
                       variant="outline"
                       size="sm"
                       onClick={clearMixer}
-                      className="border-red-300 text-red-600 hover:bg-red-50 text-xs h-5 sm:h-6 px-1 sm:px-2"
+                      className="border-red-300 text-red-600 hover:bg-red-800 text-xs h-5 sm:h-6 px-1 sm:px-2"
                     >
                       <Trash2 className="w-2.5 h-2.5 sm:w-3 sm:h-3 sm:mr-1" />
                       <span className="hidden sm:inline">Clear</span>
@@ -491,7 +491,7 @@ export default function PerfumeMixer() {
                                   onClick={() =>
                                     removeIngredient(ingredient.id)
                                   }
-                                  className="border-red-300 text-red-600 hover:bg-red-50 h-5 w-5 p-0"
+                                  className="border-red-300 text-red-600 hover:bg-red-800 h-5 w-5 p-0"
                                 >
                                   <X className="w-3 h-3" />
                                 </Button>
