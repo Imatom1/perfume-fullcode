@@ -273,7 +273,7 @@ export function PerfumeQuiz({
               variant="ghost"
               size="sm"
               onClick={onClose}
-              className="text-gray-600 hover:text-gray-800"
+              className="text-gold-300 hover:text-gold-300"
             >
               <X className="w-5 h-5" />
             </Button>
@@ -282,7 +282,7 @@ export function PerfumeQuiz({
           {!showResults && (
             <div className="mt-4">
               <Progress value={progress} className="h-2 bg-gold-200" />
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm text-gold-300 mt-2">
                 Question {currentQuestion + 1} of {quizQuestions.length}
               </p>
             </div>
@@ -293,7 +293,7 @@ export function PerfumeQuiz({
           {!showResults ? (
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                <h3 className="text-lg font-semibold text-gold-300 mb-4">
                   {quizQuestions[currentQuestion].question}
                 </h3>
 
@@ -307,7 +307,7 @@ export function PerfumeQuiz({
                     >
                       <div>
                         <div className="font-semibold">{option.text}</div>
-                        <div className="text-sm text-gray-600 mt-1">
+                        <div className="text-sm text-gold-300 mt-1">
                           {option.traits.join(", ")}
                         </div>
                       </div>
@@ -320,10 +320,10 @@ export function PerfumeQuiz({
             <div className="space-y-6">
               <div className="text-center">
                 <Sparkles className="w-12 h-12 text-gold-600 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                <h3 className="text-lg font-semibold text-gold-300 mb-2">
                   Based on your answers, here are your perfect matches:
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gold-300">
                   These fragrances align with your personality and preferences
                 </p>
               </div>
@@ -354,7 +354,7 @@ export function PerfumeQuiz({
                           <p className="text-sm font-semibold text-gold-700">
                             {perfume.brand}
                           </p>
-                          <p className="text-xs text-gray-600 mb-2">
+                          <p className="text-xs text-gold-300 mb-2">
                             Inspired by {perfume.originalBrand}
                           </p>
 
@@ -370,7 +370,7 @@ export function PerfumeQuiz({
                             ))}
                           </div>
 
-                          <p className="text-sm text-gray-700">
+                          <p className="text-sm text-gold-400">
                             <span className="font-semibold">Profile:</span>{" "}
                             {perfume.fragranceProfile}
                           </p>
@@ -380,7 +380,7 @@ export function PerfumeQuiz({
                           <div className="text-lg font-bold text-gold-800">
                             ${perfume.sizes[0].price}
                           </div>
-                          <div className="text-xs text-gray-600">
+                          <div className="text-xs text-gold-300">
                             from {perfume.sizes[0].size}
                           </div>
                         </div>

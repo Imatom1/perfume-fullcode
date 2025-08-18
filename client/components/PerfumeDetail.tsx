@@ -61,7 +61,7 @@ export function PerfumeDetail({
         <div className="p-2 sm:p-3 relative z-10 overflow-y-auto flex-1">
           {/* Header */}
           <div className="mb-2">
-            <h2 className="text-base sm:text-lg font-bold text-gray-800 mb-1 pr-6">
+            <h2 className="text-base sm:text-lg font-bold text-gold-300 mb-1 pr-6">
               {perfume.name}
             </h2>
             <div className="flex items-center justify-between gap-2">
@@ -85,7 +85,7 @@ export function PerfumeDetail({
           {/* Description */}
           {perfume.description && (
             <div className="p-2 bg-gold-50 rounded border border-gold-200 mb-2">
-              <p className="text-xs text-gray-700 italic">
+              <p className="text-xs text-gold-400 italic">
                 {perfume.description}
               </p>
             </div>
@@ -93,7 +93,7 @@ export function PerfumeDetail({
 
           {/* Main Accords */}
           <div className="mb-2">
-            <h3 className="text-sm font-semibold text-gray-800 mb-1">
+            <h3 className="text-sm font-semibold text-gold-300 mb-1">
               Main Accords
             </h3>
             <div className="flex flex-wrap gap-1">
@@ -113,26 +113,26 @@ export function PerfumeDetail({
           <div className="grid grid-cols-1 gap-1 mb-2">
             <div className="flex items-center gap-1">
               <Clock className="w-3 h-3 text-gold-500 flex-shrink-0" />
-              <span className="text-xs font-medium text-gray-700">Time:</span>
-              <span className="text-xs text-gray-600 truncate">
+              <span className="text-xs font-medium text-gold-400">Time:</span>
+              <span className="text-xs text-gold-300 truncate">
                 {perfume.bestTime}
               </span>
             </div>
             <div className="flex items-center gap-1">
               <Star className="w-3 h-3 text-gold-500 flex-shrink-0" />
-              <span className="text-xs font-medium text-gray-700">
+              <span className="text-xs font-medium text-gold-400">
                 Seasons:
               </span>
-              <span className="text-xs text-gray-600 truncate">
+              <span className="text-xs text-gold-300 truncate">
                 {perfume.mainSeasons.join(", ")}
               </span>
             </div>
             <div className="flex items-center gap-1">
               <Droplets className="w-3 h-3 text-gold-500 flex-shrink-0" />
-              <span className="text-xs font-medium text-gray-700">
+              <span className="text-xs font-medium text-gold-400">
                 Sillage:
               </span>
-              <span className="text-xs text-gray-600 truncate">
+              <span className="text-xs text-gold-300 truncate">
                 {perfume.sillage}
               </span>
             </div>
@@ -141,8 +141,8 @@ export function PerfumeDetail({
           {/* Notes Pyramid - Compact */}
           <div className="grid grid-cols-3 gap-1 mb-2">
             <div className="text-center">
-              <h4 className="text-xs font-semibold text-gray-800 mb-1">Top</h4>
-              <div className="text-xs text-gray-600">
+              <h4 className="text-xs font-semibold text-gold-300 mb-1">Top</h4>
+              <div className="text-xs text-gold-300">
                 {perfume.topNotes.map((note) => (
                   <p key={note} className="truncate">
                     {note}
@@ -152,10 +152,10 @@ export function PerfumeDetail({
             </div>
 
             <div className="text-center">
-              <h4 className="text-xs font-semibold text-gray-800 mb-1">
+              <h4 className="text-xs font-semibold text-gold-300 mb-1">
                 Middle
               </h4>
-              <div className="text-xs text-gray-600">
+              <div className="text-xs text-gold-300">
                 {perfume.middleNotes.map((note) => (
                   <p key={note} className="truncate">
                     {note}
@@ -165,8 +165,8 @@ export function PerfumeDetail({
             </div>
 
             <div className="text-center">
-              <h4 className="text-xs font-semibold text-gray-800 mb-1">Base</h4>
-              <div className="text-xs text-gray-600">
+              <h4 className="text-xs font-semibold text-gold-300 mb-1">Base</h4>
+              <div className="text-xs text-gold-300">
                 {perfume.baseNotes.map((note) => (
                   <p key={note} className="truncate">
                     {note}
@@ -178,7 +178,7 @@ export function PerfumeDetail({
 
           {/* Sizes and Pricing Display - Compact */}
           <div className="space-y-2">
-            <h3 className="text-sm font-semibold text-gray-800">
+            <h3 className="text-sm font-semibold text-gold-300">
               Sizes & Prices
             </h3>
             <div className="grid grid-cols-3 gap-1">
@@ -188,7 +188,7 @@ export function PerfumeDetail({
                   className="border-gold-200 bg-gold-50"
                 >
                   <CardContent className="p-1 text-center">
-                    <div className="text-xs font-semibold text-gray-800">
+                    <div className="text-xs font-semibold text-gold-300">
                       {size.size}
                     </div>
                     <div className="text-sm font-bold text-gold-700">

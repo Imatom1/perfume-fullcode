@@ -74,7 +74,7 @@ export function PerfumeFilters({
       <CardContent className="space-y-4">
         {/* Search */}
         <div className="space-y-2">
-          <Label htmlFor="search" className="text-sm font-medium text-gray-700">
+          <Label htmlFor="search" className="text-sm font-medium text-gold-400">
             Search
           </Label>
           <div className="relative">
@@ -91,7 +91,7 @@ export function PerfumeFilters({
 
         {/* Brand */}
         <div className="space-y-2">
-          <Label className="text-sm font-medium text-gray-700">Brand</Label>
+          <Label className="text-sm font-medium text-gold-400">Brand</Label>
           <Select
             value={filters.brand || "all"}
             onValueChange={(value) =>
@@ -114,7 +114,7 @@ export function PerfumeFilters({
 
         {/* Gender */}
         <div className="space-y-2">
-          <Label className="text-sm font-medium text-gray-700">Gender</Label>
+          <Label className="text-sm font-medium text-gold-400">Gender</Label>
           <Select
             value={filters.gender || "all"}
             onValueChange={(value) =>
@@ -137,7 +137,7 @@ export function PerfumeFilters({
 
         {/* Fragrance Profile */}
         <div className="space-y-2">
-          <Label className="text-sm font-medium text-gray-700">
+          <Label className="text-sm font-medium text-gold-400">
             Fragrance Profile
           </Label>
           <Select
@@ -162,7 +162,7 @@ export function PerfumeFilters({
 
         {/* Season */}
         <div className="space-y-2">
-          <Label className="text-sm font-medium text-gray-700">Season</Label>
+          <Label className="text-sm font-medium text-gold-400">Season</Label>
           <Select
             value={filters.season || "all"}
             onValueChange={(value) =>
@@ -185,7 +185,7 @@ export function PerfumeFilters({
 
         {/* Best Time */}
         <div className="space-y-2">
-          <Label className="text-sm font-medium text-gray-700">Best Time</Label>
+          <Label className="text-sm font-medium text-gold-400">Best Time</Label>
           <Select
             value={filters.bestTime || "all"}
             onValueChange={(value) =>
@@ -208,7 +208,7 @@ export function PerfumeFilters({
 
         {/* Price Range */}
         <div className="space-y-2">
-          <Label className="text-sm font-medium text-gray-700">
+          <Label className="text-sm font-medium text-gold-400">
             Price Range
           </Label>
           <div className="grid grid-cols-2 gap-2">

@@ -122,7 +122,7 @@ export function PerfumeCard({
             >
               {perfume.brand}
             </p>
-            <p className="text-xs font-semibold text-gray-800 mt-1 truncate">
+            <p className="text-xs font-semibold text-gold-300 mt-1 truncate">
               Inspired by {perfume.originalBrand}
             </p>
           </div>
@@ -149,14 +149,14 @@ export function PerfumeCard({
 
       <CardContent className="pt-0 relative z-10 p-3 sm:p-6">
         <div className="space-y-2 sm:space-y-3">
-          <div className="text-xs sm:text-sm text-gray-800">
+          <div className="text-xs sm:text-sm text-gold-300">
             <span className={`font-bold ${colors.profileText}`}>Profile:</span>{" "}
             <span className="font-semibold text-gray-900">
               {perfume.fragranceProfile}
             </span>
           </div>
 
-          <div className="text-xs sm:text-sm text-gray-800">
+          <div className="text-xs sm:text-sm text-gold-300">
             <span className={`font-bold ${colors.profileText}`}>
               Top Notes:
             </span>

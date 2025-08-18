@@ -460,7 +460,7 @@ export default function PerfumeMixer() {
                   {ingredients.length === 0 ? (
                     <div className="text-center py-4">
                       <Beaker className="w-8 h-8 text-gold-400 mx-auto mb-1" />
-                      <p className="text-xs text-gray-600">
+                      <p className="text-xs text-gold-300">
                         Start by adding perfumes to your mix
                       </p>
                     </div>
@@ -509,7 +509,7 @@ export default function PerfumeMixer() {
                             />
 
                             {/* Key attributes */}
-                            <div className="flex items-center justify-between text-xs text-gray-600">
+                            <div className="flex items-center justify-between text-xs text-gold-300">
                               <span className="flex items-center gap-1">
                                 <Droplets className="w-3 h-3" />
                                 {ingredient.perfume.sillage}
@@ -548,7 +548,7 @@ export default function PerfumeMixer() {
                       </CardHeader>
                       <CardContent className="p-1.5 space-y-1">
                         <div>
-                          <p className="text-xs font-medium text-gray-700 mb-0.5">
+                          <p className="text-xs font-medium text-gold-400 mb-0.5">
                             Main Accords:
                           </p>
                           <div className="flex flex-wrap gap-0.5">
@@ -563,7 +563,7 @@ export default function PerfumeMixer() {
                           </div>
                         </div>
                         <div>
-                          <p className="text-xs font-medium text-gray-700 mb-0.5">
+                          <p className="text-xs font-medium text-gold-400 mb-0.5">
                             Best Seasons:
                           </p>
                           <div className="flex flex-wrap gap-0.5">
@@ -580,10 +580,10 @@ export default function PerfumeMixer() {
                         </div>
                         <div className="flex items-center gap-1.5">
                           <Droplets className="w-3 h-3 text-gold-500" />
-                          <span className="text-xs font-medium text-gray-700">
+                          <span className="text-xs font-medium text-gold-400">
                             Sillage:
                           </span>
-                          <span className="text-xs text-gray-600">
+                          <span className="text-xs text-gold-300">
                             {resultProfile.sillage}
                           </span>
                         </div>
@@ -599,7 +599,7 @@ export default function PerfumeMixer() {
                         <p className="text-xs font-medium text-gold-800 mb-1">
                           Your Blend Request:
                         </p>
-                        <div className="bg-gray-50 border border-gray-200 rounded p-2 text-xs text-gray-700 font-mono whitespace-pre-line">
+                        <div className="bg-gray-50 border border-gray-200 rounded p-2 text-xs text-gold-400 font-mono whitespace-pre-line">
                           {`Blend: ${ingredients.map((ing) => `${ing.perfume.name} ${roundPercentage(ing.percentage)}%`).join(", ")}`}
                         </div>
                       </div>
@@ -852,7 +852,7 @@ export default function PerfumeMixer() {
                 {!canAddMore ? (
                   <div className="text-center py-8">
                     <Crown className="w-12 h-12 text-gold-400 mx-auto mb-2" />
-                    <p className="text-sm text-gray-600 font-semibold">
+                    <p className="text-sm text-gold-300 font-semibold">
                       Maximum 3 fragrances reached
                     </p>
                     <p className="text-xs text-gray-500 mt-1">
@@ -862,7 +862,7 @@ export default function PerfumeMixer() {
                 ) : filteredAndSortedPerfumes.length === 0 ? (
                   <div className="text-center py-8">
                     <Crown className="w-12 h-12 text-gold-400 mx-auto mb-2" />
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gold-300">
                       {hasActiveFilters
                         ? "No fragrances match your filters"
                         : "All fragrances are in your mix"}

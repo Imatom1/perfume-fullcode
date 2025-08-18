@@ -25,10 +25,10 @@ export function ComparisonCards({
     return (
       <div className="space-y-6">
         <div className="text-center">
-          <h2 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">
+          <h2 className="text-lg sm:text-xl font-bold text-gold-300 mb-2">
             Fragrance Comparison
           </h2>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gold-300">
             Add more fragrances to start comparing
           </p>
         </div>
@@ -36,7 +36,7 @@ export function ComparisonCards({
         <Card className="bg-gradient-to-br from-gold-100 via-gold-200 to-gold-300 border-2 border-gold-400 shadow-xl">
           <CardContent className="p-6">
             <div className="text-center">
-              <h3 className="text-lg font-bold text-gray-800 mb-2">
+              <h3 className="text-lg font-bold text-gold-300 mb-2">
                 {perfume.name}
               </h3>
               <p className="text-sm text-gold-700 mb-4">
@@ -126,7 +126,7 @@ export function ComparisonCards({
           >
             {perfume.brand}
           </p>
-          <p className="text-xs font-semibold text-gray-700 hidden sm:block">
+          <p className="text-xs font-semibold text-gold-400 hidden sm:block">
             Inspired by {perfume.originalBrand}
           </p>
           <Badge
@@ -266,7 +266,7 @@ export function ComparisonCards({
       {/* Single Comparison Card */}
       <Card className="bg-gradient-to-br from-gold-50 via-black-50 to-gold-100 border-2 border-gold-400 shadow-xl relative overflow-hidden -mt-2">
         <CardHeader className="text-center pb-1 sm:pb-2 relative">
-          <CardTitle className="text-sm sm:text-xl font-bold text-gray-800 flex items-center justify-center gap-1 sm:gap-2 flex-wrap">
+          <CardTitle className="text-sm sm:text-xl font-bold text-gold-300 flex items-center justify-center gap-1 sm:gap-2 flex-wrap">
             Fragrance Comparison Chart
           </CardTitle>
         </CardHeader>
@@ -289,7 +289,7 @@ export function ComparisonCards({
                       {/* Perfume Column */}
                       <div className="space-y-1 text-center min-h-0 flex flex-col justify-start">
                         {section.title && (
-                          <h4 className="font-bold text-xs text-gray-800 mb-1">
+                          <h4 className="font-bold text-xs text-gold-300 mb-1">
                             {section.title}
                           </h4>
                         )}
@@ -325,7 +325,7 @@ export function ComparisonCards({
                   <Button
                     variant="outline"
                     onClick={() => onViewDetails(perfume)}
-                    className="w-full border-gray-400 bg-black-800 text-gray-800 hover:bg-gray-100 font-semibold text-xs h-8"
+                    className="w-full border-gray-400 bg-black-800 text-gold-300 hover:bg-gray-100 font-semibold text-xs h-8"
                   >
                     <Eye className="w-3 h-3 mr-1" />
                     <span className="hidden sm:inline">Details</span>

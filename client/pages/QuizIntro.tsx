@@ -30,7 +30,7 @@ export default function QuizIntro() {
             </div>
             <h1 className="text-2xl font-bold text-gray-900">Fragrance Quiz</h1>
           </div>
-          <p className="text-sm text-gray-600 mb-3">
+          <p className="text-sm text-gold-300 mb-3">
             Find your perfect scent in under 3 minutes
           </p>
           <p className="text-xs text-gray-500 leading-relaxed">
@@ -42,7 +42,7 @@ export default function QuizIntro() {
         {/* What You'll Get */}
         <Card className="bg-black-800 border border-gold-200 shadow-sm mb-4">
           <CardContent className="p-4">
-            <h3 className="text-sm font-semibold text-gray-800 mb-3 flex items-center gap-2">
+            <h3 className="text-sm font-semibold text-gold-300 mb-3 flex items-center gap-2">
               <Target className="w-4 h-4 text-gold-600" />
               What You'll Get:
             </h3>
@@ -50,7 +50,7 @@ export default function QuizIntro() {
               <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-sm font-medium text-gray-700 block">
+                  <span className="text-sm font-medium text-gold-400 block">
                     6 Personalized Matches
                   </span>
                   <span className="text-xs text-gray-500">
@@ -61,7 +61,7 @@ export default function QuizIntro() {
               <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-sm font-medium text-gray-700 block">
+                  <span className="text-sm font-medium text-gold-400 block">
                     Detailed Explanations
                   </span>
                   <span className="text-xs text-gray-500">
@@ -72,7 +72,7 @@ export default function QuizIntro() {
               <div className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-sm font-medium text-gray-700 block">
+                  <span className="text-sm font-medium text-gold-400 block">
                     Occasion Recommendations
                   </span>
                   <span className="text-xs text-gray-500">
@@ -90,21 +90,21 @@ export default function QuizIntro() {
             <div className="grid grid-cols-3 gap-3 text-center">
               <div className="space-y-1">
                 <Clock className="w-5 h-5 text-gold-600 mx-auto" />
-                <div className="text-xs font-medium text-gray-700">
+                <div className="text-xs font-medium text-gold-400">
                   3 Minutes
                 </div>
                 <div className="text-xs text-gray-500">Quick & Easy</div>
               </div>
               <div className="space-y-1">
                 <Brain className="w-5 h-5 text-gold-600 mx-auto" />
-                <div className="text-xs font-medium text-gray-700">
+                <div className="text-xs font-medium text-gold-400">
                   AI Powered
                 </div>
                 <div className="text-xs text-gray-500">Smart Analysis</div>
               </div>
               <div className="space-y-1">
                 <Users className="w-5 h-5 text-gold-600 mx-auto" />
-                <div className="text-xs font-medium text-gray-700">
+                <div className="text-xs font-medium text-gold-400">
                   1K+ Users
                 </div>
                 <div className="text-xs text-gray-500">Trusted Results</div>
@@ -135,11 +135,11 @@ export default function QuizIntro() {
 
         {/* Enhanced How It Works */}
         <div className="mt-6 text-center">
-          <p className="text-xs font-medium text-gray-600 mb-3">
+          <p className="text-xs font-medium text-gold-300 mb-3">
             How it works:
           </p>
           <div className="space-y-2">
-            <div className="flex justify-center items-center gap-2 text-xs text-gray-600">
+            <div className="flex justify-center items-center gap-2 text-xs text-gold-300">
               <span className="bg-gold-100 px-3 py-1.5 rounded-full font-medium">
                 1. Answer 6 Questions
               </span>
@@ -152,7 +152,7 @@ export default function QuizIntro() {
               <span className="text-gold-400 text-xs">↓</span>
             </div>
             <div className="flex justify-center">
-              <span className="bg-gold-200 px-3 py-1.5 rounded-full font-medium text-xs text-gray-700">
+              <span className="bg-gold-200 px-3 py-1.5 rounded-full font-medium text-xs text-gold-400">
                 3. Get Perfect Matches
               </span>
             </div>

@@ -429,7 +429,7 @@ export default function Quiz() {
               </h1>
               <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-gold-700" />
             </div>
-            <p className="text-sm text-gray-700 max-w-2xl mx-auto px-2">
+            <p className="text-sm text-gold-400 max-w-2xl mx-auto px-2">
               Discover your perfect fragrance match through our
               personality-based questionnaire
             </p>
@@ -487,7 +487,7 @@ export default function Quiz() {
                   value={progress}
                   className="h-2 sm:h-3 bg-gold-200"
                 />
-                <p className="text-xs sm:text-sm text-gray-600 mt-2">
+                <p className="text-xs sm:text-sm text-gold-300 mt-2">
                   {Math.round(progress)}% complete
                 </p>
               </div>
@@ -498,7 +498,7 @@ export default function Quiz() {
             {!showResults ? (
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-6 text-center">
+                  <h3 className="text-lg sm:text-xl font-semibold text-gold-300 mb-6 text-center">
                     {quizQuestions[currentQuestion].question}
                   </h3>
 
@@ -522,7 +522,7 @@ export default function Quiz() {
                               <div className="font-semibold text-sm sm:text-base leading-tight whitespace-normal break-words">
                                 {option.text}
                               </div>
-                              <div className="text-xs text-gray-600 leading-relaxed whitespace-normal break-words px-1">
+                              <div className="text-xs text-gold-300 leading-relaxed whitespace-normal break-words px-1">
                                 {option.traits.slice(0, 3).join(", ")}
                               </div>
                             </div>
@@ -537,10 +537,10 @@ export default function Quiz() {
               <div className="space-y-4 h-full flex flex-col">
                 <div className="text-center flex-shrink-0">
                   <Sparkles className="w-8 h-8 sm:w-12 sm:h-12 text-gold-600 mx-auto mb-3" />
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2">
+                  <h3 className="text-base sm:text-lg font-semibold text-gold-300 mb-2">
                     Your Perfect Fragrance Matches
                   </h3>
-                  <p className="text-sm text-gray-600 max-w-2xl mx-auto px-2">
+                  <p className="text-sm text-gold-300 max-w-2xl mx-auto px-2">
                     Based on your personality and preferences, here are the
                     fragrances that align perfectly with who you are
                   </p>
@@ -570,7 +570,7 @@ export default function Quiz() {
                               <p className="text-xs sm:text-sm font-semibold text-gold-700">
                                 {perfume.brand}
                               </p>
-                              <p className="text-xs text-gray-600 mb-2 sm:mb-3">
+                              <p className="text-xs text-gold-300 mb-2 sm:mb-3">
                                 Inspired by {perfume.originalBrand}
                               </p>
                             </div>
@@ -588,11 +588,11 @@ export default function Quiz() {
                             </div>
 
                             <div className="space-y-1 sm:space-y-2">
-                              <p className="text-xs sm:text-sm text-gray-700">
+                              <p className="text-xs sm:text-sm text-gold-400">
                                 <span className="font-semibold">Profile:</span>{" "}
                                 {perfume.fragranceProfile}
                               </p>
-                              <p className="text-xs sm:text-sm text-gray-700">
+                              <p className="text-xs sm:text-sm text-gold-400">
                                 <span className="font-semibold">Best for:</span>{" "}
                                 {perfume.bestTime}
                               </p>
@@ -603,7 +603,7 @@ export default function Quiz() {
                                 <div className="text-sm sm:text-base md:text-lg font-bold text-gold-800">
                                   ${perfume.sizes[0].price}
                                 </div>
-                                <div className="text-xs text-gray-600">
+                                <div className="text-xs text-gold-300">
                                   from {perfume.sizes[0].size}
                                 </div>
                               </div>

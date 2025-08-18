@@ -40,7 +40,7 @@ export function StatsSection() {
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
             Designer Quality at Unbeatable Prices
           </h2>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto font-medium">
+          <p className="text-lg text-gold-400 max-w-3xl mx-auto font-medium">
             Experience luxury fragrances inspired by the world's most
             prestigious brands without the premium price tag
           </p>
@@ -58,13 +58,13 @@ export function StatsSection() {
                   <div className="flex justify-center mb-4">
                     <IconComponent className="w-8 h-8 text-gold-600" />
                   </div>
-                  <div className="text-3xl font-bold text-gray-800 mb-2">
+                  <div className="text-3xl font-bold text-gold-300 mb-2">
                     {stat.value}
                   </div>
                   <div className="text-lg font-semibold text-gold-700 mb-1">
                     {stat.label}
                   </div>
-                  <div className="text-sm text-gray-600">
+                  <div className="text-sm text-gold-300">
                     {stat.description}
                   </div>
                 </CardContent>

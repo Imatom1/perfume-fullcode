@@ -33,7 +33,7 @@ export default function CompareIntro() {
               </h1>
               <Crown className="w-12 h-12 text-gold-700" />
             </div>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gold-400 max-w-3xl mx-auto">
               Compare up to 3 fragrances side-by-side to find your perfect match
             </p>
           </div>
@@ -60,10 +60,10 @@ export default function CompareIntro() {
                     1
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">
+                    <h3 className="font-semibold text-gold-300">
                       Select Fragrances
                     </h3>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gold-300">
                       Choose up to 3 fragrances from our collection to compare
                     </p>
                   </div>
@@ -73,10 +73,10 @@ export default function CompareIntro() {
                     2
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">
+                    <h3 className="font-semibold text-gold-300">
                       View Detailed Table
                     </h3>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gold-300">
                       See side-by-side comparison of notes, profiles, and
                       characteristics
                     </p>
@@ -87,10 +87,10 @@ export default function CompareIntro() {
                     3
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">
+                    <h3 className="font-semibold text-gold-300">
                       Make Your Choice
                     </h3>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gold-300">
                       Analyze differences and find the perfect fragrance for you
                     </p>
                   </div>
@@ -115,7 +115,7 @@ export default function CompareIntro() {
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-gold-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700 font-medium">{feature}</span>
+                    <span className="text-gold-400 font-medium">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -134,7 +134,7 @@ export default function CompareIntro() {
                 <h2 className="text-3xl font-bold text-gray-900">
                   Ready to Compare Fragrances?
                 </h2>
-                <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+                <p className="text-lg text-gold-400 max-w-2xl mx-auto">
                   Start comparing fragrances side-by-side to make the perfect
                   choice
                 </p>

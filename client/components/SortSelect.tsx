@@ -21,7 +21,7 @@ export function SortSelect({ value, onChange }: SortSelectProps) {
       <ArrowUpDown className="w-3 h-3 sm:w-4 sm:h-4 text-gold-600" />
       <Label
         htmlFor="sort"
-        className="text-xs sm:text-sm font-medium text-gray-700 whitespace-nowrap hidden sm:inline"
+        className="text-xs sm:text-sm font-medium text-gold-400 whitespace-nowrap hidden sm:inline"
       >
         Sort:
       </Label>

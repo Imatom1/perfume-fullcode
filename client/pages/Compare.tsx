@@ -178,10 +178,10 @@ export default function Compare() {
               <div className="flex items-center justify-center min-h-[300px] lg:min-h-[400px]">
                 <div className="text-center px-4">
                   <Scale className="w-12 h-12 text-gold-400 mx-auto mb-4" />
-                  <h2 className="text-base sm:text-lg font-semibold text-gray-800 mb-2">
+                  <h2 className="text-base sm:text-lg font-semibold text-gold-300 mb-2">
                     Start Comparing
                   </h2>
-                  <p className="text-sm text-gray-600 mb-4 max-w-xs mx-auto">
+                  <p className="text-sm text-gold-300 mb-4 max-w-xs mx-auto">
                     Select up to 3 fragrances to compare their profiles and
                     characteristics.
                   </p>
@@ -320,10 +320,10 @@ export default function Compare() {
                       <div className="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-3">
                         <Scale className="w-6 h-6 text-gold-600" />
                       </div>
-                      <p className="text-sm font-semibold text-gray-800 mb-2">
+                      <p className="text-sm font-semibold text-gold-300 mb-2">
                         Comparison Complete!
                       </p>
-                      <p className="text-xs text-gray-600 mb-1">
+                      <p className="text-xs text-gold-300 mb-1">
                         You're comparing 3 fragrances - the maximum allowed.
                       </p>
                       <p className="text-xs text-gray-500">
@@ -344,7 +344,7 @@ export default function Compare() {
                   <div className="max-h-[500px] lg:max-h-[1000px] overflow-y-auto space-y-1">
                     {availablePerfumes.length === 0 ? (
                       <div className="text-center py-4">
-                        <p className="text-xs text-gray-600">
+                        <p className="text-xs text-gold-300">
                           {searchQuery ? "No matches" : "All selected"}
                         </p>
                       </div>

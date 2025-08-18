@@ -22,13 +22,13 @@ export function RecommendationBanner({
       <CardContent className="p-6">
         <div className="flex items-center gap-2 mb-4">
           <Sparkles className="w-6 h-6 text-gold-600" />
-          <h3 className="text-xl font-bold text-gray-800">
+          <h3 className="text-xl font-bold text-gold-300">
             Staff Picks & Bestsellers
           </h3>
           <Star className="w-5 h-5 text-gold-500" />
         </div>
 
-        <p className="text-gray-700 mb-6">
+        <p className="text-gold-400 mb-6">
           Discover our most sought-after fragrances, carefully selected by our
           perfume experts
         </p>
@@ -42,7 +42,7 @@ export function RecommendationBanner({
             >
               <div className="flex items-start justify-between mb-2">
                 <div className="flex-1">
-                  <h4 className="font-semibold text-gray-800 group-hover:text-gold-700 transition-colors text-sm">
+                  <h4 className="font-semibold text-gold-300 group-hover:text-gold-700 transition-colors text-sm">
                     {perfume.name}
                   </h4>
                   <p className="text-xs text-gold-600 font-medium">
@@ -53,7 +53,7 @@ export function RecommendationBanner({
               </div>
 
               <div className="flex items-center justify-between">
-                <span className="text-xs text-gray-600">
+                <span className="text-xs text-gold-300">
                   {perfume.fragranceProfile}
                 </span>
                 <div className="text-right">
