@@ -130,7 +130,7 @@ export default function Compare() {
     });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gold-50 via-black-50 to-gold-100">
+    <div className="min-h-screen bg-gradient-to-br from-black-950 via-black-900 to-black-800">
       <Header />
 
       {/* Compact Header */}
