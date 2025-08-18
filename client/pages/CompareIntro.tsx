@@ -16,22 +16,22 @@ export default function CompareIntro() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-copper-50 via-cream-50 to-copper-100">
+    <div className="min-h-screen bg-gradient-to-br from-gold-50 via-black-50 to-gold-100">
       <Header />
 
       {/* Page Header */}
       <div
-        className="bg-gradient-to-r from-copper-100 via-copper-200 to-copper-300 py-16 relative overflow-hidden
+        className="bg-gradient-to-r from-gold-100 via-gold-200 to-gold-300 py-16 relative overflow-hidden
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
-              <Scale className="w-12 h-12 text-copper-700" />
-              <h1 className="text-5xl font-bold bg-gradient-to-r from-copper-800 via-copper-700 to-copper-600 bg-clip-text text-transparent">
+              <Scale className="w-12 h-12 text-gold-700" />
+              <h1 className="text-5xl font-bold bg-gradient-to-r from-gold-800 via-gold-700 to-gold-600 bg-clip-text text-transparent">
                 Compare Fragrances
               </h1>
-              <Crown className="w-12 h-12 text-copper-700" />
+              <Crown className="w-12 h-12 text-gold-700" />
             </div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Compare up to 3 fragrances side-by-side to find your perfect match
@@ -44,19 +44,19 @@ export default function CompareIntro() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Column - How It Works */}
           <Card
-            className="bg-gradient-to-br from-copper-50 via-copper-100 to-copper-200 border-2 border-copper-400 shadow-xl relative overflow-hidden
+            className="bg-gradient-to-br from-gold-50 via-gold-100 to-gold-200 border-2 border-gold-400 shadow-xl relative overflow-hidden
           before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
           >
             <CardHeader className="relative z-10">
               <CardTitle className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-                <Crown className="w-6 h-6 text-copper-700" />
+                <Crown className="w-6 h-6 text-gold-700" />
                 How It Works
               </CardTitle>
             </CardHeader>
             <CardContent className="relative z-10 space-y-6">
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="bg-copper-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                  <div className="bg-gold-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
                     1
                   </div>
                   <div>
@@ -69,7 +69,7 @@ export default function CompareIntro() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="bg-copper-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                  <div className="bg-gold-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
                     2
                   </div>
                   <div>
@@ -83,7 +83,7 @@ export default function CompareIntro() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="bg-copper-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                  <div className="bg-gold-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
                     3
                   </div>
                   <div>
@@ -101,12 +101,12 @@ export default function CompareIntro() {
 
           {/* Right Column - Features */}
           <Card
-            className="bg-gradient-to-br from-copper-50 via-copper-100 to-copper-200 border-2 border-copper-400 shadow-xl relative overflow-hidden
+            className="bg-gradient-to-br from-gold-50 via-gold-100 to-gold-200 border-2 border-gold-400 shadow-xl relative overflow-hidden
           before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
           >
             <CardHeader className="relative z-10">
               <CardTitle className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-                <Scale className="w-6 h-6 text-copper-700" />
+                <Scale className="w-6 h-6 text-gold-700" />
                 Comparison Features
               </CardTitle>
             </CardHeader>
@@ -114,7 +114,7 @@ export default function CompareIntro() {
               <div className="space-y-3">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-copper-600 mt-0.5 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-gold-600 mt-0.5 flex-shrink-0" />
                     <span className="text-gray-700 font-medium">{feature}</span>
                   </div>
                 ))}
@@ -126,7 +126,7 @@ export default function CompareIntro() {
         {/* CTA Section */}
         <div className="text-center mt-12">
           <Card
-            className="bg-gradient-to-r from-copper-200 via-copper-300 to-copper-400 border-2 border-copper-500 shadow-xl relative overflow-hidden
+            className="bg-gradient-to-r from-gold-200 via-gold-300 to-gold-400 border-2 border-gold-500 shadow-xl relative overflow-hidden
           before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
           >
             <CardContent className="p-8 relative z-10">
@@ -141,7 +141,7 @@ export default function CompareIntro() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <Button
                     onClick={() => navigate("/compare")}
-                    className="bg-copper-600 hover:bg-copper-700 text-white font-bold text-lg px-8 py-4"
+                    className="bg-gold-600 hover:bg-gold-700 text-white font-bold text-lg px-8 py-4"
                   >
                     <Plus className="w-5 h-5 mr-2" />
                     Start Comparing
@@ -150,7 +150,7 @@ export default function CompareIntro() {
                   <Button
                     variant="outline"
                     onClick={() => navigate("/")}
-                    className="border-copper-600 text-copper-800 hover:bg-copper-100 font-semibold text-lg px-8 py-4"
+                    className="border-gold-600 text-gold-800 hover:bg-gold-100 font-semibold text-lg px-8 py-4"
                   >
                     Browse All Fragrances
                   </Button>

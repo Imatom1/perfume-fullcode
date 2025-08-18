@@ -130,12 +130,12 @@ export default function Compare() {
     });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-copper-50 via-cream-50 to-copper-100">
+    <div className="min-h-screen bg-gradient-to-br from-gold-50 via-black-50 to-gold-100">
       <Header />
 
       {/* Compact Header */}
       <div
-        className="bg-gradient-to-r from-copper-100 via-copper-200 to-copper-300 py-2 relative overflow-hidden
+        className="bg-gradient-to-r from-gold-100 via-gold-200 to-gold-300 py-2 relative overflow-hidden
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-7xl mx-auto px-2 sm:px-3 relative z-10">
@@ -145,13 +145,13 @@ export default function Compare() {
                 variant="outline"
                 size="sm"
                 onClick={() => navigate("/")}
-                className="border-copper-400 text-copper-800 hover:bg-copper-100 font-medium text-sm h-8 px-4"
+                className="border-gold-400 text-gold-800 hover:bg-gold-100 font-medium text-sm h-8 px-4"
               >
                 <ArrowLeft className="w-4 h-4 mr-1" />
                 Back to Main Page
               </Button>
-              <Scale className="w-4 h-4 text-copper-700" />
-              <h1 className="text-sm sm:text-base font-bold bg-gradient-to-r from-copper-800 via-copper-700 to-copper-600 bg-clip-text text-transparent">
+              <Scale className="w-4 h-4 text-gold-700" />
+              <h1 className="text-sm sm:text-base font-bold bg-gradient-to-r from-gold-800 via-gold-700 to-gold-600 bg-clip-text text-transparent">
                 Compare ({comparisonList.length}/3)
               </h1>
             </div>
@@ -160,7 +160,7 @@ export default function Compare() {
                 variant="outline"
                 size="sm"
                 onClick={clearComparison}
-                className="border-copper-400 text-copper-800 hover:bg-copper-100 font-medium text-xs h-6 px-2"
+                className="border-gold-400 text-gold-800 hover:bg-gold-100 font-medium text-xs h-6 px-2"
               >
                 Clear All
               </Button>
@@ -177,7 +177,7 @@ export default function Compare() {
             {comparisonList.length === 0 ? (
               <div className="flex items-center justify-center min-h-[300px] lg:min-h-[400px]">
                 <div className="text-center px-4">
-                  <Scale className="w-12 h-12 text-copper-400 mx-auto mb-4" />
+                  <Scale className="w-12 h-12 text-gold-400 mx-auto mb-4" />
                   <h2 className="text-base sm:text-lg font-semibold text-gray-800 mb-2">
                     Start Comparing
                   </h2>
@@ -201,15 +201,15 @@ export default function Compare() {
           {/* Perfume selection sidebar */}
           <div className="order-2 lg:w-[640px] flex-shrink-0">
             <Card
-              className="bg-gradient-to-br from-copper-100 via-copper-200 to-copper-300 border border-copper-400 shadow-lg relative overflow-hidden
+              className="bg-gradient-to-br from-gold-100 via-gold-200 to-gold-300 border border-gold-400 shadow-lg relative overflow-hidden
             before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
             >
               <CardHeader className="relative z-10 p-2 sm:p-3">
                 <CardTitle className="text-sm font-bold text-gray-900 flex items-center gap-2">
-                  <Plus className="w-4 h-4 text-copper-700" />
+                  <Plus className="w-4 h-4 text-gold-700" />
                   Add Fragrances
                   {comparisonList.length === 3 && (
-                    <span className="text-xs text-amber-600 font-medium">
+                    <span className="text-xs text-gold-600 font-medium">
                       (3/3 Selected)
                     </span>
                   )}
@@ -222,7 +222,7 @@ export default function Compare() {
                     placeholder="Search..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="pl-7 border-copper-300 focus:border-copper-500 bg-white/90 text-xs h-7"
+                    className="pl-7 border-gold-300 focus:border-gold-500 bg-white/90 text-xs h-7"
                   />
                 </div>
 
@@ -236,7 +236,7 @@ export default function Compare() {
                         setGenderFilter(value === "all" ? "" : value)
                       }
                     >
-                      <SelectTrigger className="border-copper-300 focus:border-copper-500 bg-white/90 text-xs h-7">
+                      <SelectTrigger className="border-gold-300 focus:border-gold-500 bg-white/90 text-xs h-7">
                         <SelectValue placeholder="Gender" />
                       </SelectTrigger>
                       <SelectContent>
@@ -254,7 +254,7 @@ export default function Compare() {
                         setSeasonFilter(value === "all" ? "" : value)
                       }
                     >
-                      <SelectTrigger className="border-copper-300 focus:border-copper-500 bg-white/90 text-xs h-7">
+                      <SelectTrigger className="border-gold-300 focus:border-gold-500 bg-white/90 text-xs h-7">
                         <SelectValue placeholder="Season" />
                       </SelectTrigger>
                       <SelectContent>
@@ -273,7 +273,7 @@ export default function Compare() {
                         setAccordFilter(value === "all" ? "" : value)
                       }
                     >
-                      <SelectTrigger className="border-copper-300 focus:border-copper-500 bg-white/90 text-xs h-7">
+                      <SelectTrigger className="border-gold-300 focus:border-gold-500 bg-white/90 text-xs h-7">
                         <SelectValue placeholder="Scent Type" />
                       </SelectTrigger>
                       <SelectContent>
@@ -304,7 +304,7 @@ export default function Compare() {
                         setSeasonFilter("");
                         setAccordFilter("");
                       }}
-                      className="w-full border-copper-400 text-copper-800 hover:bg-copper-100 text-xs h-6"
+                      className="w-full border-gold-400 text-gold-800 hover:bg-gold-100 text-xs h-6"
                     >
                       <X className="w-3 h-3 mr-1" />
                       Clear
@@ -317,8 +317,8 @@ export default function Compare() {
                 {comparisonList.length === 3 ? (
                   <div className="text-center py-6">
                     <div className="mb-4">
-                      <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                        <Scale className="w-6 h-6 text-amber-600" />
+                      <div className="w-12 h-12 bg-gold-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <Scale className="w-6 h-6 text-gold-600" />
                       </div>
                       <p className="text-sm font-semibold text-gray-800 mb-2">
                         Comparison Complete!
@@ -334,7 +334,7 @@ export default function Compare() {
                       variant="outline"
                       size="sm"
                       onClick={clearComparison}
-                      className="border-copper-400 text-copper-700 hover:bg-copper-50 text-xs"
+                      className="border-gold-400 text-gold-700 hover:bg-gold-50 text-xs"
                     >
                       <X className="w-3 h-3 mr-1" />
                       Start Over
