@@ -66,7 +66,7 @@ export function CompactPerfumeCard({
             </div>
             <Badge
               variant="secondary"
-              className={`${getGenderBadgeColor(perfume.gender)} text-xs font-bold shadow-sm flex-shrink-0`}
+              className={`${getGenderBadgeColor(perfume.gender)} text-xs font-extrabold shadow-lg flex-shrink-0 tracking-widest`}
             >
               {perfume.gender.charAt(0)}
             </Badge>
@@ -78,7 +78,7 @@ export function CompactPerfumeCard({
               <Badge
                 key={accord}
                 variant="outline"
-                className={`text-xs sm:text-sm ${colors.accordBorder} font-bold`}
+                className={`text-xs sm:text-sm ${colors.accordBorder} font-semibold tracking-wide shadow-sm`}
               >
                 {accord}
               </Badge>
@@ -91,7 +91,7 @@ export function CompactPerfumeCard({
               <Clock
                 className={`w-3 h-3 sm:w-4 sm:h-4 ${colors.iconColor} flex-shrink-0`}
               />
-              <span className="font-bold truncate">{perfume.bestTime}</span>
+              <span className="font-semibold truncate text-gold-200">{perfume.bestTime}</span>
             </div>
             <div className="flex items-center gap-1 truncate">
               <Droplets
