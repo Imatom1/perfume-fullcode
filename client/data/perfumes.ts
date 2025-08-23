@@ -1577,7 +1577,7 @@ export const perfumes: Perfume[] = [
   {
     id: "fahrenheit",
     name: "Fahrenheit",
-    brand: "Golden Aroma",
+    brand: "Fahrenheit Blaze",
     originalBrand: "Dior",
     gender: "Men",
     mainAccords: ["Woody", "Violet", "Leather", "Gasoline", "Unique", "Retro"],
@@ -1596,7 +1596,7 @@ export const perfumes: Perfume[] = [
   {
     id: "aventus",
     name: "Aventus",
-    brand: "Golden Aroma",
+    brand: "Noble Aventus",
     originalBrand: "Creed",
     gender: "Men",
     mainAccords: ["Fruity", "Fresh", "Smoky", "Pineapple", "Birch", "Iconic"],
@@ -1615,7 +1615,7 @@ export const perfumes: Perfume[] = [
   {
     id: "cool-water",
     name: "Cool Water",
-    brand: "Golden Aroma",
+    brand: "Cool Horizon",
     originalBrand: "Davidoff",
     gender: "Men",
     mainAccords: ["Fresh", "Aquatic", "Citrus", "Marine", "Clean", "Classic"],
@@ -1634,7 +1634,7 @@ export const perfumes: Perfume[] = [
   {
     id: "lacoste-white",
     name: "L.12.12 White",
-    brand: "Golden Aroma",
+    brand: "White Spirit",
     originalBrand: "Lacoste",
     gender: "Men",
     mainAccords: ["Fresh", "Clean", "Citrus", "Aromatic", "Sporty", "Light"],
