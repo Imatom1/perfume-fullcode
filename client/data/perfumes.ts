@@ -1679,7 +1679,7 @@ export const perfumes: Perfume[] = [
   {
     id: "mr-thompson",
     name: "Mr. Thompson",
-    brand: "Golden Aroma",
+    brand: "Gentleman's Legacy",
     originalBrand: "Penhaligon's",
     gender: "Men",
     mainAccords: [
@@ -1705,7 +1705,7 @@ export const perfumes: Perfume[] = [
   {
     id: "legend-montblanc",
     name: "Legend",
-    brand: "Golden Aroma",
+    brand: "Montblanc Legend",
     originalBrand: "Mont Blanc",
     gender: "Men",
     mainAccords: [
@@ -1731,7 +1731,7 @@ export const perfumes: Perfume[] = [
   {
     id: "horizon",
     name: "Horizon",
-    brand: "Golden Aroma",
+    brand: "Horizon Majesty",
     originalBrand: "Gissah",
     gender: "Men",
     mainAccords: ["Fresh", "Marine", "Citrus", "Blue", "Aquatic", "Limitless"],
@@ -1750,7 +1750,7 @@ export const perfumes: Perfume[] = [
   {
     id: "hugo-boss",
     name: "Boss",
-    brand: "Golden Aroma",
+    brand: "Boss Essence",
     originalBrand: "Hugo Boss",
     gender: "Men",
     mainAccords: ["Fresh", "Green", "Woody", "Apple", "Clean", "Professional"],
