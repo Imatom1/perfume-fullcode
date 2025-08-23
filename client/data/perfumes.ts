@@ -1513,7 +1513,7 @@ export const perfumes: Perfume[] = [
   {
     id: "sauvage-elixir",
     name: "Sauvage Elixir",
-    brand: "Golden Aroma",
+    brand: "Savage Elixir",
     originalBrand: "Dior",
     gender: "Men",
     mainAccords: ["Spicy", "Woody", "Amber", "Licorice", "Intense", "Powerful"],
@@ -1532,7 +1532,7 @@ export const perfumes: Perfume[] = [
   {
     id: "creed-silver-mountain",
     name: "Silver Mountain Water",
-    brand: "Golden Aroma",
+    brand: "Mountain Mist",
     originalBrand: "Creed",
     gender: "Men",
     mainAccords: [
@@ -1558,7 +1558,7 @@ export const perfumes: Perfume[] = [
   {
     id: "gucci-guilty-absolute",
     name: "Guilty Absolute",
-    brand: "Golden Aroma",
+    brand: "Guilty Absolute",
     originalBrand: "Gucci",
     gender: "Men",
     mainAccords: ["Woody", "Leather", "Patchouli", "Dry", "Dark", "Intense"],
