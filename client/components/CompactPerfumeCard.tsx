@@ -53,8 +53,11 @@ export function CompactPerfumeCard({
           {/* Header */}
           <div className="flex justify-between items-start gap-1 mb-1">
             <div className="flex-1 min-w-0">
+              <p className="text-xs text-gray-400 mb-1 break-words">
+                Inspired by
+              </p>
               <h4
-                className={`text-sm sm:text-base md:text-lg font-extrabold ${colors.titleColor} leading-tight tracking-wide break-words`}
+                className="text-sm sm:text-base md:text-lg font-extrabold text-gold-500 leading-tight tracking-wide break-words"
               >
                 {perfume.originalBrand} {perfume.name}
               </h4>
