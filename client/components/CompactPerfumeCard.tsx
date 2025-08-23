@@ -56,7 +56,7 @@ export function CompactPerfumeCard({
               <h4
                 className={`text-sm sm:text-base md:text-lg font-extrabold ${colors.titleColor} leading-tight truncate tracking-wide`}
               >
-                {perfume.name}
+                {perfume.originalBrand} {perfume.name}
               </h4>
               <p
                 className={`text-xs sm:text-sm font-semibold ${colors.brandText} truncate tracking-wider uppercase opacity-90`}
