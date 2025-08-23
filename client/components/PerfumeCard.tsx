@@ -115,7 +115,7 @@ export function PerfumeCard({
             <CardTitle
               className={`text-sm sm:text-base md:text-lg font-bold text-gold-300 ${colors.titleHover} transition-colors leading-tight truncate`}
             >
-              {perfume.name}
+              {perfume.originalBrand} {perfume.name}
             </CardTitle>
             <p
               className={`text-xs sm:text-sm font-bold ${colors.brandText} mt-1 truncate`}
