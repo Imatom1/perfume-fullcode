@@ -70,7 +70,7 @@ export function PerfumeDetail({
                   {perfume.brand}
                 </p>
                 <p className="text-xs text-gray-500">
-                  Inspired by {perfume.originalBrand}
+                  Inspired by {perfume.originalBrand} {perfume.name}
                 </p>
               </div>
               <Badge
