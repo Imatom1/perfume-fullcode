@@ -176,17 +176,17 @@ export function PerfumeCard({
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 text-xs">
             <div className="flex items-center gap-1 text-gold-300">
               <Clock className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
-              <span className="font-semibold truncate">{perfume.bestTime}</span>
+              <span className="font-semibold break-words">{perfume.bestTime}</span>
             </div>
             <div className="flex items-center gap-1 text-gold-300">
               <Droplets
                 className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`}
               />
-              <span className="font-semibold truncate">{perfume.sillage}</span>
+              <span className="font-semibold break-words">{perfume.sillage}</span>
             </div>
             <div className="flex items-center gap-1 text-gold-300 sm:col-span-2">
               <Star className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
-              <span className="font-semibold truncate">
+              <span className="font-semibold break-words">
                 {perfume.mainSeasons.join(", ")}
               </span>
             </div>
