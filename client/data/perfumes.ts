@@ -961,7 +961,7 @@ export const perfumes: Perfume[] = [
   {
     id: "eternity-ck",
     name: "Eternity",
-    brand: "Golden Aroma",
+    brand: "Timeless Essence",
     originalBrand: "Calvin Klein",
     gender: "Men",
     mainAccords: ["Fresh", "Aromatic", "Green", "Citrus", "Woody", "Classic"],
@@ -980,7 +980,7 @@ export const perfumes: Perfume[] = [
   {
     id: "chrome-extreme",
     name: "Chrome Extreme",
-    brand: "Golden Aroma",
+    brand: "Ocean Intensity",
     originalBrand: "Azzaro",
     gender: "Men",
     mainAccords: ["Fresh", "Citrus", "Aquatic", "Marine", "Clean", "Energetic"],
@@ -999,7 +999,7 @@ export const perfumes: Perfume[] = [
   {
     id: "aventus-absolu",
     name: "Aventus Absolu",
-    brand: "Golden Aroma",
+    brand: "Royal Absolu",
     originalBrand: "Creed",
     gender: "Men",
     mainAccords: ["Fruity", "Fresh", "Smoky", "Woody", "Citrus", "Pineapple"],
@@ -1018,7 +1018,7 @@ export const perfumes: Perfume[] = [
   {
     id: "acqua-di-gio",
     name: "Acqua di Gio",
-    brand: "Golden Aroma",
+    brand: "Aqua Legacy",
     originalBrand: "Giorgio Armani",
     gender: "Men",
     mainAccords: ["Fresh", "Aquatic", "Citrus", "Marine", "Light", "Airy"],
@@ -1037,7 +1037,7 @@ export const perfumes: Perfume[] = [
   {
     id: "ultra-male",
     name: "Ultra Male",
-    brand: "Golden Aroma",
+    brand: "Midnight Rebel",
     originalBrand: "Jean Paul Gaultier",
     gender: "Men",
     mainAccords: [
@@ -1063,7 +1063,7 @@ export const perfumes: Perfume[] = [
   {
     id: "invictus",
     name: "Invictus",
-    brand: "Golden Aroma",
+    brand: "Victor's Spirit",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: [
@@ -1089,7 +1089,7 @@ export const perfumes: Perfume[] = [
   {
     id: "invictus-victory-elixir",
     name: "Invictus Victory Elixir",
-    brand: "Golden Aroma",
+    brand: "Eternal Triumph",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: [
@@ -1115,7 +1115,7 @@ export const perfumes: Perfume[] = [
   {
     id: "eros-versace",
     name: "Eros",
-    brand: "Golden Aroma",
+    brand: "Flame of Eros",
     originalBrand: "Versace",
     gender: "Men",
     mainAccords: ["Fresh", "Minty", "Vanilla", "Woody", "Sweet", "Seductive"],
@@ -1134,7 +1134,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-xs",
     name: "Black XS",
-    brand: "Golden Aroma",
+    brand: "Dark Pulse",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: ["Sweet", "Woody", "Spicy", "Warm", "Amber", "Masculine"],
@@ -1153,7 +1153,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-xs-lexces",
     name: "Black XS L'Excès",
-    brand: "Golden Aroma",
+    brand: "Noir Excess",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: ["Intense", "Dark", "Woody", "Spicy", "Powerful", "Masculine"],
