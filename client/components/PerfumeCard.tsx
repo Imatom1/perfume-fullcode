@@ -113,16 +113,16 @@ export function PerfumeCard({
         <div className="flex justify-between items-start mb-2">
           <div className="flex-1 min-w-0">
             <CardTitle
-              className={`text-sm sm:text-base md:text-lg font-bold text-gold-300 ${colors.titleHover} transition-colors leading-tight truncate`}
+              className={`text-sm sm:text-base md:text-lg font-bold text-gold-300 ${colors.titleHover} transition-colors leading-tight break-words`}
             >
               {perfume.originalBrand} {perfume.name}
             </CardTitle>
             <p
-              className={`text-xs sm:text-sm font-bold ${colors.brandText} mt-1 truncate`}
+              className={`text-xs sm:text-sm font-bold ${colors.brandText} mt-1 break-words`}
             >
               {perfume.brand}
             </p>
-            <p className="text-xs font-semibold text-gold-300 mt-1 truncate">
+            <p className="text-xs font-semibold text-gold-300 mt-1 break-words">
               Inspired by {perfume.originalBrand}
             </p>
           </div>
