@@ -1404,7 +1404,7 @@ export const perfumes: Perfume[] = [
   {
     id: "stronger-with-you",
     name: "Stronger With You",
-    brand: "Golden Aroma",
+    brand: "Stronger Bond",
     originalBrand: "Emporio Armani",
     gender: "Men",
     mainAccords: ["Sweet", "Spicy", "Woody", "Vanilla", "Amber", "Addictive"],
@@ -1423,7 +1423,7 @@ export const perfumes: Perfume[] = [
   {
     id: "stronger-with-you-tobacco",
     name: "Stronger With You Tobacco",
-    brand: "Golden Aroma",
+    brand: "Tobacco Flame",
     originalBrand: "Emporio Armani",
     gender: "Men",
     mainAccords: ["Tobacco", "Sweet", "Spicy", "Woody", "Amber", "Intense"],
@@ -1442,7 +1442,7 @@ export const perfumes: Perfume[] = [
   {
     id: "sculpture",
     name: "Sculpture",
-    brand: "Golden Aroma",
+    brand: "Marble of Light",
     originalBrand: "Nikos Parfums",
     gender: "Men",
     mainAccords: [
@@ -1468,7 +1468,7 @@ export const perfumes: Perfume[] = [
   {
     id: "silver-scent",
     name: "Silver Scent",
-    brand: "Golden Aroma",
+    brand: "Silver Aura",
     originalBrand: "Jacques Bogart",
     gender: "Men",
     mainAccords: ["Fresh", "Citrus", "Aromatic", "Clean", "Light", "Energetic"],
@@ -1487,7 +1487,7 @@ export const perfumes: Perfume[] = [
   {
     id: "sauvage",
     name: "Sauvage",
-    brand: "Golden Aroma",
+    brand: "Desert Savage",
     originalBrand: "Dior",
     gender: "Men",
     mainAccords: [
