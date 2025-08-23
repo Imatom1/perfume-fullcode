@@ -1769,7 +1769,7 @@ export const perfumes: Perfume[] = [
   {
     id: "one-million",
     name: "One Million",
-    brand: "Golden Aroma",
+    brand: "Millionaire Gold",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: ["Sweet", "Spicy", "Woody", "Cinnamon", "Amber", "Seductive"],
@@ -1788,7 +1788,7 @@ export const perfumes: Perfume[] = [
   {
     id: "one-million-extra",
     name: "One Million Extra",
-    brand: "Golden Aroma",
+    brand: "Million Elixir",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: [
@@ -1814,7 +1814,7 @@ export const perfumes: Perfume[] = [
   {
     id: "one-million-gold-oud",
     name: "One Million Gold Oud",
-    brand: "Golden Aroma",
+    brand: "Golden Oud Million",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: ["Oud", "Golden", "Amber", "Spicy", "Luxurious", "Oriental"],
@@ -1833,7 +1833,7 @@ export const perfumes: Perfume[] = [
   {
     id: "one-million-lucky",
     name: "One Million Lucky",
-    brand: "Golden Aroma",
+    brand: "Million Lucky",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: [
@@ -1859,7 +1859,7 @@ export const perfumes: Perfume[] = [
   {
     id: "voyage-nautica",
     name: "Voyage",
-    brand: "Golden Aroma",
+    brand: "Ocean Voyage",
     originalBrand: "Nautica",
     gender: "Men",
     mainAccords: ["Fresh", "Marine", "Apple", "Green", "Aquatic", "Clean"],
