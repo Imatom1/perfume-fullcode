@@ -1653,7 +1653,7 @@ export const perfumes: Perfume[] = [
   {
     id: "le-male",
     name: "Le Male",
-    brand: "Golden Aroma",
+    brand: "Le Masculine",
     originalBrand: "Jean Paul Gaultier",
     gender: "Men",
     mainAccords: [
