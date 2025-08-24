@@ -35,18 +35,18 @@ export function PerfumeCard({
   const getGenderColors = (gender: string) => {
     switch (gender.toLowerCase()) {
       case "women":
-        // Better Gold theme - using amber for more authentic gold
+        // Better Gold theme - using dark backgrounds with gold accents
         return {
-          cardBg: "bg-gradient-to-br from-black-700 via-gold-300 to-gold-400",
+          cardBg: "bg-gradient-to-br from-black-700 via-black-600 to-black-500",
           cardBorder: "border-gold-500 hover:border-gold-600",
           cardShadow: "shadow-gold-300/60",
-          titleHover: "group-hover:text-gold-900",
-          brandText: "text-gold-900",
-          profileText: "text-gold-950",
-          badge: "bg-gold-300 text-gold-950 border-gold-500",
-          accordBorder: "border-gold-400 text-gold-900 bg-black-800",
-          iconColor: "text-gold-800",
-          compareButton: "border-gold-500 text-gold-900 hover:bg-black-700",
+          titleHover: "group-hover:text-gold-300",
+          brandText: "text-gold-300",
+          profileText: "text-gold-400",
+          badge: "bg-gold-600 text-white border-gold-500",
+          accordBorder: "border-gold-400 text-gold-300 bg-black-800",
+          iconColor: "text-gold-300",
+          compareButton: "border-gold-500 text-gold-300 hover:bg-black-700 hover:text-white",
           shimmer: "before:via-white/15",
         };
       case "men":
@@ -65,37 +65,37 @@ export function PerfumeCard({
           shimmer: "before:via-white/15",
         };
       case "unisex":
-        // More saturated copper theme
+        // Dark theme with gold accents
         return {
           cardBg:
-            "bg-gradient-to-br from-black-700 via-gold-300 to-gold-400",
+            "bg-gradient-to-br from-black-700 via-black-600 to-black-500",
           cardBorder: "border-gold-500 hover:border-gold-600",
           cardShadow: "shadow-gold-300/60",
-          titleHover: "group-hover:text-gold-900",
-          brandText: "text-gold-900",
-          profileText: "text-gold-950",
-          badge: "bg-gold-300 text-gold-950 border-gold-500",
-          accordBorder: "border-gold-400 text-gold-900 bg-black-800",
-          iconColor: "text-gold-800",
+          titleHover: "group-hover:text-gold-300",
+          brandText: "text-gold-300",
+          profileText: "text-gold-400",
+          badge: "bg-gold-600 text-white border-gold-500",
+          accordBorder: "border-gold-400 text-gold-300 bg-black-800",
+          iconColor: "text-gold-300",
           compareButton:
-            "border-gold-500 text-gold-900 hover:bg-black-700",
+            "border-gold-500 text-gold-300 hover:bg-black-700 hover:text-white",
           shimmer: "before:via-white/15",
         };
       default:
-        // Fallback to saturated copper
+        // Fallback to dark theme with gold accents
         return {
           cardBg:
-            "bg-gradient-to-br from-black-700 via-gold-300 to-gold-400",
+            "bg-gradient-to-br from-black-700 via-black-600 to-black-500",
           cardBorder: "border-gold-500 hover:border-gold-600",
           cardShadow: "shadow-gold-300/60",
-          titleHover: "group-hover:text-gold-900",
-          brandText: "text-gold-900",
-          profileText: "text-gold-950",
-          badge: "bg-gold-300 text-gold-950 border-gold-500",
-          accordBorder: "border-gold-400 text-gold-900 bg-black-800",
-          iconColor: "text-gold-800",
+          titleHover: "group-hover:text-gold-300",
+          brandText: "text-gold-300",
+          profileText: "text-gold-400",
+          badge: "bg-gold-600 text-white border-gold-500",
+          accordBorder: "border-gold-400 text-gold-300 bg-black-800",
+          iconColor: "text-gold-300",
           compareButton:
-            "border-gold-500 text-gold-900 hover:bg-black-700",
+            "border-gold-500 text-gold-300 hover:bg-black-700 hover:text-white",
           shimmer: "before:via-white/15",
         };
     }
