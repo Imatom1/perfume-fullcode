@@ -2495,7 +2495,7 @@ export const perfumes: Perfume[] = [
   {
     id: "chanel-chance",
     name: "Chance",
-    brand: "Golden Aroma",
+    brand: "Chance Charm",
     originalBrand: "Chanel",
     gender: "Women",
     mainAccords: [
@@ -2521,7 +2521,7 @@ export const perfumes: Perfume[] = [
   {
     id: "gucci-bloom",
     name: "Gucci Bloom",
-    brand: "Golden Aroma",
+    brand: "Blooming Essence",
     originalBrand: "Gucci",
     gender: "Women",
     mainAccords: [
@@ -2546,7 +2546,7 @@ export const perfumes: Perfume[] = [
   {
     id: "gucci-rush",
     name: "Gucci Rush",
-    brand: "Golden Aroma",
+    brand: "Rush Desire",
     originalBrand: "Gucci",
     gender: "Women",
     mainAccords: [
@@ -2572,7 +2572,7 @@ export const perfumes: Perfume[] = [
   {
     id: "victorias-secret",
     name: "Victoria's Secret",
-    brand: "Golden Aroma",
+    brand: "Secret Muse",
     originalBrand: "Victoria's Secret",
     gender: "Women",
     mainAccords: [
@@ -2598,7 +2598,7 @@ export const perfumes: Perfume[] = [
   {
     id: "flora-gorgeous-jasmine",
     name: "Flora Gorgeous Jasmine",
-    brand: "Golden Aroma",
+    brand: "Flora Jasmine",
     originalBrand: "Gucci",
     gender: "Women",
     mainAccords: [
@@ -2623,7 +2623,7 @@ export const perfumes: Perfume[] = [
   {
     id: "flora-gucci",
     name: "Flora by Gucci",
-    brand: "Golden Aroma",
+    brand: "Flora Classic",
     originalBrand: "Gucci",
     gender: "Women",
     mainAccords: [
@@ -2649,7 +2649,7 @@ export const perfumes: Perfume[] = [
   {
     id: "fantasy",
     name: "Fantasy",
-    brand: "Golden Aroma",
+    brand: "Fantasy Dream",
     originalBrand: "Britney Spears",
     gender: "Women",
     mainAccords: ["Fruity", "Gourmand", "Lychee", "Quince", "Cupcake", "Sweet"],
@@ -2668,7 +2668,7 @@ export const perfumes: Perfume[] = [
   {
     id: "vip-carolina",
     name: "V.I.P",
-    brand: "Golden Aroma",
+    brand: "VIP Allure",
     originalBrand: "Carolina Herrera",
     gender: "Women",
     mainAccords: [
