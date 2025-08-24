@@ -522,7 +522,7 @@ export const perfumes: Perfume[] = [
   {
     id: "kalemat",
     name: "Kalemat",
-    brand: "Golden Aroma",
+    brand: "Kalemat Essence",
     originalBrand: "Arabian Oud",
     gender: "Unisex",
     mainAccords: ["Oud", "Floral", "Fruity", "Sweet", "Amber", "Sophisticated"],
@@ -541,7 +541,7 @@ export const perfumes: Perfume[] = [
   {
     id: "zanbak",
     name: "Zanbak",
-    brand: "Golden Aroma",
+    brand: "White Lily",
     originalBrand: "Flowers",
     gender: "Women",
     mainAccords: ["Lily", "Fresh", "Green", "Floral", "Clean", "Natural"],
@@ -560,7 +560,7 @@ export const perfumes: Perfume[] = [
   {
     id: "sultan-al-outor",
     name: "Sultan Al Outor",
-    brand: "Golden Aroma",
+    brand: "Sultan's Aura",
     originalBrand: "Sea of Perfume",
     gender: "Unisex",
     mainAccords: ["Oud", "Regal", "Amber", "Spicy", "Royal", "Majestic"],
@@ -579,7 +579,7 @@ export const perfumes: Perfume[] = [
   {
     id: "white-musk-arabian",
     name: "White Musk",
-    brand: "Golden Aroma",
+    brand: "Pure Musk",
     originalBrand: "Arabian Oud",
     gender: "Unisex",
     mainAccords: ["Musk", "Clean", "Soft", "Powdery", "Intimate", "Pure"],
@@ -598,7 +598,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-musk",
     name: "Black Musk",
-    brand: "Golden Aroma",
+    brand: "Noir Musk",
     originalBrand: "Sea of Perfume",
     gender: "Unisex",
     mainAccords: ["Musk", "Dark", "Animalic", "Sensual", "Mysterious", "Deep"],
@@ -617,7 +617,7 @@ export const perfumes: Perfume[] = [
   {
     id: "musk-al-harameen",
     name: "Musk Al-Harameen",
-    brand: "Golden Aroma",
+    brand: "Sacred Musk",
     originalBrand: "Oriental",
     gender: "Unisex",
     mainAccords: ["Musk", "Sacred", "Rose", "Amber", "Holy", "Traditional"],
@@ -636,7 +636,7 @@ export const perfumes: Perfume[] = [
   {
     id: "musk-pomegranate",
     name: "Musk Pomegranate",
-    brand: "Golden Aroma",
+    brand: "Ruby Musk",
     originalBrand: "Oriental",
     gender: "Unisex",
     mainAccords: ["Musk", "Fruity", "Sweet", "Fresh", "Pomegranate", "Juicy"],
@@ -655,7 +655,7 @@ export const perfumes: Perfume[] = [
   {
     id: "musk-al-tahara",
     name: "Musk Al Tahara",
-    brand: "Golden Aroma",
+    brand: "Tahara Musk",
     originalBrand: "Sea of Perfume",
     gender: "Unisex",
     mainAccords: ["Musk", "Pure", "Clean", "White", "Sacred", "Pristine"],
@@ -674,7 +674,7 @@ export const perfumes: Perfume[] = [
   {
     id: "strawberry-musk",
     name: "Strawberry Musk",
-    brand: "Golden Aroma",
+    brand: "Sweet Strawberry Musk",
     originalBrand: "Oriental",
     gender: "Women",
     mainAccords: [
@@ -700,7 +700,7 @@ export const perfumes: Perfume[] = [
   {
     id: "madawe-gold",
     name: "Madawe Gold",
-    brand: "Golden Aroma",
+    brand: "Golden Madawe",
     originalBrand: "Arabian Oud",
     gender: "Unisex",
     mainAccords: ["Oud", "Golden", "Luxurious", "Amber", "Precious", "Rich"],
