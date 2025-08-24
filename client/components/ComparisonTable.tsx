@@ -33,7 +33,7 @@ export function ComparisonTable({
       getValue: (p: Perfume) => (
         <div className="space-y-1">
           <div className="font-bold text-gold-300">{p.name}</div>
-          <div className="text-sm font-semibold text-gold-700">{p.brand}</div>
+          <div className="text-sm font-semibold text-gold-300">{p.brand}</div>
           <div className="text-xs font-medium text-gold-400">
             Inspired by {p.originalBrand}
           </div>
@@ -43,7 +43,7 @@ export function ComparisonTable({
     {
       label: "Gender",
       getValue: (p: Perfume) => (
-        <Badge className="bg-black-700 text-gold-900 border-gold-400 font-semibold">
+        <Badge className="bg-black-700 text-gold-200 border-gold-400 font-semibold">
           {p.gender}
         </Badge>
       ),
@@ -84,7 +84,7 @@ export function ComparisonTable({
             <Badge
               key={accord}
               variant="outline"
-              className="text-xs border-gold-300 text-gold-800 bg-black-800 font-medium"
+              className="text-xs border-gold-300 text-gold-300 bg-black-800 font-medium"
             >
               {accord}
             </Badge>
@@ -153,14 +153,14 @@ export function ComparisonTable({
                 <h4 className="font-bold text-gold-300 text-sm mb-1">
                   {perfume.name}
                 </h4>
-                <p className="text-xs text-gold-700">{perfume.brand}</p>
+                <p className="text-xs text-gold-300">{perfume.brand}</p>
               </div>
               <div className="flex gap-2 justify-center">
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={() => onViewDetails(perfume)}
-                  className="border-gold-400 text-gold-800 hover:bg-black-800 font-semibold text-xs"
+                  className="border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white font-semibold text-xs"
                 >
                   <Eye className="w-3 h-3 mr-1" />
                   View

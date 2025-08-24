@@ -405,7 +405,7 @@ export default function PerfumeMixer() {
 
       {/* Page Header */}
       <div
-        className="bg-gradient-to-r from-black-800 via-black-700 to-gold-300 py-2 relative overflow-hidden flex-shrink-0
+        className="bg-gradient-to-r from-black-800 via-black-700 to-black-600 py-2 relative overflow-hidden flex-shrink-0
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-7xl mx-auto px-2 sm:px-3 relative z-10">
@@ -420,7 +420,7 @@ export default function PerfumeMixer() {
               variant="outline"
               size="sm"
               onClick={() => navigate("/")}
-              className="border-gold-400 text-gold-800 hover:bg-black-800 text-xs h-6 px-2"
+              className="border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white text-xs h-6 px-2"
             >
               <ArrowLeft className="w-3 h-3 mr-1" />
               Back
@@ -482,7 +482,7 @@ export default function PerfumeMixer() {
                                 </p>
                               </div>
                               <div className="flex items-center gap-1">
-                                <span className="text-xs font-bold text-gold-800 min-w-[2.5rem] text-right">
+                                <span className="text-xs font-bold text-gold-300 min-w-[2.5rem] text-right">
                                   {roundPercentage(ingredient.percentage)}%
                                 </span>
                                 <Button
@@ -525,7 +525,7 @@ export default function PerfumeMixer() {
                                   <Badge
                                     key={accord}
                                     variant="outline"
-                                    className="text-xs border-black-700 text-gold-700 px-1 py-0"
+                                    className="text-xs border-black-700 text-gold-300 px-1 py-0"
                                   >
                                     {accord}
                                   </Badge>
@@ -571,7 +571,7 @@ export default function PerfumeMixer() {
                               <Badge
                                 key={season}
                                 variant="outline"
-                                className="border-gold-300 text-gold-800 text-xs px-1 py-0"
+                                className="border-gold-300 text-gold-300 text-xs px-1 py-0"
                               >
                                 {season}
                               </Badge>
@@ -596,7 +596,7 @@ export default function PerfumeMixer() {
                     <div className="mt-1.5 space-y-1">
                       {/* Blend Request Text */}
                       <div className="bg-black-800 border border-gold-300 rounded-lg p-2">
-                        <p className="text-xs font-medium text-gold-800 mb-1">
+                        <p className="text-xs font-medium text-gold-300 mb-1">
                           Your Blend Request:
                         </p>
                         <div className="bg-black-700 border border-gray-200 rounded p-2 text-xs text-gold-400 font-mono whitespace-pre-line">
@@ -626,7 +626,7 @@ export default function PerfumeMixer() {
                             });
                         }}
                         variant="outline"
-                        className="w-full border-gold-400 text-gold-800 hover:bg-black-800 font-semibold text-xs h-7"
+                        className="w-full border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white font-semibold text-xs h-7"
                       >
                         <Copy className="w-3 h-3 mr-1" />
                         Copy Blend Request
@@ -634,10 +634,10 @@ export default function PerfumeMixer() {
 
                       {/* Instructions */}
                       <div className="bg-black-800 border border-black-700 rounded-lg p-2 mt-2">
-                        <p className="text-sm font-medium text-gold-800 text-center mb-1">
+                        <p className="text-sm font-medium text-gold-300 text-center mb-1">
                           📋 How to Use Your Blend Request
                         </p>
-                        <p className="text-xs text-gold-700 text-center">
+                        <p className="text-xs text-gold-300 text-center">
                           Copy the text above, then paste it into our perfume
                           request form. Our team will review your custom blend
                           and get back to you with availability and pricing.
@@ -653,7 +653,7 @@ export default function PerfumeMixer() {
 
           {/* Right Panel - Perfume Browser */}
           <div className="flex flex-col min-h-[500px]">
-            <Card className="bg-gradient-to-br from-black-800 via-black-700 to-gold-300 border border-gold-400 shadow-lg flex-1 flex flex-col">
+            <Card className="bg-gradient-to-br from-black-800 via-black-700 to-black-600 border border-gold-400 shadow-lg flex-1 flex flex-col">
               <CardHeader className="p-2 sm:p-3 flex-shrink-0">
                 <CardTitle className="text-sm font-bold text-gold-300 flex items-center justify-between">
                   <span className="flex items-center gap-2">
@@ -821,7 +821,7 @@ export default function PerfumeMixer() {
                               <Button
                                 variant="outline"
                                 onClick={resetFilters}
-                                className="w-full border-gold-400 text-gold-800 hover:bg-black-800 text-sm h-8"
+                                className="w-full border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white text-sm h-8"
                               >
                                 <X className="w-4 h-4 mr-2" />
                                 Clear All Filters
@@ -839,7 +839,7 @@ export default function PerfumeMixer() {
                       variant="outline"
                       size="sm"
                       onClick={resetFilters}
-                      className="w-full border-gold-400 text-gold-800 hover:bg-black-800 text-xs h-6"
+                      className="w-full border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white text-xs h-6"
                     >
                       <X className="w-3 h-3 mr-1" />
                       Clear Filters

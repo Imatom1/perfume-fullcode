@@ -417,7 +417,7 @@ export default function Quiz() {
 
       {/* Page Header */}
       <div
-        className="bg-gradient-to-r from-black-800 via-black-700 to-gold-300 py-3 sm:py-4 relative overflow-hidden flex-shrink-0
+        className="bg-gradient-to-r from-black-800 via-black-700 to-black-600 py-3 sm:py-4 relative overflow-hidden flex-shrink-0
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -429,7 +429,7 @@ export default function Quiz() {
               </h1>
               <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-gold-700" />
             </div>
-            <p className="text-sm text-gold-400 max-w-2xl mx-auto px-2">
+            <p className="text-sm text-gold-600 sm:text-gold-400 max-w-2xl mx-auto px-2">
               Discover your perfect fragrance match through our
               personality-based questionnaire
             </p>
@@ -455,7 +455,7 @@ export default function Quiz() {
                     variant="outline"
                     size="sm"
                     onClick={restartQuiz}
-                    className="border-gold-400 text-gold-800 hover:bg-black-800 flex-1 sm:flex-none"
+                    className="border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white flex-1 sm:flex-none"
                   >
                     <RefreshCw className="w-4 h-4 mr-1" />
                     <span className="hidden sm:inline">Restart Quiz</span>
@@ -467,7 +467,7 @@ export default function Quiz() {
                     variant="outline"
                     size="sm"
                     onClick={goToPreviousQuestion}
-                    className="border-gold-400 text-gold-800 hover:bg-black-800 flex-1 sm:flex-none"
+                    className="border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white flex-1 sm:flex-none"
                   >
                     <ArrowLeft className="w-4 h-4 mr-1" />
                     <span className="hidden sm:inline">
@@ -509,7 +509,7 @@ export default function Quiz() {
                         <Button
                           key={option.id}
                           variant="outline"
-                          className="aspect-square p-3 sm:p-4 border-gold-300 text-gold-800 hover:bg-black-800 hover:border-gold-500 font-medium flex flex-col items-center justify-center text-center w-full h-auto"
+                          className="aspect-square p-3 sm:p-4 border-gold-300 text-gold-300 hover:bg-black-800 hover:text-white hover:border-gold-500 font-medium flex flex-col items-center justify-center text-center w-full h-auto"
                           onClick={() => handleAnswer(option)}
                           style={{
                             minHeight: "calc(min(40vw, 180px))",
@@ -551,7 +551,7 @@ export default function Quiz() {
                     {recommendations.map((perfume, index) => (
                       <Card
                         key={perfume.id}
-                        className="border-gold-300 bg-gradient-to-br from-black-800 to-black-800 hover:from-black-800 hover:to-gold-150 transition-all cursor-pointer group"
+                        className="border-gold-300 bg-gradient-to-br from-black-800 to-black-800 hover:from-black-700 hover:to-black-600 transition-all cursor-pointer group"
                         onClick={() => handlePerfumeClick(perfume)}
                       >
                         <CardContent className="p-3 sm:p-4 md:p-5">
@@ -564,10 +564,10 @@ export default function Quiz() {
                             </div>
 
                             <div>
-                              <h4 className="font-bold text-gold-300 text-sm sm:text-base md:text-lg group-hover:text-gold-800 transition-colors">
+                              <h4 className="font-bold text-gold-300 text-sm sm:text-base md:text-lg group-hover:text-gold-300 transition-colors">
                                 {perfume.name}
                               </h4>
-                              <p className="text-xs sm:text-sm font-semibold text-gold-700">
+                              <p className="text-xs sm:text-sm font-semibold text-gold-300">
                                 {perfume.brand}
                               </p>
                               <p className="text-xs text-gold-300 mb-2 sm:mb-3">
@@ -580,7 +580,7 @@ export default function Quiz() {
                                 <Badge
                                   key={accord}
                                   variant="outline"
-                                  className="text-xs border-gold-300 text-gold-800 bg-black-800"
+                                  className="text-xs border-gold-300 text-gold-300 bg-black-800"
                                 >
                                   {accord}
                                 </Badge>
@@ -600,7 +600,7 @@ export default function Quiz() {
 
                             <div className="flex justify-between items-center pt-2 border-t border-black-700">
                               <div className="text-right">
-                                <div className="text-sm sm:text-base md:text-lg font-bold text-gold-800">
+                                <div className="text-sm sm:text-base md:text-lg font-bold text-gold-300">
                                   ${perfume.sizes[0].price}
                                 </div>
                                 <div className="text-xs text-gold-300">
@@ -619,7 +619,7 @@ export default function Quiz() {
                   <Button
                     variant="outline"
                     onClick={resetQuiz}
-                    className="flex-1 border-gold-400 text-gold-800 hover:bg-black-800 font-semibold py-2 sm:py-3 text-sm sm:text-base"
+                    className="flex-1 border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white font-semibold py-2 sm:py-3 text-sm sm:text-base"
                   >
                     Take Quiz Again
                   </Button>

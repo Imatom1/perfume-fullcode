@@ -39,7 +39,7 @@ export function ComparisonCards({
               <h3 className="text-lg font-bold text-gold-300 mb-2">
                 {perfume.name}
               </h3>
-              <p className="text-sm text-gold-700 mb-4">
+              <p className="text-sm text-gold-300 mb-4">
                 Add another fragrance to begin your comparison
               </p>
               <Button
@@ -76,31 +76,31 @@ export function ComparisonCards({
     switch (gender.toLowerCase()) {
       case "women":
         return {
-          titleText: "text-black-700",
-          brandText: "text-gold-800",
-          accordBorder: "border-gold-400 text-black-700 bg-black-800",
-          iconColor: "text-gold-700",
+          titleText: "text-gold-300",
+          brandText: "text-gold-300",
+          accordBorder: "border-gold-400 text-gold-300 bg-black-800",
+          iconColor: "text-gold-300",
         };
       case "men":
         return {
-          titleText: "text-slate-900",
-          brandText: "text-slate-800",
-          accordBorder: "border-slate-500 text-slate-900 bg-black-800",
-          iconColor: "text-slate-700",
+          titleText: "text-slate-300",
+          brandText: "text-slate-300",
+          accordBorder: "border-slate-500 text-slate-300 bg-black-800",
+          iconColor: "text-slate-300",
         };
       case "unisex":
         return {
-          titleText: "text-black-700",
-          brandText: "text-gold-800",
-          accordBorder: "border-gold-400 text-black-700 bg-black-800",
-          iconColor: "text-gold-700",
+          titleText: "text-gold-300",
+          brandText: "text-gold-300",
+          accordBorder: "border-gold-400 text-gold-300 bg-black-800",
+          iconColor: "text-gold-300",
         };
       default:
         return {
-          titleText: "text-black-700",
-          brandText: "text-gold-800",
-          accordBorder: "border-gold-400 text-black-700 bg-black-800",
-          iconColor: "text-gold-700",
+          titleText: "text-gold-300",
+          brandText: "text-gold-300",
+          accordBorder: "border-gold-400 text-gold-300 bg-black-800",
+          iconColor: "text-gold-300",
         };
     }
   };

@@ -52,7 +52,7 @@ export function PerfumeDetail({
         {/* Close button */}
         <button
           onClick={() => onOpenChange(false)}
-          className="absolute top-2 sm:top-3 right-2 sm:right-3 z-50 p-1 sm:p-2 rounded-full bg-black-700 hover:bg-gold-300 text-gold-800 transition-colors shadow-md border border-gold-300"
+          className="absolute top-2 sm:top-3 right-2 sm:right-3 z-50 p-1 sm:p-2 rounded-full bg-black-700 hover:bg-gold-300 text-gold-300 hover:text-black-900 transition-colors shadow-md border border-gold-300"
           type="button"
         >
           <X className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -75,7 +75,7 @@ export function PerfumeDetail({
               </div>
               <Badge
                 variant="secondary"
-                className="bg-black-800 text-gold-800 border-gold-300 text-xs"
+                className="bg-black-800 text-gold-300 border-gold-300 text-xs"
               >
                 {perfume.gender}
               </Badge>
@@ -101,7 +101,7 @@ export function PerfumeDetail({
                 <Badge
                   key={accord}
                   variant="outline"
-                  className="border-black-700 text-gold-700 bg-black-800 text-xs"
+                  className="border-black-700 text-gold-300 bg-black-800 text-xs"
                 >
                   {accord}
                 </Badge>
@@ -191,7 +191,7 @@ export function PerfumeDetail({
                     <div className="text-xs font-semibold text-gold-300">
                       {size.size}
                     </div>
-                    <div className="text-sm font-bold text-gold-700">
+                    <div className="text-sm font-bold text-gold-300">
                       ${size.price}
                     </div>
                   </CardContent>
@@ -217,7 +217,7 @@ export function PerfumeDetail({
               <div className="p-2 bg-gradient-to-br from-black-800 to-black-800 rounded border border-black-700">
                 <Button
                   variant="outline"
-                  className="w-full border-gold-300 text-gold-700 hover:bg-black-800 text-sm h-8"
+                  className="w-full border-gold-300 text-gold-300 hover:bg-black-800 hover:text-white text-sm h-8"
                   onClick={() => onCompare?.(perfume)}
                   disabled={isInComparison}
                 >

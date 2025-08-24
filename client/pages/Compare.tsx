@@ -160,7 +160,7 @@ export default function Compare() {
                 variant="outline"
                 size="sm"
                 onClick={clearComparison}
-                className="border-gold-400 text-gold-800 hover:bg-black-800 font-medium text-xs h-6 px-2"
+                className="border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white font-medium text-xs h-6 px-2"
               >
                 Clear All
               </Button>
@@ -201,7 +201,7 @@ export default function Compare() {
           {/* Perfume selection sidebar */}
           <div className="order-2 lg:w-[640px] flex-shrink-0">
             <Card
-              className="bg-gradient-to-br from-black-800 via-black-700 to-gold-300 border border-gold-400 shadow-lg relative overflow-hidden
+              className="bg-gradient-to-br from-black-800 via-black-700 to-black-600 border border-gold-400 shadow-lg relative overflow-hidden
             before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
             >
               <CardHeader className="relative z-10 p-2 sm:p-3">
@@ -304,7 +304,7 @@ export default function Compare() {
                         setSeasonFilter("");
                         setAccordFilter("");
                       }}
-                      className="w-full border-gold-400 text-gold-800 hover:bg-black-800 text-xs h-6"
+                      className="w-full border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white text-xs h-6"
                     >
                       <X className="w-3 h-3 mr-1" />
                       Clear
@@ -334,7 +334,7 @@ export default function Compare() {
                       variant="outline"
                       size="sm"
                       onClick={clearComparison}
-                      className="border-gold-400 text-gold-700 hover:bg-black-800 text-xs"
+                      className="border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white text-xs"
                     >
                       <X className="w-3 h-3 mr-1" />
                       Start Over

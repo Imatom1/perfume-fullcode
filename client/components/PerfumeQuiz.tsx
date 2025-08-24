@@ -302,7 +302,7 @@ export function PerfumeQuiz({
                     <Button
                       key={option.id}
                       variant="outline"
-                      className="w-full text-left p-4 h-auto border-gold-300 text-gold-800 hover:bg-black-800 hover:border-gold-500 font-medium"
+                      className="w-full text-left p-4 h-auto border-gold-300 text-gold-300 hover:bg-black-800 hover:text-white hover:border-gold-500 font-medium"
                       onClick={() => handleAnswer(option)}
                     >
                       <div>
@@ -332,7 +332,7 @@ export function PerfumeQuiz({
                 {recommendations.map((perfume, index) => (
                   <Card
                     key={perfume.id}
-                    className="border-gold-300 bg-gradient-to-r from-black-800 to-black-800 hover:from-black-800 hover:to-gold-150 transition-all cursor-pointer"
+                    className="border-gold-300 bg-gradient-to-r from-black-800 to-black-800 hover:from-black-700 hover:to-black-600 transition-all cursor-pointer"
                     onClick={() => {
                       onPerfumeSelect(perfume);
                       onClose();
@@ -351,7 +351,7 @@ export function PerfumeQuiz({
                           <h4 className="font-bold text-gold-300">
                             {perfume.name}
                           </h4>
-                          <p className="text-sm font-semibold text-gold-700">
+                          <p className="text-sm font-semibold text-gold-300">
                             {perfume.brand}
                           </p>
                           <p className="text-xs text-gold-300 mb-2">
@@ -363,7 +363,7 @@ export function PerfumeQuiz({
                               <Badge
                                 key={accord}
                                 variant="outline"
-                                className="text-xs border-gold-300 text-gold-800 bg-black-800"
+                                className="text-xs border-gold-300 text-gold-300 bg-black-800"
                               >
                                 {accord}
                               </Badge>
@@ -377,7 +377,7 @@ export function PerfumeQuiz({
                         </div>
 
                         <div className="text-right">
-                          <div className="text-lg font-bold text-gold-800">
+                          <div className="text-lg font-bold text-gold-300">
                             ${perfume.sizes[0].price}
                           </div>
                           <div className="text-xs text-gold-300">
@@ -394,7 +394,7 @@ export function PerfumeQuiz({
                 <Button
                   variant="outline"
                   onClick={resetQuiz}
-                  className="flex-1 border-gold-400 text-gold-800 hover:bg-black-800 font-semibold"
+                  className="flex-1 border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white font-semibold"
                 >
                   Take Quiz Again
                 </Button>

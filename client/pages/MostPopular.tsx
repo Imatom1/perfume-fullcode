@@ -137,7 +137,7 @@ export default function MostPopular() {
 
       {/* Page Header */}
       <div
-        className="bg-gradient-to-r from-black-800 via-black-700 to-gold-300 py-6 relative overflow-hidden
+        className="bg-gradient-to-r from-black-800 via-black-700 to-black-600 py-6 relative overflow-hidden
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -148,7 +148,7 @@ export default function MostPopular() {
                 <h1 className="text-3xl font-bold bg-gradient-to-r from-gold-800 via-gold-700 to-gold-600 bg-clip-text text-transparent">
                   Most Popular
                 </h1>
-                <p className="text-gold-700 mt-1">
+                <p className="text-gold-300 mt-1">
                   Discover our bestselling and most loved fragrances
                 </p>
               </div>
@@ -156,7 +156,7 @@ export default function MostPopular() {
             <Button
               variant="outline"
               onClick={() => navigate("/")}
-              className="border-gold-400 text-gold-800 hover:bg-black-800"
+              className="border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Collection
@@ -181,7 +181,7 @@ export default function MostPopular() {
                   className={`flex items-center gap-2 ${
                     selectedCategory === category.id
                       ? "bg-gold-600 hover:bg-gold-700 text-white"
-                      : "border-gold-300 text-gold-800 hover:bg-black-800"
+                      : "border-gold-300 text-gold-300 hover:bg-black-800 hover:text-white"
                   }`}
                 >
                   <Icon className="w-4 h-4" />
@@ -198,21 +198,21 @@ export default function MostPopular() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div className="flex flex-col items-center">
                 <TrendingUp className="w-8 h-8 text-gold-600 mb-2" />
-                <span className="text-2xl font-bold text-gold-800">
+                <span className="text-2xl font-bold text-gold-300">
                   {popularPerfumes.length}
                 </span>
                 <span className="text-gold-600">Top Fragrances</span>
               </div>
               <div className="flex flex-col items-center">
                 <Award className="w-8 h-8 text-yellow-500 mb-2" />
-                <span className="text-2xl font-bold text-gold-800">
+                <span className="text-2xl font-bold text-gold-300">
                   {popularPerfumes.filter((p) => p.gender === "Unisex").length}
                 </span>
                 <span className="text-gold-600">Unisex Options</span>
               </div>
               <div className="flex flex-col items-center">
                 <Sparkles className="w-8 h-8 text-gold-600 mb-2" />
-                <span className="text-2xl font-bold text-gold-800">
+                <span className="text-2xl font-bold text-gold-300">
                   {Math.round(
                     popularPerfumes.reduce(
                       (acc, p) => acc + p.popularityScore,
@@ -233,7 +233,7 @@ export default function MostPopular() {
               {/* Rank Badge */}
               <div className="absolute top-2 left-2 z-10 flex items-center gap-1 bg-black-800 backdrop-blur-sm rounded-full px-2 py-1 shadow-sm">
                 {getRankIcon(index)}
-                <span className="text-sm font-bold text-gold-800">
+                <span className="text-sm font-bold text-gold-300">
                   #{index + 1}
                 </span>
               </div>
@@ -257,7 +257,7 @@ export default function MostPopular() {
         {/* Popular Insights */}
         <Card className="mt-12 bg-gradient-to-r from-black-800 to-black-800 border-black-700">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-gold-800">
+            <CardTitle className="flex items-center gap-2 text-gold-300">
               <Sparkles className="w-5 h-5" />
               What Makes These Fragrances Popular?
             </CardTitle>
@@ -265,10 +265,10 @@ export default function MostPopular() {
           <CardContent className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-semibold text-gold-800 mb-2">
+                <h4 className="font-semibold text-gold-300 mb-2">
                   Top Characteristics:
                 </h4>
-                <ul className="text-sm text-gold-700 space-y-1">
+                <ul className="text-sm text-gold-300 space-y-1">
                   <li>• Versatile for multiple seasons</li>
                   <li>• Balanced sillage (not too light, not overpowering)</li>
                   <li>• Popular accord combinations</li>
@@ -276,7 +276,7 @@ export default function MostPopular() {
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold text-gold-800 mb-2">
+                <h4 className="font-semibold text-gold-300 mb-2">
                   Most Popular Accords:
                 </h4>
                 <div className="flex flex-wrap gap-1">
@@ -291,7 +291,7 @@ export default function MostPopular() {
                     <Badge
                       key={accord}
                       variant="outline"
-                      className="text-xs border-gold-300 text-gold-700"
+                      className="text-xs border-gold-300 text-gold-300"
                     >
                       {accord}
                     </Badge>

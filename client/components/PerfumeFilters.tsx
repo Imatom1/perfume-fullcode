@@ -53,7 +53,7 @@ export function PerfumeFilters({
 
   return (
     <Card
-      className="bg-gradient-to-br from-black-800 via-black-700 to-gold-300 border-2 border-gold-400 shadow-xl relative overflow-hidden
+      className="bg-gradient-to-br from-black-800 via-black-700 to-black-600 border-2 border-gold-400 shadow-xl relative overflow-hidden
     before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] hover:before:animate-shimmer before:transition-transform"
     >
       <CardHeader className="relative z-10">
@@ -63,7 +63,7 @@ export function PerfumeFilters({
           {resultCount > 0 && (
             <Badge
               variant="secondary"
-              className="bg-black-700 text-gold-900 border-gold-400 ml-auto font-semibold shadow-sm"
+              className="bg-black-700 text-gold-300 border-gold-400 ml-auto font-semibold shadow-sm"
             >
               {resultCount} results
             </Badge>
@@ -244,7 +244,7 @@ export function PerfumeFilters({
           <Button
             variant="outline"
             onClick={onReset}
-            className="w-full border-gold-300 text-gold-700 hover:bg-black-800"
+            className="w-full border-gold-300 text-gold-300 hover:bg-black-800 hover:text-white"
           >
             <X className="w-4 h-4 mr-2" />
             Clear Filters

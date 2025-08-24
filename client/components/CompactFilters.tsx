@@ -107,7 +107,7 @@ export function CompactFilters({
                       variant="ghost"
                       size="sm"
                       onClick={onReset}
-                      className="h-6 px-2 text-xs text-gold-800 hover:bg-black-800"
+                      className="h-6 px-2 text-xs text-gold-300 hover:bg-black-800 hover:text-white"
                     >
                       <X className="w-3 h-3 mr-1" />
                       Clear
@@ -203,7 +203,7 @@ export function CompactFilters({
           {/* Results count */}
           <Badge
             variant="secondary"
-            className="bg-black-700 text-gold-900 border-gold-400 text-xs px-2 py-1"
+            className="bg-black-700 text-gold-300 border-gold-400 text-xs px-2 py-1"
           >
             {resultCount}
           </Badge>
