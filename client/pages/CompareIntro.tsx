@@ -150,7 +150,7 @@ export default function CompareIntro() {
                   <Button
                     variant="outline"
                     onClick={() => navigate("/")}
-                    className="border-gold-600 text-gold-800 hover:bg-black-800 font-semibold text-lg px-8 py-4"
+                    className="border-gold-600 text-gold-300 hover:bg-black-800 hover:text-white font-semibold text-lg px-8 py-4"
                   >
                     Browse All Fragrances
                   </Button>
