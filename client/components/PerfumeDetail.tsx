@@ -61,16 +61,16 @@ export function PerfumeDetail({
         <div className="p-2 sm:p-3 relative z-10 overflow-y-auto flex-1">
           {/* Header */}
           <div className="mb-2">
-            <h2 className="text-base sm:text-lg font-bold text-gold-300 mb-1 pr-6">
-              {perfume.name}
+            <p className="text-xs text-gray-400 mb-1 pr-6">
+              Inspired by
+            </p>
+            <h2 className="text-base sm:text-lg font-bold text-gold-500 mb-1 pr-6">
+              {perfume.originalBrand} {perfume.name}
             </h2>
             <div className="flex items-center justify-between gap-2">
               <div>
                 <p className="text-sm font-medium text-gold-600">
                   {perfume.brand}
-                </p>
-                <p className="text-xs text-gray-500">
-                  Inspired by {perfume.originalBrand}
                 </p>
               </div>
               <Badge

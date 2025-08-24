@@ -53,13 +53,16 @@ export function CompactPerfumeCard({
           {/* Header */}
           <div className="flex justify-between items-start gap-1 mb-1">
             <div className="flex-1 min-w-0">
+              <p className="text-xs text-gray-400 mb-1 break-words">
+                Inspired by
+              </p>
               <h4
-                className={`text-sm sm:text-base md:text-lg font-extrabold ${colors.titleColor} leading-tight truncate tracking-wide`}
+                className="text-sm sm:text-base md:text-lg font-extrabold text-gold-500 leading-tight tracking-wide break-words"
               >
-                {perfume.name}
+                {perfume.originalBrand} {perfume.name}
               </h4>
               <p
-                className={`text-xs sm:text-sm font-semibold ${colors.brandText} truncate tracking-wider uppercase opacity-90`}
+                className={`text-xs sm:text-sm font-semibold ${colors.brandText} tracking-wider uppercase opacity-90 break-words`}
               >
                 {perfume.brand}
               </p>
@@ -87,23 +90,23 @@ export function CompactPerfumeCard({
 
           {/* Info Grid */}
           <div className="grid grid-cols-1 gap-1 text-xs sm:text-sm flex-1">
-            <div className="flex items-center gap-1 truncate">
+            <div className="flex items-center gap-1">
               <Clock
                 className={`w-3 h-3 sm:w-4 sm:h-4 ${colors.iconColor} flex-shrink-0`}
               />
-              <span className="font-semibold truncate text-gold-200">{perfume.bestTime}</span>
+              <span className="font-semibold text-gold-200 break-words">{perfume.bestTime}</span>
             </div>
-            <div className="flex items-center gap-1 truncate">
+            <div className="flex items-center gap-1">
               <Droplets
                 className={`w-3 h-3 sm:w-4 sm:h-4 ${colors.iconColor} flex-shrink-0`}
               />
-              <span className="font-semibold truncate text-gold-200">{perfume.sillage}</span>
+              <span className="font-semibold text-gold-200 break-words">{perfume.sillage}</span>
             </div>
-            <div className="flex items-center gap-1 truncate">
+            <div className="flex items-center gap-1">
               <Star
                 className={`w-3 h-3 sm:w-4 sm:h-4 ${colors.iconColor} flex-shrink-0`}
               />
-              <span className="font-semibold truncate text-gold-200">
+              <span className="font-semibold text-gold-200 break-words">
                 {perfume.mainSeasons.join(", ")}
               </span>
             </div>

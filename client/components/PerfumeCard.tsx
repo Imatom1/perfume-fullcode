@@ -112,18 +112,18 @@ export function PerfumeCard({
       <CardHeader className="pb-2 sm:pb-3 relative z-10 p-3 sm:p-6">
         <div className="flex justify-between items-start mb-2">
           <div className="flex-1 min-w-0">
+            <p className="text-xs text-gray-400 mb-1 break-words">
+              Inspired by
+            </p>
             <CardTitle
-              className={`text-sm sm:text-base md:text-lg font-bold text-gold-300 ${colors.titleHover} transition-colors leading-tight truncate`}
+              className="text-sm sm:text-base md:text-lg font-bold text-gold-500 transition-colors leading-tight break-words"
             >
-              {perfume.name}
+              {perfume.originalBrand} {perfume.name}
             </CardTitle>
             <p
-              className={`text-xs sm:text-sm font-bold ${colors.brandText} mt-1 truncate`}
+              className={`text-xs sm:text-sm font-bold ${colors.brandText} mt-1 break-words`}
             >
               {perfume.brand}
-            </p>
-            <p className="text-xs font-semibold text-gold-300 mt-1 truncate">
-              Inspired by {perfume.originalBrand}
             </p>
           </div>
           <Badge
@@ -176,17 +176,17 @@ export function PerfumeCard({
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 text-xs">
             <div className="flex items-center gap-1 text-gold-300">
               <Clock className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
-              <span className="font-semibold truncate">{perfume.bestTime}</span>
+              <span className="font-semibold break-words">{perfume.bestTime}</span>
             </div>
             <div className="flex items-center gap-1 text-gold-300">
               <Droplets
                 className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`}
               />
-              <span className="font-semibold truncate">{perfume.sillage}</span>
+              <span className="font-semibold break-words">{perfume.sillage}</span>
             </div>
             <div className="flex items-center gap-1 text-gold-300 sm:col-span-2">
               <Star className={`w-3 h-3 ${colors.iconColor} flex-shrink-0`} />
-              <span className="font-semibold truncate">
+              <span className="font-semibold break-words">
                 {perfume.mainSeasons.join(", ")}
               </span>
             </div>

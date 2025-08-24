@@ -35,7 +35,7 @@ export const perfumes: Perfume[] = [
   {
     id: "baccarat-rouge-540",
     name: "Baccarat Rouge 540",
-    brand: "Golden Aroma",
+    brand: "Rouge Elixir",
     originalBrand: "Maison Francis Kurkdjian",
     gender: "Unisex",
     mainAccords: [
@@ -65,7 +65,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-afgano",
     name: "Black Afgano",
-    brand: "Golden Aroma",
+    brand: "Black Spirit",
     originalBrand: "Nasomatto",
     gender: "Unisex",
     mainAccords: [
@@ -92,7 +92,7 @@ export const perfumes: Perfume[] = [
   {
     id: "ombre-nomade",
     name: "Ombre Nomade",
-    brand: "Golden Aroma",
+    brand: "Dark Nomad",
     originalBrand: "Louis Vuitton",
     gender: "Unisex",
     mainAccords: [
@@ -119,7 +119,7 @@ export const perfumes: Perfume[] = [
   {
     id: "interlude",
     name: "Interlude",
-    brand: "Golden Aroma",
+    brand: "Eternal Interlude",
     originalBrand: "Amouage",
     gender: "Men",
     mainAccords: [
@@ -146,7 +146,7 @@ export const perfumes: Perfume[] = [
   {
     id: "oud-ispahan",
     name: "Oud Ispahan",
-    brand: "Golden Aroma",
+    brand: "Oud Essence",
     originalBrand: "Dior",
     gender: "Unisex",
     mainAccords: ["Oud", "Rose", "Sweet", "Warm Spicy", "Amber", "Powdery"],
@@ -165,7 +165,7 @@ export const perfumes: Perfume[] = [
   {
     id: "oud-wood",
     name: "Oud Wood",
-    brand: "Golden Aroma",
+    brand: "Oud Majesty",
     originalBrand: "Tom Ford",
     gender: "Unisex",
     mainAccords: ["Oud", "Woody", "Sweet", "Warm Spicy", "Balsamic", "Smoky"],
@@ -184,7 +184,7 @@ export const perfumes: Perfume[] = [
   {
     id: "rose-vanille",
     name: "Rose Vanille",
-    brand: "Golden Aroma",
+    brand: "Rose Vanilla",
     originalBrand: "Mancera",
     gender: "Unisex",
     mainAccords: ["Rose", "Sweet", "Vanilla", "Fruity", "Floral", "Powdery"],
@@ -203,7 +203,7 @@ export const perfumes: Perfume[] = [
   {
     id: "red-tobacco",
     name: "Red Tobacco",
-    brand: "Golden Aroma",
+    brand: "Red Tobacco Flame",
     originalBrand: "Mancera",
     gender: "Unisex",
     mainAccords: [
@@ -230,7 +230,7 @@ export const perfumes: Perfume[] = [
   {
     id: "imagination-lv",
     name: "Imagination",
-    brand: "Golden Aroma",
+    brand: "Imagination",
     originalBrand: "Louis Vuitton",
     gender: "Men",
     mainAccords: ["Fresh", "Citrus", "Tea", "Amber", "Woody", "Aquatic"],
@@ -249,7 +249,7 @@ export const perfumes: Perfume[] = [
   {
     id: "accento",
     name: "Accento",
-    brand: "Golden Aroma",
+    brand: "Golden Accento",
     originalBrand: "Sospiro",
     gender: "Unisex",
     mainAccords: ["Floral", "Iris", "Fruity", "Powdery", "Woody", "Musky"],
@@ -268,7 +268,7 @@ export const perfumes: Perfume[] = [
   {
     id: "imperial-valley",
     name: "Imperial Valley",
-    brand: "Golden Aroma",
+    brand: "Imperial Valley",
     originalBrand: "Gessa",
     gender: "Men",
     mainAccords: ["Fresh", "Citrus", "Lavender", "Woody", "Amber"],
@@ -287,7 +287,7 @@ export const perfumes: Perfume[] = [
   {
     id: "alf-lele-w-lele",
     name: "Alf Lele W Lele",
-    brand: "Golden Aroma",
+    brand: "Thousand Nights",
     originalBrand: "Ajmal",
     gender: "Unisex",
     mainAccords: ["Oud", "Rose", "Amber", "Sweet", "Woody", "Spicy"],
@@ -306,7 +306,7 @@ export const perfumes: Perfume[] = [
   {
     id: "al-fares",
     name: "Al Fares",
-    brand: "Golden Aroma",
+    brand: "Noble Knight",
     originalBrand: "Arabian Oud",
     gender: "Unisex",
     mainAccords: ["Oud", "Woody", "Amber", "Rose", "Spicy", "Smoky"],
@@ -325,7 +325,7 @@ export const perfumes: Perfume[] = [
   {
     id: "i-am-white",
     name: "I Am White",
-    brand: "Golden Aroma",
+    brand: "Pure White",
     originalBrand: "Lattafa",
     gender: "Women",
     mainAccords: [
@@ -351,7 +351,7 @@ export const perfumes: Perfume[] = [
   {
     id: "ana-walshok",
     name: "Ana Walshok",
-    brand: "Golden Aroma",
+    brand: "Longing",
     originalBrand: "Oriental",
     gender: "Women",
     mainAccords: ["Rose", "Oud", "Amber", "Sweet", "Romantic", "Spicy"],
@@ -370,7 +370,7 @@ export const perfumes: Perfume[] = [
   {
     id: "sweet-oud",
     name: "Sweet Oud",
-    brand: "Golden Aroma",
+    brand: "Sweet Oud",
     originalBrand: "Oriental",
     gender: "Unisex",
     mainAccords: ["Oud", "Sweet", "Honey", "Floral", "Vanilla", "Amber"],
@@ -389,7 +389,7 @@ export const perfumes: Perfume[] = [
   {
     id: "shams-al-emarat",
     name: "Shams Al Emarat",
-    brand: "Golden Aroma",
+    brand: "Desert Sun",
     originalBrand: "Ard Al Zaafran",
     gender: "Unisex",
     mainAccords: ["Fresh", "Citrus", "Floral", "Amber", "Sunny", "Radiant"],
@@ -408,7 +408,7 @@ export const perfumes: Perfume[] = [
   {
     id: "shay-oud",
     name: "Shay Oud",
-    brand: "Golden Aroma",
+    brand: "Shay Oud",
     originalBrand: "Anfasic Dokhoon",
     gender: "Unisex",
     mainAccords: ["Tea", "Oud", "Citrus", "Woody", "Earl Grey", "Aromatic"],
@@ -427,7 +427,7 @@ export const perfumes: Perfume[] = [
   {
     id: "amber-rasasi",
     name: "Amber",
-    brand: "Golden Aroma",
+    brand: "Amber Glow",
     originalBrand: "Rasasi",
     gender: "Unisex",
     mainAccords: ["Amber", "Sweet", "Warm", "Resinous", "Spicy", "Oriental"],
@@ -446,7 +446,7 @@ export const perfumes: Perfume[] = [
   {
     id: "white-oud-sea",
     name: "White Oud",
-    brand: "Golden Aroma",
+    brand: "White Oud",
     originalBrand: "Sea of Perfume",
     gender: "Unisex",
     mainAccords: ["Oud", "White Flowers", "Clean", "Fresh", "Ethereal", "Soft"],
@@ -465,7 +465,7 @@ export const perfumes: Perfume[] = [
   {
     id: "dahen-al-oud",
     name: "Dahen Al Oud",
-    brand: "Golden Aroma",
+    brand: "Oud Essence",
     originalBrand: "Ajmal",
     gender: "Unisex",
     mainAccords: ["Oud", "Intense", "Dark", "Woody", "Smoky", "Traditional"],
@@ -484,7 +484,7 @@ export const perfumes: Perfume[] = [
   {
     id: "gucci-oud",
     name: "Gucci Oud",
-    brand: "Golden Aroma",
+    brand: "Oud Prestige",
     originalBrand: "Gucci",
     gender: "Unisex",
     mainAccords: ["Oud", "Fruity", "Rose", "Sweet", "Amber", "Patchouli"],
@@ -503,7 +503,7 @@ export const perfumes: Perfume[] = [
   {
     id: "royal-oud-chopard",
     name: "Royal Oud",
-    brand: "Golden Aroma",
+    brand: "Oud Royale",
     originalBrand: "Chopard",
     gender: "Unisex",
     mainAccords: ["Oud", "Regal", "Rose", "Spicy", "Amber", "Luxurious"],
@@ -522,7 +522,7 @@ export const perfumes: Perfume[] = [
   {
     id: "kalemat",
     name: "Kalemat",
-    brand: "Golden Aroma",
+    brand: "Kalemat Essence",
     originalBrand: "Arabian Oud",
     gender: "Unisex",
     mainAccords: ["Oud", "Floral", "Fruity", "Sweet", "Amber", "Sophisticated"],
@@ -541,7 +541,7 @@ export const perfumes: Perfume[] = [
   {
     id: "zanbak",
     name: "Zanbak",
-    brand: "Golden Aroma",
+    brand: "White Lily",
     originalBrand: "Flowers",
     gender: "Women",
     mainAccords: ["Lily", "Fresh", "Green", "Floral", "Clean", "Natural"],
@@ -560,7 +560,7 @@ export const perfumes: Perfume[] = [
   {
     id: "sultan-al-outor",
     name: "Sultan Al Outor",
-    brand: "Golden Aroma",
+    brand: "Sultan's Aura",
     originalBrand: "Sea of Perfume",
     gender: "Unisex",
     mainAccords: ["Oud", "Regal", "Amber", "Spicy", "Royal", "Majestic"],
@@ -579,7 +579,7 @@ export const perfumes: Perfume[] = [
   {
     id: "white-musk-arabian",
     name: "White Musk",
-    brand: "Golden Aroma",
+    brand: "Pure Musk",
     originalBrand: "Arabian Oud",
     gender: "Unisex",
     mainAccords: ["Musk", "Clean", "Soft", "Powdery", "Intimate", "Pure"],
@@ -598,7 +598,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-musk",
     name: "Black Musk",
-    brand: "Golden Aroma",
+    brand: "Noir Musk",
     originalBrand: "Sea of Perfume",
     gender: "Unisex",
     mainAccords: ["Musk", "Dark", "Animalic", "Sensual", "Mysterious", "Deep"],
@@ -617,7 +617,7 @@ export const perfumes: Perfume[] = [
   {
     id: "musk-al-harameen",
     name: "Musk Al-Harameen",
-    brand: "Golden Aroma",
+    brand: "Sacred Musk",
     originalBrand: "Oriental",
     gender: "Unisex",
     mainAccords: ["Musk", "Sacred", "Rose", "Amber", "Holy", "Traditional"],
@@ -636,7 +636,7 @@ export const perfumes: Perfume[] = [
   {
     id: "musk-pomegranate",
     name: "Musk Pomegranate",
-    brand: "Golden Aroma",
+    brand: "Ruby Musk",
     originalBrand: "Oriental",
     gender: "Unisex",
     mainAccords: ["Musk", "Fruity", "Sweet", "Fresh", "Pomegranate", "Juicy"],
@@ -655,7 +655,7 @@ export const perfumes: Perfume[] = [
   {
     id: "musk-al-tahara",
     name: "Musk Al Tahara",
-    brand: "Golden Aroma",
+    brand: "Tahara Musk",
     originalBrand: "Sea of Perfume",
     gender: "Unisex",
     mainAccords: ["Musk", "Pure", "Clean", "White", "Sacred", "Pristine"],
@@ -674,7 +674,7 @@ export const perfumes: Perfume[] = [
   {
     id: "strawberry-musk",
     name: "Strawberry Musk",
-    brand: "Golden Aroma",
+    brand: "Sweet Strawberry Musk",
     originalBrand: "Oriental",
     gender: "Women",
     mainAccords: [
@@ -700,7 +700,7 @@ export const perfumes: Perfume[] = [
   {
     id: "madawe-gold",
     name: "Madawe Gold",
-    brand: "Golden Aroma",
+    brand: "Golden Madawe",
     originalBrand: "Arabian Oud",
     gender: "Unisex",
     mainAccords: ["Oud", "Golden", "Luxurious", "Amber", "Precious", "Rich"],
@@ -719,7 +719,7 @@ export const perfumes: Perfume[] = [
   {
     id: "molecule-020",
     name: "Molecule 020",
-    brand: "Golden Aroma",
+    brand: "Molecular Essence",
     originalBrand: "Escentric",
     gender: "Unisex",
     mainAccords: ["Synthetic", "Clean", "Minimalist", "Skin-like", "Abstract"],
@@ -738,7 +738,7 @@ export const perfumes: Perfume[] = [
   {
     id: "meydan-dubai",
     name: "Meydan Dubai",
-    brand: "Golden Aroma",
+    brand: "Spirit of Dubai",
     originalBrand: "Spirit of Dubai",
     gender: "Unisex",
     mainAccords: ["Modern", "Citrus", "Rose", "Oud", "Sophisticated", "Urban"],
@@ -757,7 +757,7 @@ export const perfumes: Perfume[] = [
   {
     id: "la-luna",
     name: "La Luna",
-    brand: "Golden Aroma",
+    brand: "Luna Mystery",
     originalBrand: "Gissah",
     gender: "Women",
     mainAccords: [
@@ -783,7 +783,7 @@ export const perfumes: Perfume[] = [
   {
     id: "magic-al-jazeera",
     name: "Magic",
-    brand: "Golden Aroma",
+    brand: "Island Magic",
     originalBrand: "Al-Jazeera Perfumes",
     gender: "Unisex",
     mainAccords: [
@@ -809,7 +809,7 @@ export const perfumes: Perfume[] = [
   {
     id: "wared-jore",
     name: "Wared Jore",
-    brand: "Golden Aroma",
+    brand: "Rose Garden",
     originalBrand: "Flower",
     gender: "Women",
     mainAccords: [
@@ -854,7 +854,7 @@ export const perfumes: Perfume[] = [
   {
     id: "yasmin",
     name: "Yasmin",
-    brand: "Golden Aroma",
+    brand: "Jasmine Petals",
     originalBrand: "Flower",
     gender: "Women",
     mainAccords: [
@@ -880,7 +880,7 @@ export const perfumes: Perfume[] = [
   {
     id: "khamrah",
     name: "Khamrah",
-    brand: "Golden Aroma",
+    brand: "Khamrah Delight",
     originalBrand: "Lattafa",
     gender: "Unisex",
     mainAccords: ["Sweet", "Gourmand", "Spicy", "Dates", "Praline", "Warm"],
@@ -899,7 +899,7 @@ export const perfumes: Perfume[] = [
   {
     id: "oud-bouquet",
     name: "Oud Bouquet",
-    brand: "Golden Aroma",
+    brand: "Oud Bouquet",
     originalBrand: "Generic",
     gender: "Unisex",
     mainAccords: ["Oud", "Floral", "Bouquet", "Rose", "Jasmine", "Traditional"],
@@ -917,7 +917,7 @@ export const perfumes: Perfume[] = [
   {
     id: "silver-ghubar",
     name: "Silver Ghubar",
-    brand: "Golden Aroma",
+    brand: "Silver Mist",
     originalBrand: "Generic",
     gender: "Unisex",
     mainAccords: ["Metallic", "Silver", "Cool", "Mineral", "Modern", "Clean"],
@@ -935,7 +935,7 @@ export const perfumes: Perfume[] = [
   {
     id: "wared-al-fel",
     name: "Wared Al Fel",
-    brand: "Golden Aroma",
+    brand: "Fel Rose",
     originalBrand: "Arabian Jasmine",
     gender: "Women",
     mainAccords: [
@@ -961,7 +961,7 @@ export const perfumes: Perfume[] = [
   {
     id: "eternity-ck",
     name: "Eternity",
-    brand: "Golden Aroma",
+    brand: "Timeless Essence",
     originalBrand: "Calvin Klein",
     gender: "Men",
     mainAccords: ["Fresh", "Aromatic", "Green", "Citrus", "Woody", "Classic"],
@@ -980,7 +980,7 @@ export const perfumes: Perfume[] = [
   {
     id: "chrome-extreme",
     name: "Chrome Extreme",
-    brand: "Golden Aroma",
+    brand: "Ocean Intensity",
     originalBrand: "Azzaro",
     gender: "Men",
     mainAccords: ["Fresh", "Citrus", "Aquatic", "Marine", "Clean", "Energetic"],
@@ -999,7 +999,7 @@ export const perfumes: Perfume[] = [
   {
     id: "aventus-absolu",
     name: "Aventus Absolu",
-    brand: "Golden Aroma",
+    brand: "Royal Absolu",
     originalBrand: "Creed",
     gender: "Men",
     mainAccords: ["Fruity", "Fresh", "Smoky", "Woody", "Citrus", "Pineapple"],
@@ -1018,7 +1018,7 @@ export const perfumes: Perfume[] = [
   {
     id: "acqua-di-gio",
     name: "Acqua di Gio",
-    brand: "Golden Aroma",
+    brand: "Aqua Legacy",
     originalBrand: "Giorgio Armani",
     gender: "Men",
     mainAccords: ["Fresh", "Aquatic", "Citrus", "Marine", "Light", "Airy"],
@@ -1037,7 +1037,7 @@ export const perfumes: Perfume[] = [
   {
     id: "ultra-male",
     name: "Ultra Male",
-    brand: "Golden Aroma",
+    brand: "Midnight Rebel",
     originalBrand: "Jean Paul Gaultier",
     gender: "Men",
     mainAccords: [
@@ -1063,7 +1063,7 @@ export const perfumes: Perfume[] = [
   {
     id: "invictus",
     name: "Invictus",
-    brand: "Golden Aroma",
+    brand: "Victor's Spirit",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: [
@@ -1089,7 +1089,7 @@ export const perfumes: Perfume[] = [
   {
     id: "invictus-victory-elixir",
     name: "Invictus Victory Elixir",
-    brand: "Golden Aroma",
+    brand: "Eternal Triumph",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: [
@@ -1115,7 +1115,7 @@ export const perfumes: Perfume[] = [
   {
     id: "eros-versace",
     name: "Eros",
-    brand: "Golden Aroma",
+    brand: "Flame of Eros",
     originalBrand: "Versace",
     gender: "Men",
     mainAccords: ["Fresh", "Minty", "Vanilla", "Woody", "Sweet", "Seductive"],
@@ -1134,7 +1134,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-xs",
     name: "Black XS",
-    brand: "Golden Aroma",
+    brand: "Dark Pulse",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: ["Sweet", "Woody", "Spicy", "Warm", "Amber", "Masculine"],
@@ -1153,7 +1153,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-xs-lexces",
     name: "Black XS L'Excès",
-    brand: "Golden Aroma",
+    brand: "Noir Excess",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: ["Intense", "Dark", "Woody", "Spicy", "Powerful", "Masculine"],
@@ -1172,7 +1172,7 @@ export const perfumes: Perfume[] = [
   {
     id: "bleu-de-chanel",
     name: "Bleu de Chanel",
-    brand: "Golden Aroma",
+    brand: "Blue Prestige",
     originalBrand: "Chanel",
     gender: "Men",
     mainAccords: [
@@ -1198,7 +1198,7 @@ export const perfumes: Perfume[] = [
   {
     id: "pi-givenchy",
     name: "Pi",
-    brand: "Golden Aroma",
+    brand: "Infinite Pi",
     originalBrand: "Givenchy",
     gender: "Men",
     mainAccords: ["Sweet", "Vanilla", "Woody", "Almond", "Gourmand", "Warm"],
@@ -1217,7 +1217,7 @@ export const perfumes: Perfume[] = [
   {
     id: "pegasus",
     name: "Pegasus",
-    brand: "Golden Aroma",
+    brand: "Silver Stallion",
     originalBrand: "Parfums de Marly",
     gender: "Men",
     mainAccords: [
@@ -1243,7 +1243,7 @@ export const perfumes: Perfume[] = [
   {
     id: "dunhill-desire",
     name: "Desire",
-    brand: "Golden Aroma",
+    brand: "Crimson Desire",
     originalBrand: "Dunhill",
     gender: "Men",
     mainAccords: [
@@ -1269,7 +1269,7 @@ export const perfumes: Perfume[] = [
   {
     id: "desire-blue",
     name: "Desire Blue",
-    brand: "Golden Aroma",
+    brand: "Desire Blue Sky",
     originalBrand: "Dunhill",
     gender: "Men",
     mainAccords: ["Fresh", "Aquatic", "Citrus", "Marine", "Light", "Breezy"],
@@ -1288,7 +1288,7 @@ export const perfumes: Perfume[] = [
   {
     id: "dior-homme-intense",
     name: "Dior Homme Intense",
-    brand: "Golden Aroma",
+    brand: "Homme Intense",
     originalBrand: "Dior",
     gender: "Men",
     mainAccords: [
@@ -1314,7 +1314,7 @@ export const perfumes: Perfume[] = [
   {
     id: "the-scent-elixir",
     name: "The Scent Elixir",
-    brand: "Golden Aroma",
+    brand: "Elixir of Power",
     originalBrand: "Hugo Boss",
     gender: "Men",
     mainAccords: [
@@ -1340,7 +1340,7 @@ export const perfumes: Perfume[] = [
   {
     id: "the-most-wanted",
     name: "The Most Wanted",
-    brand: "Golden Aroma",
+    brand: "The Icon",
     originalBrand: "Azzaro",
     gender: "Men",
     mainAccords: ["Sweet", "Gourmand", "Spicy", "Toffee", "Warm", "Addictive"],
@@ -1359,7 +1359,7 @@ export const perfumes: Perfume[] = [
   {
     id: "the-one-dg",
     name: "The One",
-    brand: "Golden Aroma",
+    brand: "The One Legend",
     originalBrand: "Dolce & Gabbana",
     gender: "Men",
     mainAccords: [
@@ -1385,7 +1385,7 @@ export const perfumes: Perfume[] = [
   {
     id: "this-is-him-undressed",
     name: "This Is Him Undressed",
-    brand: "Golden Aroma",
+    brand: "Bare Allure",
     originalBrand: "Zadig & Voltaire",
     gender: "Men",
     mainAccords: ["Fresh", "Citrus", "Woody", "Clean", "Modern", "Minimalist"],
@@ -1404,7 +1404,7 @@ export const perfumes: Perfume[] = [
   {
     id: "stronger-with-you",
     name: "Stronger With You",
-    brand: "Golden Aroma",
+    brand: "Stronger Bond",
     originalBrand: "Emporio Armani",
     gender: "Men",
     mainAccords: ["Sweet", "Spicy", "Woody", "Vanilla", "Amber", "Addictive"],
@@ -1423,7 +1423,7 @@ export const perfumes: Perfume[] = [
   {
     id: "stronger-with-you-tobacco",
     name: "Stronger With You Tobacco",
-    brand: "Golden Aroma",
+    brand: "Tobacco Flame",
     originalBrand: "Emporio Armani",
     gender: "Men",
     mainAccords: ["Tobacco", "Sweet", "Spicy", "Woody", "Amber", "Intense"],
@@ -1442,7 +1442,7 @@ export const perfumes: Perfume[] = [
   {
     id: "sculpture",
     name: "Sculpture",
-    brand: "Golden Aroma",
+    brand: "Marble of Light",
     originalBrand: "Nikos Parfums",
     gender: "Men",
     mainAccords: [
@@ -1468,7 +1468,7 @@ export const perfumes: Perfume[] = [
   {
     id: "silver-scent",
     name: "Silver Scent",
-    brand: "Golden Aroma",
+    brand: "Silver Aura",
     originalBrand: "Jacques Bogart",
     gender: "Men",
     mainAccords: ["Fresh", "Citrus", "Aromatic", "Clean", "Light", "Energetic"],
@@ -1487,7 +1487,7 @@ export const perfumes: Perfume[] = [
   {
     id: "sauvage",
     name: "Sauvage",
-    brand: "Golden Aroma",
+    brand: "Desert Savage",
     originalBrand: "Dior",
     gender: "Men",
     mainAccords: [
@@ -1513,7 +1513,7 @@ export const perfumes: Perfume[] = [
   {
     id: "sauvage-elixir",
     name: "Sauvage Elixir",
-    brand: "Golden Aroma",
+    brand: "Savage Elixir",
     originalBrand: "Dior",
     gender: "Men",
     mainAccords: ["Spicy", "Woody", "Amber", "Licorice", "Intense", "Powerful"],
@@ -1532,7 +1532,7 @@ export const perfumes: Perfume[] = [
   {
     id: "creed-silver-mountain",
     name: "Silver Mountain Water",
-    brand: "Golden Aroma",
+    brand: "Mountain Mist",
     originalBrand: "Creed",
     gender: "Men",
     mainAccords: [
@@ -1558,7 +1558,7 @@ export const perfumes: Perfume[] = [
   {
     id: "gucci-guilty-absolute",
     name: "Guilty Absolute",
-    brand: "Golden Aroma",
+    brand: "Guilty Absolute",
     originalBrand: "Gucci",
     gender: "Men",
     mainAccords: ["Woody", "Leather", "Patchouli", "Dry", "Dark", "Intense"],
@@ -1577,7 +1577,7 @@ export const perfumes: Perfume[] = [
   {
     id: "fahrenheit",
     name: "Fahrenheit",
-    brand: "Golden Aroma",
+    brand: "Fahrenheit Blaze",
     originalBrand: "Dior",
     gender: "Men",
     mainAccords: ["Woody", "Violet", "Leather", "Gasoline", "Unique", "Retro"],
@@ -1596,7 +1596,7 @@ export const perfumes: Perfume[] = [
   {
     id: "aventus",
     name: "Aventus",
-    brand: "Golden Aroma",
+    brand: "Noble Aventus",
     originalBrand: "Creed",
     gender: "Men",
     mainAccords: ["Fruity", "Fresh", "Smoky", "Pineapple", "Birch", "Iconic"],
@@ -1615,7 +1615,7 @@ export const perfumes: Perfume[] = [
   {
     id: "cool-water",
     name: "Cool Water",
-    brand: "Golden Aroma",
+    brand: "Cool Horizon",
     originalBrand: "Davidoff",
     gender: "Men",
     mainAccords: ["Fresh", "Aquatic", "Citrus", "Marine", "Clean", "Classic"],
@@ -1634,7 +1634,7 @@ export const perfumes: Perfume[] = [
   {
     id: "lacoste-white",
     name: "L.12.12 White",
-    brand: "Golden Aroma",
+    brand: "White Spirit",
     originalBrand: "Lacoste",
     gender: "Men",
     mainAccords: ["Fresh", "Clean", "Citrus", "Aromatic", "Sporty", "Light"],
@@ -1653,7 +1653,7 @@ export const perfumes: Perfume[] = [
   {
     id: "le-male",
     name: "Le Male",
-    brand: "Golden Aroma",
+    brand: "Le Masculine",
     originalBrand: "Jean Paul Gaultier",
     gender: "Men",
     mainAccords: [
@@ -1679,7 +1679,7 @@ export const perfumes: Perfume[] = [
   {
     id: "mr-thompson",
     name: "Mr. Thompson",
-    brand: "Golden Aroma",
+    brand: "Gentleman's Legacy",
     originalBrand: "Penhaligon's",
     gender: "Men",
     mainAccords: [
@@ -1705,7 +1705,7 @@ export const perfumes: Perfume[] = [
   {
     id: "legend-montblanc",
     name: "Legend",
-    brand: "Golden Aroma",
+    brand: "Montblanc Legend",
     originalBrand: "Mont Blanc",
     gender: "Men",
     mainAccords: [
@@ -1731,7 +1731,7 @@ export const perfumes: Perfume[] = [
   {
     id: "horizon",
     name: "Horizon",
-    brand: "Golden Aroma",
+    brand: "Horizon Majesty",
     originalBrand: "Gissah",
     gender: "Men",
     mainAccords: ["Fresh", "Marine", "Citrus", "Blue", "Aquatic", "Limitless"],
@@ -1750,7 +1750,7 @@ export const perfumes: Perfume[] = [
   {
     id: "hugo-boss",
     name: "Boss",
-    brand: "Golden Aroma",
+    brand: "Boss Essence",
     originalBrand: "Hugo Boss",
     gender: "Men",
     mainAccords: ["Fresh", "Green", "Woody", "Apple", "Clean", "Professional"],
@@ -1769,7 +1769,7 @@ export const perfumes: Perfume[] = [
   {
     id: "one-million",
     name: "One Million",
-    brand: "Golden Aroma",
+    brand: "Millionaire Gold",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: ["Sweet", "Spicy", "Woody", "Cinnamon", "Amber", "Seductive"],
@@ -1788,7 +1788,7 @@ export const perfumes: Perfume[] = [
   {
     id: "one-million-extra",
     name: "One Million Extra",
-    brand: "Golden Aroma",
+    brand: "Million Elixir",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: [
@@ -1814,7 +1814,7 @@ export const perfumes: Perfume[] = [
   {
     id: "one-million-gold-oud",
     name: "One Million Gold Oud",
-    brand: "Golden Aroma",
+    brand: "Golden Oud Million",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: ["Oud", "Golden", "Amber", "Spicy", "Luxurious", "Oriental"],
@@ -1833,7 +1833,7 @@ export const perfumes: Perfume[] = [
   {
     id: "one-million-lucky",
     name: "One Million Lucky",
-    brand: "Golden Aroma",
+    brand: "Million Lucky",
     originalBrand: "Paco Rabanne",
     gender: "Men",
     mainAccords: [
@@ -1859,7 +1859,7 @@ export const perfumes: Perfume[] = [
   {
     id: "voyage-nautica",
     name: "Voyage",
-    brand: "Golden Aroma",
+    brand: "Ocean Voyage",
     originalBrand: "Nautica",
     gender: "Men",
     mainAccords: ["Fresh", "Marine", "Apple", "Green", "Aquatic", "Clean"],
@@ -1879,7 +1879,7 @@ export const perfumes: Perfume[] = [
   {
     id: "armani-code-women",
     name: "Armani Code",
-    brand: "Golden Aroma",
+    brand: "Secret Code",
     originalBrand: "Giorgio Armani",
     gender: "Women",
     mainAccords: [
@@ -1905,7 +1905,7 @@ export const perfumes: Perfume[] = [
   {
     id: "taj-sunset",
     name: "Taj Sunset",
-    brand: "Golden Aroma",
+    brand: "Sunset Glow",
     originalBrand: "Escada",
     gender: "Women",
     mainAccords: ["Fruity", "Floral", "Sweet", "Tropical", "Coconut", "Sunset"],
@@ -1924,7 +1924,7 @@ export const perfumes: Perfume[] = [
   {
     id: "sexy-graffiti",
     name: "Sexy Graffiti",
-    brand: "Golden Aroma",
+    brand: "Urban Muse",
     originalBrand: "Escada",
     gender: "Women",
     mainAccords: ["Fruity", "Sweet", "Playful", "Berry", "Floral", "Youthful"],
@@ -1943,7 +1943,7 @@ export const perfumes: Perfume[] = [
   {
     id: "moon-sparkle",
     name: "Moon Sparkle",
-    brand: "Golden Aroma",
+    brand: "Moonlight Spark",
     originalBrand: "Escada",
     gender: "Women",
     mainAccords: [
@@ -1969,7 +1969,7 @@ export const perfumes: Perfume[] = [
   {
     id: "oriana",
     name: "Oriana",
-    brand: "Golden Aroma",
+    brand: "Oriana Dream",
     originalBrand: "Parfums de Marly",
     gender: "Women",
     mainAccords: [
@@ -1995,7 +1995,7 @@ export const perfumes: Perfume[] = [
   {
     id: "euphoria-ck",
     name: "Euphoria",
-    brand: "Golden Aroma",
+    brand: "Euphoria Bloom",
     originalBrand: "Calvin Klein",
     gender: "Women",
     mainAccords: [
@@ -2027,7 +2027,7 @@ export const perfumes: Perfume[] = [
   {
     id: "elie-saab",
     name: "Elie Saab Le Parfum",
-    brand: "Golden Aroma",
+    brand: "Elie's Grace",
     originalBrand: "Elie Saab",
     gender: "Women",
     mainAccords: [
@@ -2053,7 +2053,7 @@ export const perfumes: Perfume[] = [
   {
     id: "alien-oud-majestueux",
     name: "Alien Oud Majestueux",
-    brand: "Golden Aroma",
+    brand: "Majestic Alien",
     originalBrand: "Mugler",
     gender: "Women",
     mainAccords: ["Oud", "Oriental", "Mystical", "Intense", "Woody", "Amber"],
@@ -2072,7 +2072,7 @@ export const perfumes: Perfume[] = [
   {
     id: "paris-hilton",
     name: "Paris Hilton",
-    brand: "Golden Aroma",
+    brand: "Starlet Glam",
     originalBrand: "Paris Hilton",
     gender: "Women",
     mainAccords: ["Fruity", "Sweet", "Apple", "Floral", "Youthful", "Playful"],
@@ -2091,7 +2091,7 @@ export const perfumes: Perfume[] = [
   {
     id: "bright-crystal",
     name: "Bright Crystal",
-    brand: "Golden Aroma",
+    brand: "Crystal Radiance",
     originalBrand: "Versace",
     gender: "Women",
     mainAccords: [
@@ -2117,7 +2117,7 @@ export const perfumes: Perfume[] = [
   {
     id: "burberry-women",
     name: "Burberry",
-    brand: "Golden Aroma",
+    brand: "Heritage Muse",
     originalBrand: "Burberry",
     gender: "Women",
     mainAccords: [
@@ -2144,7 +2144,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-opium",
     name: "Black Opium",
-    brand: "Golden Aroma",
+    brand: "Midnight Opium",
     originalBrand: "Yves Saint Laurent",
     gender: "Women",
     mainAccords: [
@@ -2170,7 +2170,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-orchid",
     name: "Black Orchid",
-    brand: "Golden Aroma",
+    brand: "Orchid Noir",
     originalBrand: "Tom Ford",
     gender: "Women",
     mainAccords: [
@@ -2204,7 +2204,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-opium-over-red",
     name: "Black Opium Over Red",
-    brand: "Golden Aroma",
+    brand: "Scarlet Opium",
     originalBrand: "Yves Saint Laurent",
     gender: "Women",
     mainAccords: [
@@ -2230,7 +2230,7 @@ export const perfumes: Perfume[] = [
   {
     id: "bombshell",
     name: "Bombshell",
-    brand: "Golden Aroma",
+    brand: "Bombshell Glow",
     originalBrand: "Victoria's Secret",
     gender: "Women",
     mainAccords: [
@@ -2256,7 +2256,7 @@ export const perfumes: Perfume[] = [
   {
     id: "baby-johnson",
     name: "Baby Johnson",
-    brand: "Golden Aroma",
+    brand: "Baby Whisper",
     originalBrand: "Johnson's",
     gender: "Women",
     mainAccords: [
@@ -2282,7 +2282,7 @@ export const perfumes: Perfume[] = [
   {
     id: "jadore",
     name: "J'adore",
-    brand: "Golden Aroma",
+    brand: "Golden Bloom",
     originalBrand: "Dior",
     gender: "Women",
     mainAccords: [
@@ -2316,7 +2316,7 @@ export const perfumes: Perfume[] = [
   {
     id: "delina",
     name: "Delina",
-    brand: "Golden Aroma",
+    brand: "Rose Delina",
     originalBrand: "Parfums de Marly",
     gender: "Women",
     mainAccords: ["Rose", "Fruity", "Sweet", "Peony", "Lychee", "Luxurious"],
@@ -2335,7 +2335,7 @@ export const perfumes: Perfume[] = [
   {
     id: "ralph-lauren-women",
     name: "Ralph Lauren",
-    brand: "Golden Aroma",
+    brand: "Polo Elegance",
     originalBrand: "Ralph Lauren",
     gender: "Women",
     mainAccords: [
@@ -2365,7 +2365,7 @@ export const perfumes: Perfume[] = [
   {
     id: "rose-des-vents",
     name: "Rose Des Vents",
-    brand: "Golden Aroma",
+    brand: "Rose of Winds",
     originalBrand: "Louis Vuitton",
     gender: "Women",
     mainAccords: [
@@ -2391,7 +2391,7 @@ export const perfumes: Perfume[] = [
   {
     id: "romance-intense",
     name: "Romance Intense",
-    brand: "Golden Aroma",
+    brand: "Romance Flame",
     originalBrand: "Ralph Lauren",
     gender: "Women",
     mainAccords: [
@@ -2417,7 +2417,7 @@ export const perfumes: Perfume[] = [
   {
     id: "212-sexy",
     name: "212 Sexy",
-    brand: "Golden Aroma",
+    brand: "212 Desire",
     originalBrand: "Carolina Herrera",
     gender: "Women",
     mainAccords: [
@@ -2443,7 +2443,7 @@ export const perfumes: Perfume[] = [
   {
     id: "si-armani",
     name: "Sì",
-    brand: "Golden Aroma",
+    brand: "Armani Sí",
     originalBrand: "Giorgio Armani",
     gender: "Women",
     mainAccords: [
@@ -2469,7 +2469,7 @@ export const perfumes: Perfume[] = [
   {
     id: "chanel-no5",
     name: "Chanel Nº5",
-    brand: "Golden Aroma",
+    brand: "Eternal No.5",
     originalBrand: "Chanel",
     gender: "Women",
     mainAccords: [
@@ -2495,7 +2495,7 @@ export const perfumes: Perfume[] = [
   {
     id: "chanel-chance",
     name: "Chance",
-    brand: "Golden Aroma",
+    brand: "Chance Charm",
     originalBrand: "Chanel",
     gender: "Women",
     mainAccords: [
@@ -2521,7 +2521,7 @@ export const perfumes: Perfume[] = [
   {
     id: "gucci-bloom",
     name: "Gucci Bloom",
-    brand: "Golden Aroma",
+    brand: "Blooming Essence",
     originalBrand: "Gucci",
     gender: "Women",
     mainAccords: [
@@ -2546,7 +2546,7 @@ export const perfumes: Perfume[] = [
   {
     id: "gucci-rush",
     name: "Gucci Rush",
-    brand: "Golden Aroma",
+    brand: "Rush Desire",
     originalBrand: "Gucci",
     gender: "Women",
     mainAccords: [
@@ -2572,7 +2572,7 @@ export const perfumes: Perfume[] = [
   {
     id: "victorias-secret",
     name: "Victoria's Secret",
-    brand: "Golden Aroma",
+    brand: "Secret Muse",
     originalBrand: "Victoria's Secret",
     gender: "Women",
     mainAccords: [
@@ -2598,7 +2598,7 @@ export const perfumes: Perfume[] = [
   {
     id: "flora-gorgeous-jasmine",
     name: "Flora Gorgeous Jasmine",
-    brand: "Golden Aroma",
+    brand: "Flora Jasmine",
     originalBrand: "Gucci",
     gender: "Women",
     mainAccords: [
@@ -2623,7 +2623,7 @@ export const perfumes: Perfume[] = [
   {
     id: "flora-gucci",
     name: "Flora by Gucci",
-    brand: "Golden Aroma",
+    brand: "Flora Classic",
     originalBrand: "Gucci",
     gender: "Women",
     mainAccords: [
@@ -2649,7 +2649,7 @@ export const perfumes: Perfume[] = [
   {
     id: "fantasy",
     name: "Fantasy",
-    brand: "Golden Aroma",
+    brand: "Fantasy Dream",
     originalBrand: "Britney Spears",
     gender: "Women",
     mainAccords: ["Fruity", "Gourmand", "Lychee", "Quince", "Cupcake", "Sweet"],
@@ -2668,7 +2668,7 @@ export const perfumes: Perfume[] = [
   {
     id: "vip-carolina",
     name: "V.I.P",
-    brand: "Golden Aroma",
+    brand: "VIP Allure",
     originalBrand: "Carolina Herrera",
     gender: "Women",
     mainAccords: [
@@ -2694,7 +2694,7 @@ export const perfumes: Perfume[] = [
   {
     id: "coco-mademoiselle",
     name: "Coco Mademoiselle",
-    brand: "Golden Aroma",
+    brand: "Coco Mademoiselle",
     originalBrand: "Chanel",
     gender: "Women",
     mainAccords: [
@@ -2720,7 +2720,7 @@ export const perfumes: Perfume[] = [
   {
     id: "queen-of-silk",
     name: "Queen of Silk",
-    brand: "Golden Aroma",
+    brand: "Queen of Silk",
     originalBrand: "Creed",
     gender: "Women",
     mainAccords: ["Floral", "Rose", "Silk", "Luxurious", "Elegant", "Regal"],
@@ -2739,7 +2739,7 @@ export const perfumes: Perfume[] = [
   {
     id: "la-vie-est-belle",
     name: "La Vie Est Belle",
-    brand: "Golden Aroma",
+    brand: "Life is Beautiful",
     originalBrand: "Lancôme",
     gender: "Women",
     mainAccords: [
@@ -2765,7 +2765,7 @@ export const perfumes: Perfume[] = [
   {
     id: "love-is-heavenly",
     name: "Love Is Heavenly",
-    brand: "Golden Aroma",
+    brand: "Heavenly Love",
     originalBrand: "Victoria's Secret",
     gender: "Women",
     mainAccords: ["Fruity", "Floral", "Sweet", "Peach", "Vanilla", "Romantic"],
@@ -2784,7 +2784,7 @@ export const perfumes: Perfume[] = [
   {
     id: "libre",
     name: "Libre",
-    brand: "Golden Aroma",
+    brand: "Libre Spirit",
     originalBrand: "Yves Saint Laurent",
     gender: "Women",
     mainAccords: [
@@ -2816,7 +2816,7 @@ export const perfumes: Perfume[] = [
   {
     id: "my-way",
     name: "My Way",
-    brand: "Golden Aroma",
+    brand: "My Way",
     originalBrand: "Giorgio Armani",
     gender: "Women",
     mainAccords: [
@@ -2841,7 +2841,7 @@ export const perfumes: Perfume[] = [
   {
     id: "midnight-fantasy",
     name: "Midnight Fantasy",
-    brand: "Golden Aroma",
+    brand: "Midnight Fantasy",
     originalBrand: "Britney Spears",
     gender: "Women",
     mainAccords: [
@@ -2867,7 +2867,7 @@ export const perfumes: Perfume[] = [
   {
     id: "narciso-rodriguez-black",
     name: "For Her Black",
-    brand: "Golden Aroma",
+    brand: "Noir Narciso",
     originalBrand: "Narciso Rodriguez",
     gender: "Women",
     mainAccords: [
@@ -2893,7 +2893,7 @@ export const perfumes: Perfume[] = [
   {
     id: "narciso-rodriguez-pink",
     name: "For Her Pink",
-    brand: "Golden Aroma",
+    brand: "Pink Narciso",
     originalBrand: "Narciso Rodriguez",
     gender: "Women",
     mainAccords: ["Floral", "Musky", "Rose", "Peony", "Geranium", "Feminine"],
@@ -2912,7 +2912,7 @@ export const perfumes: Perfume[] = [
   {
     id: "scandal-absolu",
     name: "Scandal Absolu",
-    brand: "Golden Aroma",
+    brand: "Absolute Scandal",
     originalBrand: "Jean Paul Gaultier",
     gender: "Women",
     mainAccords: [
@@ -2937,7 +2937,7 @@ export const perfumes: Perfume[] = [
   {
     id: "212-herrera",
     name: "212",
-    brand: "Golden Aroma",
+    brand: "212 Chic",
     originalBrand: "Carolina Herrera",
     gender: "Women",
     mainAccords: [
