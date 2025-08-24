@@ -564,7 +564,7 @@ export default function Quiz() {
                             </div>
 
                             <div>
-                              <h4 className="font-bold text-gold-300 text-sm sm:text-base md:text-lg group-hover:text-gold-800 transition-colors">
+                              <h4 className="font-bold text-gold-300 text-sm sm:text-base md:text-lg group-hover:text-gold-300 transition-colors">
                                 {perfume.name}
                               </h4>
                               <p className="text-xs sm:text-sm font-semibold text-gold-300">

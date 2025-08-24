@@ -42,7 +42,7 @@ export function RecommendationBanner({
             >
               <div className="flex items-start justify-between mb-2">
                 <div className="flex-1">
-                  <h4 className="font-semibold text-gold-300 group-hover:text-gold-700 transition-colors text-sm">
+                  <h4 className="font-semibold text-gold-300 group-hover:text-gold-300 transition-colors text-sm">
                     {perfume.name}
                   </h4>
                   <p className="text-xs text-gold-600 font-medium">
@@ -57,7 +57,7 @@ export function RecommendationBanner({
                   {perfume.fragranceProfile}
                 </span>
                 <div className="text-right">
-                  <span className="text-sm font-bold text-gold-700">
+                  <span className="text-sm font-bold text-gold-300">
                     ${perfume.sizes[0].price}
                   </span>
                   <div className="text-xs text-gray-500">
@@ -72,7 +72,7 @@ export function RecommendationBanner({
         <div className="mt-6 text-center">
           <Button
             variant="outline"
-            className="border-gold-400 text-gold-700 hover:bg-black-800"
+            className="border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white"
           >
             <Sparkles className="w-4 h-4 mr-2" />
             View All Premium Collection
