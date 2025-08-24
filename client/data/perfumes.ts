@@ -2230,7 +2230,7 @@ export const perfumes: Perfume[] = [
   {
     id: "bombshell",
     name: "Bombshell",
-    brand: "Golden Aroma",
+    brand: "Bombshell Glow",
     originalBrand: "Victoria's Secret",
     gender: "Women",
     mainAccords: [
@@ -2256,7 +2256,7 @@ export const perfumes: Perfume[] = [
   {
     id: "baby-johnson",
     name: "Baby Johnson",
-    brand: "Golden Aroma",
+    brand: "Baby Whisper",
     originalBrand: "Johnson's",
     gender: "Women",
     mainAccords: [
@@ -2282,7 +2282,7 @@ export const perfumes: Perfume[] = [
   {
     id: "jadore",
     name: "J'adore",
-    brand: "Golden Aroma",
+    brand: "Golden Bloom",
     originalBrand: "Dior",
     gender: "Women",
     mainAccords: [
@@ -2316,7 +2316,7 @@ export const perfumes: Perfume[] = [
   {
     id: "delina",
     name: "Delina",
-    brand: "Golden Aroma",
+    brand: "Rose Delina",
     originalBrand: "Parfums de Marly",
     gender: "Women",
     mainAccords: ["Rose", "Fruity", "Sweet", "Peony", "Lychee", "Luxurious"],
@@ -2335,7 +2335,7 @@ export const perfumes: Perfume[] = [
   {
     id: "ralph-lauren-women",
     name: "Ralph Lauren",
-    brand: "Golden Aroma",
+    brand: "Polo Elegance",
     originalBrand: "Ralph Lauren",
     gender: "Women",
     mainAccords: [
@@ -2365,7 +2365,7 @@ export const perfumes: Perfume[] = [
   {
     id: "rose-des-vents",
     name: "Rose Des Vents",
-    brand: "Golden Aroma",
+    brand: "Rose of Winds",
     originalBrand: "Louis Vuitton",
     gender: "Women",
     mainAccords: [
@@ -2391,7 +2391,7 @@ export const perfumes: Perfume[] = [
   {
     id: "romance-intense",
     name: "Romance Intense",
-    brand: "Golden Aroma",
+    brand: "Romance Flame",
     originalBrand: "Ralph Lauren",
     gender: "Women",
     mainAccords: [
@@ -2417,7 +2417,7 @@ export const perfumes: Perfume[] = [
   {
     id: "212-sexy",
     name: "212 Sexy",
-    brand: "Golden Aroma",
+    brand: "212 Desire",
     originalBrand: "Carolina Herrera",
     gender: "Women",
     mainAccords: [
@@ -2443,7 +2443,7 @@ export const perfumes: Perfume[] = [
   {
     id: "si-armani",
     name: "Sì",
-    brand: "Golden Aroma",
+    brand: "Armani Sí",
     originalBrand: "Giorgio Armani",
     gender: "Women",
     mainAccords: [
@@ -2469,7 +2469,7 @@ export const perfumes: Perfume[] = [
   {
     id: "chanel-no5",
     name: "Chanel Nº5",
-    brand: "Golden Aroma",
+    brand: "Eternal No.5",
     originalBrand: "Chanel",
     gender: "Women",
     mainAccords: [
