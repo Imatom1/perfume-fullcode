@@ -35,7 +35,7 @@ export const perfumes: Perfume[] = [
   {
     id: "baccarat-rouge-540",
     name: "Baccarat Rouge 540",
-    brand: "Golden Aroma",
+    brand: "Rouge Elixir",
     originalBrand: "Maison Francis Kurkdjian",
     gender: "Unisex",
     mainAccords: [
@@ -65,7 +65,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-afgano",
     name: "Black Afgano",
-    brand: "Golden Aroma",
+    brand: "Black Spirit",
     originalBrand: "Nasomatto",
     gender: "Unisex",
     mainAccords: [
@@ -92,7 +92,7 @@ export const perfumes: Perfume[] = [
   {
     id: "ombre-nomade",
     name: "Ombre Nomade",
-    brand: "Golden Aroma",
+    brand: "Dark Nomad",
     originalBrand: "Louis Vuitton",
     gender: "Unisex",
     mainAccords: [
@@ -146,7 +146,7 @@ export const perfumes: Perfume[] = [
   {
     id: "oud-ispahan",
     name: "Oud Ispahan",
-    brand: "Golden Aroma",
+    brand: "Oud Essence",
     originalBrand: "Dior",
     gender: "Unisex",
     mainAccords: ["Oud", "Rose", "Sweet", "Warm Spicy", "Amber", "Powdery"],
@@ -165,7 +165,7 @@ export const perfumes: Perfume[] = [
   {
     id: "oud-wood",
     name: "Oud Wood",
-    brand: "Golden Aroma",
+    brand: "Oud Majesty",
     originalBrand: "Tom Ford",
     gender: "Unisex",
     mainAccords: ["Oud", "Woody", "Sweet", "Warm Spicy", "Balsamic", "Smoky"],
@@ -184,7 +184,7 @@ export const perfumes: Perfume[] = [
   {
     id: "rose-vanille",
     name: "Rose Vanille",
-    brand: "Golden Aroma",
+    brand: "Rose Vanilla",
     originalBrand: "Mancera",
     gender: "Unisex",
     mainAccords: ["Rose", "Sweet", "Vanilla", "Fruity", "Floral", "Powdery"],
@@ -203,7 +203,7 @@ export const perfumes: Perfume[] = [
   {
     id: "red-tobacco",
     name: "Red Tobacco",
-    brand: "Golden Aroma",
+    brand: "Red Tobacco Flame",
     originalBrand: "Mancera",
     gender: "Unisex",
     mainAccords: [
@@ -249,7 +249,7 @@ export const perfumes: Perfume[] = [
   {
     id: "accento",
     name: "Accento",
-    brand: "Golden Aroma",
+    brand: "Golden Accento",
     originalBrand: "Sospiro",
     gender: "Unisex",
     mainAccords: ["Floral", "Iris", "Fruity", "Powdery", "Woody", "Musky"],
@@ -287,7 +287,7 @@ export const perfumes: Perfume[] = [
   {
     id: "alf-lele-w-lele",
     name: "Alf Lele W Lele",
-    brand: "Golden Aroma",
+    brand: "Thousand Nights",
     originalBrand: "Ajmal",
     gender: "Unisex",
     mainAccords: ["Oud", "Rose", "Amber", "Sweet", "Woody", "Spicy"],
@@ -306,7 +306,7 @@ export const perfumes: Perfume[] = [
   {
     id: "al-fares",
     name: "Al Fares",
-    brand: "Golden Aroma",
+    brand: "Noble Knight",
     originalBrand: "Arabian Oud",
     gender: "Unisex",
     mainAccords: ["Oud", "Woody", "Amber", "Rose", "Spicy", "Smoky"],
