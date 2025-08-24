@@ -2694,7 +2694,7 @@ export const perfumes: Perfume[] = [
   {
     id: "coco-mademoiselle",
     name: "Coco Mademoiselle",
-    brand: "Golden Aroma",
+    brand: "Coco Mademoiselle",
     originalBrand: "Chanel",
     gender: "Women",
     mainAccords: [
@@ -2720,7 +2720,7 @@ export const perfumes: Perfume[] = [
   {
     id: "queen-of-silk",
     name: "Queen of Silk",
-    brand: "Golden Aroma",
+    brand: "Queen of Silk",
     originalBrand: "Creed",
     gender: "Women",
     mainAccords: ["Floral", "Rose", "Silk", "Luxurious", "Elegant", "Regal"],
@@ -2739,7 +2739,7 @@ export const perfumes: Perfume[] = [
   {
     id: "la-vie-est-belle",
     name: "La Vie Est Belle",
-    brand: "Golden Aroma",
+    brand: "Life is Beautiful",
     originalBrand: "Lancôme",
     gender: "Women",
     mainAccords: [
@@ -2765,7 +2765,7 @@ export const perfumes: Perfume[] = [
   {
     id: "love-is-heavenly",
     name: "Love Is Heavenly",
-    brand: "Golden Aroma",
+    brand: "Heavenly Love",
     originalBrand: "Victoria's Secret",
     gender: "Women",
     mainAccords: ["Fruity", "Floral", "Sweet", "Peach", "Vanilla", "Romantic"],
@@ -2784,7 +2784,7 @@ export const perfumes: Perfume[] = [
   {
     id: "libre",
     name: "Libre",
-    brand: "Golden Aroma",
+    brand: "Libre Spirit",
     originalBrand: "Yves Saint Laurent",
     gender: "Women",
     mainAccords: [
@@ -2816,7 +2816,7 @@ export const perfumes: Perfume[] = [
   {
     id: "my-way",
     name: "My Way",
-    brand: "Golden Aroma",
+    brand: "My Way",
     originalBrand: "Giorgio Armani",
     gender: "Women",
     mainAccords: [
@@ -2841,7 +2841,7 @@ export const perfumes: Perfume[] = [
   {
     id: "midnight-fantasy",
     name: "Midnight Fantasy",
-    brand: "Golden Aroma",
+    brand: "Midnight Fantasy",
     originalBrand: "Britney Spears",
     gender: "Women",
     mainAccords: [
@@ -2867,7 +2867,7 @@ export const perfumes: Perfume[] = [
   {
     id: "narciso-rodriguez-black",
     name: "For Her Black",
-    brand: "Golden Aroma",
+    brand: "Noir Narciso",
     originalBrand: "Narciso Rodriguez",
     gender: "Women",
     mainAccords: [
@@ -2893,7 +2893,7 @@ export const perfumes: Perfume[] = [
   {
     id: "narciso-rodriguez-pink",
     name: "For Her Pink",
-    brand: "Golden Aroma",
+    brand: "Pink Narciso",
     originalBrand: "Narciso Rodriguez",
     gender: "Women",
     mainAccords: ["Floral", "Musky", "Rose", "Peony", "Geranium", "Feminine"],
@@ -2912,7 +2912,7 @@ export const perfumes: Perfume[] = [
   {
     id: "scandal-absolu",
     name: "Scandal Absolu",
-    brand: "Golden Aroma",
+    brand: "Absolute Scandal",
     originalBrand: "Jean Paul Gaultier",
     gender: "Women",
     mainAccords: [
@@ -2937,7 +2937,7 @@ export const perfumes: Perfume[] = [
   {
     id: "212-herrera",
     name: "212",
-    brand: "Golden Aroma",
+    brand: "212 Chic",
     originalBrand: "Carolina Herrera",
     gender: "Women",
     mainAccords: [
