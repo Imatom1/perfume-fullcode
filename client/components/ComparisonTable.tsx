@@ -33,7 +33,7 @@ export function ComparisonTable({
       getValue: (p: Perfume) => (
         <div className="space-y-1">
           <div className="font-bold text-gold-300">{p.name}</div>
-          <div className="text-sm font-semibold text-gold-700">{p.brand}</div>
+          <div className="text-sm font-semibold text-gold-300">{p.brand}</div>
           <div className="text-xs font-medium text-gold-400">
             Inspired by {p.originalBrand}
           </div>
@@ -153,7 +153,7 @@ export function ComparisonTable({
                 <h4 className="font-bold text-gold-300 text-sm mb-1">
                   {perfume.name}
                 </h4>
-                <p className="text-xs text-gold-700">{perfume.brand}</p>
+                <p className="text-xs text-gold-300">{perfume.brand}</p>
               </div>
               <div className="flex gap-2 justify-center">
                 <Button

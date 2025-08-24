@@ -63,7 +63,7 @@ export function PerfumeFilters({
           {resultCount > 0 && (
             <Badge
               variant="secondary"
-              className="bg-black-700 text-gold-900 border-gold-400 ml-auto font-semibold shadow-sm"
+              className="bg-black-700 text-gold-300 border-gold-400 ml-auto font-semibold shadow-sm"
             >
               {resultCount} results
             </Badge>
@@ -244,7 +244,7 @@ export function PerfumeFilters({
           <Button
             variant="outline"
             onClick={onReset}
-            className="w-full border-gold-300 text-gold-700 hover:bg-black-800"
+            className="w-full border-gold-300 text-gold-300 hover:bg-black-800 hover:text-white"
           >
             <X className="w-4 h-4 mr-2" />
             Clear Filters

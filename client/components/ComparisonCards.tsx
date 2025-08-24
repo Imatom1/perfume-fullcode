@@ -39,7 +39,7 @@ export function ComparisonCards({
               <h3 className="text-lg font-bold text-gold-300 mb-2">
                 {perfume.name}
               </h3>
-              <p className="text-sm text-gold-700 mb-4">
+              <p className="text-sm text-gold-300 mb-4">
                 Add another fragrance to begin your comparison
               </p>
               <Button

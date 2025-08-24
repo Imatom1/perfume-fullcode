@@ -61,7 +61,7 @@ export function StatsSection() {
                   <div className="text-3xl font-bold text-gold-300 mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-lg font-semibold text-gold-700 mb-1">
+                  <div className="text-lg font-semibold text-gold-300 mb-1">
                     {stat.label}
                   </div>
                   <div className="text-sm text-gold-300">
