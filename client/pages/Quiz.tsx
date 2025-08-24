@@ -551,7 +551,7 @@ export default function Quiz() {
                     {recommendations.map((perfume, index) => (
                       <Card
                         key={perfume.id}
-                        className="border-gold-300 bg-gradient-to-br from-black-800 to-black-800 hover:from-black-800 hover:to-gold-150 transition-all cursor-pointer group"
+                        className="border-gold-300 bg-gradient-to-br from-black-800 to-black-800 hover:from-black-700 hover:to-black-600 transition-all cursor-pointer group"
                         onClick={() => handlePerfumeClick(perfume)}
                       >
                         <CardContent className="p-3 sm:p-4 md:p-5">

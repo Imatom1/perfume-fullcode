@@ -76,10 +76,10 @@ export function ComparisonCards({
     switch (gender.toLowerCase()) {
       case "women":
         return {
-          titleText: "text-black-700",
-          brandText: "text-gold-800",
-          accordBorder: "border-gold-400 text-black-700 bg-black-800",
-          iconColor: "text-gold-700",
+          titleText: "text-gold-300",
+          brandText: "text-gold-300",
+          accordBorder: "border-gold-400 text-gold-300 bg-black-800",
+          iconColor: "text-gold-300",
         };
       case "men":
         return {
@@ -90,16 +90,16 @@ export function ComparisonCards({
         };
       case "unisex":
         return {
-          titleText: "text-black-700",
-          brandText: "text-gold-800",
-          accordBorder: "border-gold-400 text-black-700 bg-black-800",
+          titleText: "text-gold-300",
+          brandText: "text-gold-300",
+          accordBorder: "border-gold-400 text-gold-300 bg-black-800",
           iconColor: "text-gold-700",
         };
       default:
         return {
-          titleText: "text-black-700",
-          brandText: "text-gold-800",
-          accordBorder: "border-gold-400 text-black-700 bg-black-800",
+          titleText: "text-gold-300",
+          brandText: "text-gold-300",
+          accordBorder: "border-gold-400 text-gold-300 bg-black-800",
           iconColor: "text-gold-700",
         };
     }

@@ -332,7 +332,7 @@ export function PerfumeQuiz({
                 {recommendations.map((perfume, index) => (
                   <Card
                     key={perfume.id}
-                    className="border-gold-300 bg-gradient-to-r from-black-800 to-black-800 hover:from-black-800 hover:to-gold-150 transition-all cursor-pointer"
+                    className="border-gold-300 bg-gradient-to-r from-black-800 to-black-800 hover:from-black-700 hover:to-black-600 transition-all cursor-pointer"
                     onClick={() => {
                       onPerfumeSelect(perfume);
                       onClose();
