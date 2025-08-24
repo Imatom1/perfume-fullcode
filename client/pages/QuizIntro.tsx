@@ -117,7 +117,7 @@ export default function QuizIntro() {
         <div className="space-y-3">
           <Button
             onClick={() => navigate("/quiz")}
-            className="w-full bg-gold-600 hover:bg-gold-700 text-white font-semibold py-4 text-base"
+            className="w-full bg-gold-600 hover:bg-gold-700 text-black-800 font-semibold py-4 text-base"
           >
             <Heart className="w-4 h-4 mr-2" />
             Start Your Fragrance Journey

@@ -555,7 +555,7 @@ export default function PerfumeMixer() {
                             {resultProfile.accords.map((accord) => (
                               <Badge
                                 key={accord}
-                                className="bg-gold-600 text-white text-xs px-1 py-0"
+                                className="bg-gold-600 text-black-800 text-xs px-1 py-0"
                               >
                                 {accord}
                               </Badge>
