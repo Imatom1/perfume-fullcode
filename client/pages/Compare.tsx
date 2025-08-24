@@ -160,7 +160,7 @@ export default function Compare() {
                 variant="outline"
                 size="sm"
                 onClick={clearComparison}
-                className="border-gold-400 text-gold-800 hover:bg-black-800 font-medium text-xs h-6 px-2"
+                className="border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white font-medium text-xs h-6 px-2"
               >
                 Clear All
               </Button>
@@ -304,7 +304,7 @@ export default function Compare() {
                         setSeasonFilter("");
                         setAccordFilter("");
                       }}
-                      className="w-full border-gold-400 text-gold-800 hover:bg-black-800 text-xs h-6"
+                      className="w-full border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white text-xs h-6"
                     >
                       <X className="w-3 h-3 mr-1" />
                       Clear
@@ -334,7 +334,7 @@ export default function Compare() {
                       variant="outline"
                       size="sm"
                       onClick={clearComparison}
-                      className="border-gold-400 text-gold-700 hover:bg-black-800 text-xs"
+                      className="border-gold-400 text-gold-300 hover:bg-black-800 hover:text-white text-xs"
                     >
                       <X className="w-3 h-3 mr-1" />
                       Start Over
