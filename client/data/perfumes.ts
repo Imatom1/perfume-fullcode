@@ -119,7 +119,7 @@ export const perfumes: Perfume[] = [
   {
     id: "interlude",
     name: "Interlude",
-    brand: "Golden Aroma",
+    brand: "Eternal Interlude",
     originalBrand: "Amouage",
     gender: "Men",
     mainAccords: [
@@ -230,7 +230,7 @@ export const perfumes: Perfume[] = [
   {
     id: "imagination-lv",
     name: "Imagination",
-    brand: "Golden Aroma",
+    brand: "Imagination",
     originalBrand: "Louis Vuitton",
     gender: "Men",
     mainAccords: ["Fresh", "Citrus", "Tea", "Amber", "Woody", "Aquatic"],
@@ -268,7 +268,7 @@ export const perfumes: Perfume[] = [
   {
     id: "imperial-valley",
     name: "Imperial Valley",
-    brand: "Golden Aroma",
+    brand: "Imperial Valley",
     originalBrand: "Gessa",
     gender: "Men",
     mainAccords: ["Fresh", "Citrus", "Lavender", "Woody", "Amber"],
