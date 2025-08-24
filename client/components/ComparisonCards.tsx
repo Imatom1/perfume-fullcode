@@ -83,24 +83,24 @@ export function ComparisonCards({
         };
       case "men":
         return {
-          titleText: "text-slate-900",
-          brandText: "text-slate-800",
-          accordBorder: "border-slate-500 text-slate-900 bg-black-800",
-          iconColor: "text-slate-700",
+          titleText: "text-slate-300",
+          brandText: "text-slate-300",
+          accordBorder: "border-slate-500 text-slate-300 bg-black-800",
+          iconColor: "text-slate-300",
         };
       case "unisex":
         return {
           titleText: "text-gold-300",
           brandText: "text-gold-300",
           accordBorder: "border-gold-400 text-gold-300 bg-black-800",
-          iconColor: "text-gold-700",
+          iconColor: "text-gold-300",
         };
       default:
         return {
           titleText: "text-gold-300",
           brandText: "text-gold-300",
           accordBorder: "border-gold-400 text-gold-300 bg-black-800",
-          iconColor: "text-gold-700",
+          iconColor: "text-gold-300",
         };
     }
   };
