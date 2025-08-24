@@ -429,7 +429,7 @@ export default function Quiz() {
               </h1>
               <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-gold-700" />
             </div>
-            <p className="text-sm text-gold-400 max-w-2xl mx-auto px-2">
+            <p className="text-sm text-gold-600 sm:text-gold-400 max-w-2xl mx-auto px-2">
               Discover your perfect fragrance match through our
               personality-based questionnaire
             </p>
