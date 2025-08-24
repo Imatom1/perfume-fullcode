@@ -2027,7 +2027,7 @@ export const perfumes: Perfume[] = [
   {
     id: "elie-saab",
     name: "Elie Saab Le Parfum",
-    brand: "Golden Aroma",
+    brand: "Elie's Grace",
     originalBrand: "Elie Saab",
     gender: "Women",
     mainAccords: [
@@ -2053,7 +2053,7 @@ export const perfumes: Perfume[] = [
   {
     id: "alien-oud-majestueux",
     name: "Alien Oud Majestueux",
-    brand: "Golden Aroma",
+    brand: "Majestic Alien",
     originalBrand: "Mugler",
     gender: "Women",
     mainAccords: ["Oud", "Oriental", "Mystical", "Intense", "Woody", "Amber"],
@@ -2072,7 +2072,7 @@ export const perfumes: Perfume[] = [
   {
     id: "paris-hilton",
     name: "Paris Hilton",
-    brand: "Golden Aroma",
+    brand: "Starlet Glam",
     originalBrand: "Paris Hilton",
     gender: "Women",
     mainAccords: ["Fruity", "Sweet", "Apple", "Floral", "Youthful", "Playful"],
