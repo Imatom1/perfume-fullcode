@@ -137,7 +137,7 @@ export default function MostPopular() {
 
       {/* Page Header */}
       <div
-        className="bg-gradient-to-r from-black-800 via-black-700 to-gold-300 py-6 relative overflow-hidden
+        className="bg-gradient-to-r from-black-800 via-black-700 to-black-600 py-6 relative overflow-hidden
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

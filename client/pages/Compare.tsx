@@ -201,7 +201,7 @@ export default function Compare() {
           {/* Perfume selection sidebar */}
           <div className="order-2 lg:w-[640px] flex-shrink-0">
             <Card
-              className="bg-gradient-to-br from-black-800 via-black-700 to-gold-300 border border-gold-400 shadow-lg relative overflow-hidden
+              className="bg-gradient-to-br from-black-800 via-black-700 to-black-600 border border-gold-400 shadow-lg relative overflow-hidden
             before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
             >
               <CardHeader className="relative z-10 p-2 sm:p-3">

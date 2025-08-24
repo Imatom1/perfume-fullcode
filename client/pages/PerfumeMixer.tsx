@@ -405,7 +405,7 @@ export default function PerfumeMixer() {
 
       {/* Page Header */}
       <div
-        className="bg-gradient-to-r from-black-800 via-black-700 to-gold-300 py-2 relative overflow-hidden flex-shrink-0
+        className="bg-gradient-to-r from-black-800 via-black-700 to-black-600 py-2 relative overflow-hidden flex-shrink-0
       before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] before:animate-shimmer before:transition-transform"
       >
         <div className="max-w-7xl mx-auto px-2 sm:px-3 relative z-10">
@@ -653,7 +653,7 @@ export default function PerfumeMixer() {
 
           {/* Right Panel - Perfume Browser */}
           <div className="flex flex-col min-h-[500px]">
-            <Card className="bg-gradient-to-br from-black-800 via-black-700 to-gold-300 border border-gold-400 shadow-lg flex-1 flex flex-col">
+            <Card className="bg-gradient-to-br from-black-800 via-black-700 to-black-600 border border-gold-400 shadow-lg flex-1 flex flex-col">
               <CardHeader className="p-2 sm:p-3 flex-shrink-0">
                 <CardTitle className="text-sm font-bold text-gold-300 flex items-center justify-between">
                   <span className="flex items-center gap-2">
