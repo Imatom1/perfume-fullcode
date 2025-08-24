@@ -2091,7 +2091,7 @@ export const perfumes: Perfume[] = [
   {
     id: "bright-crystal",
     name: "Bright Crystal",
-    brand: "Golden Aroma",
+    brand: "Crystal Radiance",
     originalBrand: "Versace",
     gender: "Women",
     mainAccords: [
@@ -2144,7 +2144,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-opium",
     name: "Black Opium",
-    brand: "Golden Aroma",
+    brand: "Midnight Opium",
     originalBrand: "Yves Saint Laurent",
     gender: "Women",
     mainAccords: [
@@ -2170,7 +2170,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-orchid",
     name: "Black Orchid",
-    brand: "Golden Aroma",
+    brand: "Orchid Noir",
     originalBrand: "Tom Ford",
     gender: "Women",
     mainAccords: [
@@ -2204,7 +2204,7 @@ export const perfumes: Perfume[] = [
   {
     id: "black-opium-over-red",
     name: "Black Opium Over Red",
-    brand: "Golden Aroma",
+    brand: "Scarlet Opium",
     originalBrand: "Yves Saint Laurent",
     gender: "Women",
     mainAccords: [
