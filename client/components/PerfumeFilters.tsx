@@ -53,7 +53,7 @@ export function PerfumeFilters({
 
   return (
     <Card
-      className="bg-gradient-to-br from-black-800 via-black-700 to-gold-300 border-2 border-gold-400 shadow-xl relative overflow-hidden
+      className="bg-gradient-to-br from-black-800 via-black-700 to-black-600 border-2 border-gold-400 shadow-xl relative overflow-hidden
     before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/5 before:to-transparent before:translate-x-[-200%] hover:before:animate-shimmer before:transition-transform"
     >
       <CardHeader className="relative z-10">

@@ -50,18 +50,18 @@ export function PerfumeCard({
           shimmer: "before:via-white/15",
         };
       case "men":
-        // Darker Silver theme - using slate for deeper silver
+        // Dark Silver theme - using dark backgrounds with silver accents
         return {
-          cardBg: "bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500",
-          cardBorder: "border-slate-600 hover:border-slate-700",
+          cardBg: "bg-gradient-to-br from-slate-800 via-slate-700 to-slate-600",
+          cardBorder: "border-slate-400 hover:border-slate-300",
           cardShadow: "shadow-slate-400/60",
-          titleHover: "group-hover:text-slate-900",
-          brandText: "text-slate-900",
-          profileText: "text-slate-950",
-          badge: "bg-slate-400 text-slate-950 border-slate-600",
-          accordBorder: "border-slate-500 text-slate-900 bg-slate-200",
-          iconColor: "text-slate-800",
-          compareButton: "border-slate-600 text-slate-900 hover:bg-slate-300",
+          titleHover: "group-hover:text-slate-300",
+          brandText: "text-slate-300",
+          profileText: "text-slate-400",
+          badge: "bg-slate-500 text-white border-slate-400",
+          accordBorder: "border-slate-400 text-slate-300 bg-black-800",
+          iconColor: "text-slate-300",
+          compareButton: "border-slate-400 text-slate-300 hover:bg-black-700 hover:text-white",
           shimmer: "before:via-white/15",
         };
       case "unisex":
